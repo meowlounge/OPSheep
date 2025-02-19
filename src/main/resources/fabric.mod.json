@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "opsheeps",
+	"version": "${version}",
+	"name": "opsheeps",
+	"description": "OP Sheeps with OP Shears",
+	"authors": [
+		"dwhincandi"
+	],
+	"contact": {
+		"homepage": "https://linktr.ee/dwhincandi",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/opsheeps/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.dwhincandi.opsheeps.Opsheeps"
+		],
+		"fabric-datagen": [
+			"com.dwhincandi.opsheeps.OpsheepsDataGenerator"
+		],
+		"clients": [
+			"com.dwhincandi.opsheeps.OpsheepsClient"
+		]
+	},
+	"mixins": [
+		"opsheeps.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
