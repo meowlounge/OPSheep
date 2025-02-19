@@ -19,4 +19,8 @@ public class ModItems {
         Opsheeps.LOGGER.info("Registering item: " + name);
         return Registry.register(Registries.ITEM, Identifier.of(Opsheeps.MOD_ID, name), item);
     }
+
+    public static void registerModItems() {
+        Opsheeps.LOGGER.info("Registering Mod Items for " + Opsheeps.MOD_ID);
+    }
 }
