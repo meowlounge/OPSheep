@@ -16,5 +16,3 @@ public class Opsheeps implements ModInitializer {
 		ModItems.registerModItems();
 	}
 }
-
-//? this is an test comment to test the new repo
