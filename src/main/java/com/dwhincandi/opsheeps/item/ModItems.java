@@ -11,11 +11,11 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     public static final Item SUPER_DYE = registerItem("super_dye", new Item(new Item.Settings()));
-    public static final Item SUPER_SHEARv1 = registerItem("super_shearv1", new Item(new Item.Settings()));
-    public static final Item SUPER_SHEARv2 = registerItem("super_shearv2", new Item(new Item.Settings()));
-    public static final Item SUPER_SHEARv3 = registerItem("super_shearv3", new Item(new Item.Settings()));
-    public static final Item SUPER_SHEARv4 = registerItem("super_shearv4", new Item(new Item.Settings()));
-    public static final Item SUPER_SHEARv5 = registerItem("super_shearv5", new Item(new Item.Settings()));
+    public static final Item SUPER_SHEAR_V1 = registerItem("super_shear_v1", new Item(new Item.Settings()));
+    public static final Item SUPER_SHEAR_V2 = registerItem("super_shear_v2", new Item(new Item.Settings()));
+    public static final Item SUPER_SHEAR_V3 = registerItem("super_shear_v3", new Item(new Item.Settings()));
+    public static final Item SUPER_SHEAR_V4 = registerItem("super_shear_v4", new Item(new Item.Settings()));
+    public static final Item SUPER_SHEAR_V5 = registerItem("super_shear_v5", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         Opsheeps.LOGGER.info("Registering item: " + name);

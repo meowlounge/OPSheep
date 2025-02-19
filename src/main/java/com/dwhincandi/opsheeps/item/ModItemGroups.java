@@ -17,11 +17,11 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroups.opsheeps.super_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.SUPER_DYE);
-                        entries.add(ModItems.SUPER_SHEARv1);
-                        entries.add(ModItems.SUPER_SHEARv2);
-                        entries.add(ModItems.SUPER_SHEARv3);
-                        entries.add(ModItems.SUPER_SHEARv4);
-                        entries.add(ModItems.SUPER_SHEARv5);
+                        entries.add(ModItems.SUPER_SHEAR_V1);
+                        entries.add(ModItems.SUPER_SHEAR_V2);
+                        entries.add(ModItems.SUPER_SHEAR_V3);
+                        entries.add(ModItems.SUPER_SHEAR_V4);
+                        entries.add(ModItems.SUPER_SHEAR_V5);
                     })
 
                     .build());
