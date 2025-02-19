@@ -1,13 +1,11 @@
 package com.dwhincandi.opsheeps.item;
 
 import com.dwhincandi.opsheeps.Opsheeps;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-//d
+
 public class ModItems {
 
     public static final Item SUPER_DYE = registerItem("super_dye", new Item(new Item.Settings()));
