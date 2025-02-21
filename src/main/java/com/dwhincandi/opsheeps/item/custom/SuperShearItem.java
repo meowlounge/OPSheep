@@ -11,7 +11,7 @@ import net.minecraft.world.World;
 import java.util.Random;
 
 public class SuperShearItem extends ShearsItem {
-    private final int opDropCount; // Anzahl der OP-Items
+    private final int opDropCount;
 
     public SuperShearItem(Settings settings, int opDropCount) {
         super(settings);
@@ -25,7 +25,6 @@ public class SuperShearItem extends ShearsItem {
             Random random = new Random();
 
             if (!world.isClient) {
-                // Liste der möglichen OP-Drops
                 ItemStack[] opDrops = {
                         new ItemStack(Items.NETHERITE_INGOT),
                         new ItemStack(Items.DIAMOND),
@@ -33,8 +32,6 @@ public class SuperShearItem extends ShearsItem {
                         new ItemStack(Items.TOTEM_OF_UNDYING),
                         new ItemStack(Items.POTION)
                 };
-
-                // Dropt die entsprechende Anzahl an OP-Items
                 for (int i = 0; i < opDropCount; i++) {
                     ItemStack drop = opDrops[random.nextInt(opDrops.length)];
                     sheep.dropStack(drop);
@@ -46,5 +43,3 @@ public class SuperShearItem extends ShearsItem {
         return super.useOnEntity(stack, player, entity, hand);
     }
 }
-
-//This is a Test

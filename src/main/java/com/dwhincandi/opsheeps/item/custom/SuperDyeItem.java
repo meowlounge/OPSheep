@@ -19,16 +19,13 @@ public class SuperDyeItem extends Item {
     public ActionResult useOnEntity(ItemStack stack, PlayerEntity player, LivingEntity entity, Hand hand) {
         if (entity instanceof SheepEntity sheep) {
             if (!sheep.getWorld().isClient) {
-                // Setzt das Schaf auf "jeb_"
                 sheep.setCustomName(Text.literal("jeb_"));
-                sheep.setPersistent(); // Damit es so bleibt
+                sheep.setPersistent();
 
-                // Optionale Partikel
                 sheep.getWorld().addParticle(ParticleTypes.HAPPY_VILLAGER,
                         sheep.getX(), sheep.getY() + 0.5, sheep.getZ(),
                         0, 0.1, 0);
 
-                // Verbrauch des Dyes (optional)
                 if (!player.isCreative()) {
                     stack.decrement(1);
                 }
