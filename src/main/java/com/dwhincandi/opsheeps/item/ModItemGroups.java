@@ -17,19 +17,18 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroups.opsheeps.super_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.SUPER_DYE);
+                        entries.add(ModItems.SUPER_SHEAR_V69);
                         entries.add(ModItems.SUPER_SHEAR_V1);
                         entries.add(ModItems.SUPER_SHEAR_V2);
                         entries.add(ModItems.SUPER_SHEAR_V3);
                         entries.add(ModItems.SUPER_SHEAR_V4);
                         entries.add(ModItems.SUPER_SHEAR_V5);
-                        entries.add(ModItems.SUPER_SHEAR_V69);
                     })
-
                     .build());
 
 
 
     public static void registerItemGroups() {
-        Opsheeps.LOGGER.info("Registering Item Groups for" + Opsheeps.MOD_ID);
+        Opsheeps.LOGGER.info("Registering Item Groups for " + Opsheeps.MOD_ID);
     }
 }

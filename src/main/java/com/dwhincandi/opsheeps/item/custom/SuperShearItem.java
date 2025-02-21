@@ -36,6 +36,9 @@ public class SuperShearItem extends ShearsItem {
             if (!sheep.isSheared()) {
                 sheep.setSheared(true);
 
+                //* Developer Mode ( INSTANT WOOL BACK )
+//                sheep.setSheared(false);
+
                 if (!world.isClient) {
 
                     //? Some Development Items. Will be changed into a Drop System?
@@ -57,11 +60,6 @@ public class SuperShearItem extends ShearsItem {
                 sheep.getWorld().addParticle(ParticleTypes.HAPPY_VILLAGER,
                         sheep.getX(), sheep.getY() + 0.5, sheep.getZ(),
                         3, 3, 3);
-
-//              Stack bei nicht-Kreativmodus abziehen
-                if (!player.isCreative()) {
-                    stack.decrement(1);
-                }
 
                 return ActionResult.SUCCESS;
             } else {
