@@ -44,9 +44,9 @@ public class SuperDyeItem extends Item {
 
             startRainbowEffect(sheep, player);
 
-            sheep.getWorld().addParticle(ParticleTypes.HAPPY_VILLAGER,
-                    sheep.getX(), sheep.getY() + 0.5, sheep.getZ(),
-                    0, 0.1, 0);
+            sheep.getWorld().addParticle(ParticleTypes.FLAME,
+                    sheep.getX(), sheep.getY() + 1, sheep.getZ(),
+                    3, 3, 3);
 
             if (!player.isCreative()) {
                 stack.decrement(1);
@@ -72,6 +72,6 @@ public class SuperDyeItem extends Item {
             DyeColor newColor = RAINBOW_COLORS.get(nextColorIndex);
             sheep.setColor(newColor);
 
-        }, 0, 200, TimeUnit.MILLISECONDS);
+        }, 0, 150, TimeUnit.MILLISECONDS);
     }
 }
