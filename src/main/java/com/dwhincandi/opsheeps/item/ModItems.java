@@ -7,7 +7,7 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-//d
+
 public class ModItems {
 
     public static final Item SUPER_DYE = registerItem("super_dye", new SuperDyeItem(new Item.Settings()));
