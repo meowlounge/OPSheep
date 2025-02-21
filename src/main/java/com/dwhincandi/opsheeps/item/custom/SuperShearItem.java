@@ -28,10 +28,10 @@ public class SuperShearItem extends ShearsItem {
                 // Liste der möglichen OP-Drops
                 ItemStack[] opDrops = {
                         new ItemStack(Items.NETHERITE_INGOT),
-                        new ItemStack(Items.DIAMOND, 3),
+                        new ItemStack(Items.DIAMOND),
                         new ItemStack(Items.ENCHANTED_GOLDEN_APPLE),
                         new ItemStack(Items.TOTEM_OF_UNDYING),
-                        new ItemStack(Items.POTION) // Hier könntest du benutzerdefinierte Tränke setzen
+                        new ItemStack(Items.POTION)
                 };
 
                 // Dropt die entsprechende Anzahl an OP-Items
