@@ -14,19 +14,46 @@ import net.minecraft.world.World;
 
 import java.util.Random;
 
+/**
+ * Represents the Super Shear item, which shears a sheep and drops special items.
+ * This item is a custom shears that provides additional loot drops when used on a sheep.
+ */
 public class SuperShearItem extends ShearsItem {
     private final int opDropCount;
 
+    /**
+     * Constructor for the Super Shear item.
+     *
+     * @param settings the settings for the item, including its behavior and appearance.
+     * @param opDropCount the number of special loot items dropped when the sheep is sheared.
+     */
     public SuperShearItem(Settings settings, int opDropCount) {
         super(settings);
         this.opDropCount = opDropCount;
     }
 
+    /**
+     * Indicates that the Super Shear item has a glint, making it appear enchanted.
+     *
+     * @param stack the ItemStack representing this item.
+     * @return true, as the item always has a glint.
+     */
     @Override
     public boolean hasGlint(ItemStack stack) {
         return true;
     }
 
+    /**
+     * When used on a sheep entity, shears the sheep and drops a special set of loot items.
+     * The item also spawns a particle effect at the sheep's position.
+     * If the sheep has already been sheared, the action is skipped.
+     *
+     * @param stack  the ItemStack representing this item.
+     * @param player the player using the item.
+     * @param entity the entity being interacted with, expected to be a SheepEntity.
+     * @param hand   the hand with which the item is being used.
+     * @return ActionResult.SUCCESS if the sheep was sheared, otherwise the default action.
+     */
     @Override
     public ActionResult useOnEntity(ItemStack stack, PlayerEntity player, LivingEntity entity, Hand hand) {
         if (entity instanceof SheepEntity sheep) {
@@ -40,9 +67,6 @@ public class SuperShearItem extends ShearsItem {
 //                sheep.setSheared(false);
 
                 if (!world.isClient) {
-
-                    //? Some Development Items. Will be changed into a Drop System?
-                    //? Were we can add Enchantments, Custom Styling for Name, and Lore.
                     ItemStack[] opDrops = {
                             new ItemStack(Items.NETHERITE_INGOT),
                             new ItemStack(Items.DIAMOND),

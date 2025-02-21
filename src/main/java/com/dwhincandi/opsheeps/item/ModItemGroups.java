@@ -26,8 +26,6 @@ public class ModItemGroups {
                     })
                     .build());
 
-
-
     public static void registerItemGroups() {
         Opsheeps.LOGGER.info("Registering Item Groups for " + Opsheeps.MOD_ID);
     }
