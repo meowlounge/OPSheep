@@ -22,6 +22,7 @@ public class ModItemGroups {
                         entries.add(ModItems.SUPER_SHEAR_V3);
                         entries.add(ModItems.SUPER_SHEAR_V4);
                         entries.add(ModItems.SUPER_SHEAR_V5);
+                        entries.add(ModItems.SUPER_SHEAR_V69);
                     })
 
                     .build());

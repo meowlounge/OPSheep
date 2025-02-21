@@ -16,6 +16,7 @@ public class ModItems {
     public static final Item SUPER_SHEAR_V3 = registerItem("super_shear_v3", new SuperShearItem(new Item.Settings().maxDamage(-1), 10));
     public static final Item SUPER_SHEAR_V4 = registerItem("super_shear_v4", new SuperShearItem(new Item.Settings().maxDamage(-1), 30));
     public static final Item SUPER_SHEAR_V5 = registerItem("super_shear_v5", new SuperShearItem(new Item.Settings().maxDamage(-1), 100));
+    public static final Item SUPER_SHEAR_V69 = registerItem("super_shear_v69", new SuperShearItem(new Item.Settings().maxDamage(-1), 250));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Opsheeps.MOD_ID, name), item);
