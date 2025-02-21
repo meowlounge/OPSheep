@@ -19,6 +19,11 @@ public class SuperShearItem extends ShearsItem {
     }
 
     @Override
+    public boolean hasGlint(ItemStack stack) {
+        return true;
+    }
+
+    @Override
     public ActionResult useOnEntity(ItemStack stack, PlayerEntity player, LivingEntity entity, Hand hand) {
         if (entity instanceof SheepEntity sheep) {
             World world = sheep.getWorld();
@@ -30,7 +35,12 @@ public class SuperShearItem extends ShearsItem {
                         new ItemStack(Items.DIAMOND),
                         new ItemStack(Items.ENCHANTED_GOLDEN_APPLE),
                         new ItemStack(Items.TOTEM_OF_UNDYING),
-                        new ItemStack(Items.POTION)
+                        new ItemStack(Items.NETHERITE_BLOCK),
+                        new ItemStack(Items.DRAGON_EGG),
+                        new ItemStack(Items.BEACON),
+                        new ItemStack(Items.ELYTRA),
+                        new ItemStack(Items.WITHER_SKELETON_SKULL),
+                        new ItemStack(Items.NETHER_STAR)
                 };
                 for (int i = 0; i < opDropCount; i++) {
                     ItemStack drop = opDrops[random.nextInt(opDrops.length)];
@@ -43,4 +53,3 @@ public class SuperShearItem extends ShearsItem {
         return super.useOnEntity(stack, player, entity, hand);
     }
 }
-
