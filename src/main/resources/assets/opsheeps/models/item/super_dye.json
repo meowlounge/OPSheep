@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "opsheeps:item/super_dye"
+    "layer0": "opsheeps:item/gray_dye"
   }
 }
