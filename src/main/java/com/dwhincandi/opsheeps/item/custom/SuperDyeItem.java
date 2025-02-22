@@ -22,10 +22,11 @@ import java.util.concurrent.TimeUnit;
  * This item applies a continuous rainbow effect to a sheep when used and provides visual feedback via particles.
  */
 public class SuperDyeItem extends Item {
-    // List of rainbow colors for the sheep's color change effect.
     private static final List<DyeColor> RAINBOW_COLORS = Arrays.asList(
-            DyeColor.RED, DyeColor.ORANGE, DyeColor.YELLOW, DyeColor.LIME,
-            DyeColor.LIGHT_BLUE, DyeColor.BLUE, DyeColor.PURPLE, DyeColor.MAGENTA
+            DyeColor.WHITE, DyeColor.ORANGE, DyeColor.MAGENTA, DyeColor.LIGHT_BLUE,
+            DyeColor.YELLOW, DyeColor.LIME, DyeColor.PINK, DyeColor.GRAY,
+            DyeColor.LIGHT_GRAY, DyeColor.CYAN, DyeColor.PURPLE, DyeColor.BLUE,
+            DyeColor.BROWN, DyeColor.GREEN, DyeColor.RED, DyeColor.BLACK
     );
     private static final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
 
