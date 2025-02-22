@@ -50,54 +50,42 @@ public class SuperShearItem extends ShearsItem {
 
                 if (!world.isClient) {
                     ItemStack[] lootTable = switch (this.opShearVersion) {
-                        case 1 -> {
-                            yield new ItemStack[]{
-                                    new ItemStack(Items.STICK, random.nextInt(6) + 1),
-                                    new ItemStack(Items.STRING, random.nextInt(3) + 1)
-                            };
-                        }
-                        case 2 -> {
-                            yield new ItemStack[]{
-                                    new ItemStack(Items.NETHERITE_SCRAP, random.nextInt(2) + 1),
-                                    new ItemStack(Items.DIAMOND, random.nextInt(4) + 1),
-                                    new ItemStack(Items.ENCHANTED_GOLDEN_APPLE, random.nextInt(3) + 1),
-                                    new ItemStack(Items.EXPERIENCE_BOTTLE, random.nextInt(16) + 1)
-                            };
-                        }
-                        case 3 -> {
-                            yield new ItemStack[]{
-                                    new ItemStack(Items.NETHERITE_BLOCK),
-                                    new ItemStack(Items.NETHER_STAR, random.nextInt(4) + 1),
-                                    new ItemStack(Items.TOTEM_OF_UNDYING)
-                            };
-                        }
-                        case 4 -> {
-                            yield new ItemStack[]{
-                                    new ItemStack(Items.GLOWSTONE_DUST, random.nextInt(16) + 1),
-                                    new ItemStack(Items.ELYTRA),
-                                    new ItemStack(Items.GOLDEN_APPLE, random.nextInt(16) + 1)
-                            };
-                        }
-                        case 5 -> {
-                            yield new ItemStack[]{
-                                    new ItemStack(Items.DRAGON_BREATH, random.nextInt(16) + 1),
-                                    new ItemStack(Items.POPPED_CHORUS_FRUIT, random.nextInt(32) + 1),
-                                    new ItemStack(Items.BEACON),
-                                    new ItemStack(Items.SHULKER_SHELL, random.nextInt(16) + 1),
-                                    new ItemStack(Items.END_CRYSTAL),
-                                    new ItemStack(Items.DRAGON_EGG)
-                            };
-                        }
-                        case 69 -> {
-                            yield new ItemStack[]{
-                                    new ItemStack(Items.BONE_BLOCK, random.nextInt(16) + 1),
-                                    new ItemStack(Items.AMETHYST_BLOCK, random.nextInt(32) + 1),
-                                    new ItemStack(Items.COPPER_BLOCK, random.nextInt(16) + 1),
-                                    new ItemStack(Items.BONE_BLOCK, random.nextInt(16) + 1),
-                                    new ItemStack(Items.RAW_COPPER_BLOCK, random.nextInt(16) + 1),
-                                    new ItemStack(Items.HONEYCOMB_BLOCK, random.nextInt(16) + 1)
-                            };
-                        }
+                        case 1 -> new ItemStack[]{
+                                new ItemStack(Items.STICK, random.nextInt(6) + 1),
+                                new ItemStack(Items.STRING, random.nextInt(3) + 1)
+                        };
+                        case 2 -> new ItemStack[]{
+                                new ItemStack(Items.NETHERITE_SCRAP, random.nextInt(2) + 1),
+                                new ItemStack(Items.DIAMOND, random.nextInt(4) + 1),
+                                new ItemStack(Items.ENCHANTED_GOLDEN_APPLE, random.nextInt(3) + 1),
+                                new ItemStack(Items.EXPERIENCE_BOTTLE, random.nextInt(16) + 1)
+                        };
+                        case 3 -> new ItemStack[]{
+                                new ItemStack(Items.NETHERITE_BLOCK),
+                                new ItemStack(Items.NETHER_STAR, random.nextInt(4) + 1),
+                                new ItemStack(Items.TOTEM_OF_UNDYING)
+                        };
+                        case 4 -> new ItemStack[]{
+                                new ItemStack(Items.GLOWSTONE_DUST, random.nextInt(16) + 1),
+                                new ItemStack(Items.ELYTRA),
+                                new ItemStack(Items.GOLDEN_APPLE, random.nextInt(16) + 1)
+                        };
+                        case 5 -> new ItemStack[]{
+                                new ItemStack(Items.DRAGON_BREATH, random.nextInt(16) + 1),
+                                new ItemStack(Items.POPPED_CHORUS_FRUIT, random.nextInt(32) + 1),
+                                new ItemStack(Items.BEACON),
+                                new ItemStack(Items.SHULKER_SHELL, random.nextInt(16) + 1),
+                                new ItemStack(Items.END_CRYSTAL),
+                                new ItemStack(Items.DRAGON_EGG)
+                        };
+                        case 69 -> new ItemStack[]{
+                                new ItemStack(Items.BONE_BLOCK, random.nextInt(16) + 1),
+                                new ItemStack(Items.AMETHYST_BLOCK, random.nextInt(32) + 1),
+                                new ItemStack(Items.COPPER_BLOCK, random.nextInt(16) + 1),
+                                new ItemStack(Items.BONE_BLOCK, random.nextInt(16) + 1),
+                                new ItemStack(Items.RAW_COPPER_BLOCK, random.nextInt(16) + 1),
+                                new ItemStack(Items.HONEYCOMB_BLOCK, random.nextInt(16) + 1)
+                        };
                         default -> {
                             yield new ItemStack[]{
                                     new ItemStack(Items.SKELETON_SKULL)
