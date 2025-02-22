@@ -36,9 +36,9 @@ public class SuperShearItem extends ShearsItem {
     public ActionResult useOnEntity(ItemStack stack, PlayerEntity player, LivingEntity entity, Hand hand) {
         if (entity instanceof SheepEntity sheep) {
 
-//            if (!sheep.getDataTracker().get(SheepEntityData.IS_OP_SHEEP)) {
-//                player.sendMessage(Text.literal("This sheep is not powerful enough for the OP Shears!").setStyle(Style.EMPTY.withColor(Formatting.RED)), true);
-//            }
+            if (!sheep.getDataTracker().get(SheepEntityData.IS_OP_SHEEP)) {
+                player.sendMessage(Text.literal("This sheep is not powerful enough for the OP Shears!").setStyle(Style.EMPTY.withColor(Formatting.RED)), true);
+            }
             
             World world = sheep.getWorld();
             Random random = new Random();
