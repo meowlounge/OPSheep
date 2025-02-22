@@ -36,9 +36,9 @@ public class SuperShearItem extends ShearsItem {
     public ActionResult useOnEntity(ItemStack stack, PlayerEntity player, LivingEntity entity, Hand hand) {
         if (entity instanceof SheepEntity sheep) {
 
-            if (!sheep.getDataTracker().get(SheepEntityData.IS_OP_SHEEP)) {
-                player.sendMessage(Text.literal("This sheep is not powerful enough for the OP Shears!").setStyle(Style.EMPTY.withColor(Formatting.RED)), true);
-            }
+//            if (!sheep.getDataTracker().get(SheepEntityData.IS_OP_SHEEP)) {
+//                player.sendMessage(Text.literal("This sheep is not powerful enough for the OP Shears!").setStyle(Style.EMPTY.withColor(Formatting.RED)), true);
+//            }
             
             World world = sheep.getWorld();
             Random random = new Random();
@@ -46,7 +46,7 @@ public class SuperShearItem extends ShearsItem {
             if (!sheep.isSheared()) {
                 sheep.setSheared(true);
 
-//                sheep.setSheared(false);
+                sheep.setSheared(false);
 
                 if (!world.isClient) {
                     ItemStack[] lootTable = switch (this.opShearVersion) {
@@ -67,7 +67,7 @@ public class SuperShearItem extends ShearsItem {
                         };
                         case 4 -> new ItemStack[]{
                                 new ItemStack(Items.GLOWSTONE_DUST, random.nextInt(16) + 1),
-                                new ItemStack(Items.ELYTRA),
+                                new ItemStack(Items.ELYTRA, random.nextInt(1) + 1),
                                 new ItemStack(Items.GOLDEN_APPLE, random.nextInt(16) + 1)
                         };
                         case 5 -> new ItemStack[]{
