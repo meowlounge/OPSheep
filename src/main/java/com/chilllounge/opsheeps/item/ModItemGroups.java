@@ -1,6 +1,6 @@
-package com.dwhincandi.opsheeps.item;
+package com.chilllounge.opsheeps.item;
 
-import com.dwhincandi.opsheeps.Opsheeps;
+import com.chilllounge.opsheeps.Opsheeps;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;

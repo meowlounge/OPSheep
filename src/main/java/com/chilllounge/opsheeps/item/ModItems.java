@@ -1,8 +1,8 @@
-package com.dwhincandi.opsheeps.item;
+package com.chilllounge.opsheeps.item;
 
-import com.dwhincandi.opsheeps.Opsheeps;
-import com.dwhincandi.opsheeps.item.custom.SuperDyeItem;
-import com.dwhincandi.opsheeps.item.custom.SuperShearItem;
+import com.chilllounge.opsheeps.Opsheeps;
+import com.chilllounge.opsheeps.item.custom.SuperDyeItem;
+import com.chilllounge.opsheeps.item.custom.SuperShearItem;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.LoreComponent;
 import net.minecraft.item.Item;

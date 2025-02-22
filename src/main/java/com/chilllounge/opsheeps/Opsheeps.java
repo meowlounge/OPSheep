@@ -1,7 +1,7 @@
-package com.dwhincandi.opsheeps;
+package com.chilllounge.opsheeps;
 
-import com.dwhincandi.opsheeps.item.ModItemGroups;
-import com.dwhincandi.opsheeps.item.ModItems;
+import com.chilllounge.opsheeps.item.ModItemGroups;
+import com.chilllounge.opsheeps.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

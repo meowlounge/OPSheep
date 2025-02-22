@@ -1,4 +1,4 @@
-package com.dwhincandi.opsheeps;
+package com.chilllounge.opsheeps;
 
 import net.fabricmc.api.ClientModInitializer;
 

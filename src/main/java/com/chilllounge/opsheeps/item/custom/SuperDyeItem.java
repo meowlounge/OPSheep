@@ -1,4 +1,4 @@
-package com.dwhincandi.opsheeps.item.custom;
+package com.chilllounge.opsheeps.item.custom;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.passive.SheepEntity;
@@ -9,8 +9,7 @@ import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Hand;
-import net.minecraft.world.World;
-import com.dwhincandi.opsheeps.entity.SheepEntityData;
+import com.chilllounge.opsheeps.entity.SheepEntityData;
 
 import java.util.Arrays;
 import java.util.List;

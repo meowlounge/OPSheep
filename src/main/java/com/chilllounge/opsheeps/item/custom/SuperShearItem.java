@@ -1,7 +1,7 @@
-package com.dwhincandi.opsheeps.item.custom;
+package com.chilllounge.opsheeps.item.custom;
 
-import com.dwhincandi.opsheeps.Opsheeps;
-import com.dwhincandi.opsheeps.entity.SheepEntityData;
+import com.chilllounge.opsheeps.Opsheeps;
+import com.chilllounge.opsheeps.entity.SheepEntityData;
 import net.minecraft.item.ShearsItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -9,6 +9,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.particle.ParticleTypes;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Style;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
@@ -93,7 +94,10 @@ public class SuperShearItem extends ShearsItem {
 
                     for (int i = 0; i < opDropCount; i++) {
                         ItemStack drop = lootTable[random.nextInt(lootTable.length)];
-                        sheep.dropStack(drop);
+
+                        if (world instanceof ServerWorld serverWorld) {
+                            sheep.dropStack(serverWorld, drop, 0.5f);
+                        }
                     }
                 }
 
