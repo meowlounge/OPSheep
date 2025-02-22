@@ -86,11 +86,9 @@ public class SuperShearItem extends ShearsItem {
                                 new ItemStack(Items.RAW_COPPER_BLOCK, random.nextInt(16) + 1),
                                 new ItemStack(Items.HONEYCOMB_BLOCK, random.nextInt(16) + 1)
                         };
-                        default -> {
-                            yield new ItemStack[]{
-                                    new ItemStack(Items.SKELETON_SKULL)
-                            };
-                        }
+                        default -> new ItemStack[]{
+                                new ItemStack(Items.SKELETON_SKULL)
+                        };
                     };
 
                     for (int i = 0; i < opDropCount; i++) {
