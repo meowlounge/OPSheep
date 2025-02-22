@@ -10,7 +10,6 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Hand;
 import net.minecraft.world.World;
-
 import com.dwhincandi.opsheeps.entity.SheepEntityData;
 
 import java.util.Arrays;
@@ -26,6 +25,7 @@ public class SuperDyeItem extends Item {
             DyeColor.LIGHT_GRAY, DyeColor.CYAN, DyeColor.PURPLE, DyeColor.BLUE,
             DyeColor.BROWN, DyeColor.GREEN, DyeColor.RED, DyeColor.BLACK
     );
+
     private static final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
 
     public SuperDyeItem(Settings settings) {
@@ -44,9 +44,8 @@ public class SuperDyeItem extends Item {
                 sheep.setColor(RAINBOW_COLORS.getFirst());
             }
 
-            sheep.getDataTracker().set(SheepEntityData.IS_OP_SHEEP, true, true);
-
-            startRainbowEffect(sheep, player);
+            sheep.getDataTracker().set(SheepEntityData.IS_OP_SHEEP, true);
+            startRainbowEffect(sheep);
             spawnFlameParticles(sheep);
 
             if (!player.isCreative()) {
@@ -57,28 +56,19 @@ public class SuperDyeItem extends Item {
         return super.useOnEntity(stack, player, entity, hand);
     }
 
-    private void startRainbowEffect(SheepEntity sheep, PlayerEntity player) {
-        final World world = sheep.getWorld();
+    private void startRainbowEffect(SheepEntity sheep) {
         scheduler.scheduleAtFixedRate(() -> {
-            if (!sheep.isAlive() || sheep.isSheared() || world.isClient) {
+            if (!sheep.isAlive() || sheep.isSheared() || sheep.getWorld().isClient) {
                 return;
             }
 
-            DyeColor currentColor = sheep.getColor();
-            if (currentColor == null) {
-                currentColor = RAINBOW_COLORS.getFirst();
-            }
-
-            int nextColorIndex = (RAINBOW_COLORS.indexOf(currentColor) + 1) % RAINBOW_COLORS.size();
-            DyeColor newColor = RAINBOW_COLORS.get(nextColorIndex);
+            DyeColor currentColor = sheep.getColor() == null ? RAINBOW_COLORS.getFirst() : sheep.getColor();
+            DyeColor newColor = RAINBOW_COLORS.get((RAINBOW_COLORS.indexOf(currentColor) + 1) % RAINBOW_COLORS.size());
             sheep.setColor(newColor);
-
         }, 0, 150, TimeUnit.MILLISECONDS);
     }
 
     private void spawnFlameParticles(SheepEntity sheep) {
-        sheep.getWorld().addParticle(ParticleTypes.FLAME,
-                sheep.getX(), sheep.getY() + 1, sheep.getZ(),
-                3, 3, 3);
+        sheep.getWorld().addParticle(ParticleTypes.FLAME, sheep.getX(), sheep.getY() + 1, sheep.getZ(), 3, 3, 3);
     }
 }
