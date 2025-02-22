@@ -7,12 +7,12 @@
     "111"
   ],
   "key": {
-    "1": {
-      "item": "opsheeps:super_shear_v1"
-    },
-    "D": {
-      "item": "minecraft:diamond"
-    }
+    "1": [
+      "opsheeps:super_shear_v1"
+    ],
+    "D": [
+      "minecraft:diamond"
+    ]
   },
   "result": {
     "id": "opsheeps:super_shear_v2",
