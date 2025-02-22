@@ -13,7 +13,8 @@ public class ModItemGroups {
 
     public static final ItemGroup SUPER_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(Opsheeps.MOD_ID, "super_items"),
-            FabricItemGroup.builder().icon(()-> new ItemStack(ModItems.SUPER_DYE))
+            FabricItemGroup.builder()
+                    .icon(()-> new ItemStack(ModItems.SUPER_DYE))
                     .displayName(Text.translatable("itemgroups.opsheeps.super_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.SUPER_DYE);
