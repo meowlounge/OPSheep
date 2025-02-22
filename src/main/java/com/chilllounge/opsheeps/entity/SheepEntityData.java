@@ -1,4 +1,4 @@
-package com.dwhincandi.opsheeps.entity;
+package com.chilllounge.opsheeps.entity;
 
 import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.entity.data.DataTracker;

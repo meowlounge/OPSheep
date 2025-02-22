@@ -7,12 +7,12 @@
     "111"
   ],
   "key": {
-    "1": {
-      "item": "minecraft:shears"
-    },
-    "D": {
-      "item": "minecraft:diamond"
-    }
+    "1": [
+      "minecraft:shears"
+    ],
+    "D": [
+      "minecraft:diamond"
+    ]
   },
   "result": {
     "id": "opsheeps:super_shear_v1",

@@ -2,36 +2,33 @@
 	"schemaVersion": 1,
 	"id": "opsheeps",
 	"version": "${version}",
-	"name": "opsheeps",
-	"description": "OP Sheeps with OP Shears",
+	"name": "OP Sheeps",
+	"description": "Dream about Sheep that doesnt drop wool...",
 	"authors": [
+		"prodbyeagle",
 		"dwhincandi"
 	],
 	"contact": {
-		"homepage": "https://linktr.ee/dwhincandi",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/prodbyeagle-inc/opsheeps"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/opsheeps/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.dwhincandi.opsheeps.Opsheeps"
+			"com.chilllounge.opsheeps.Opsheeps"
 		],
 		"fabric-datagen": [
-			"com.dwhincandi.opsheeps.OpsheepsDataGenerator"
+			"com.chilllounge.opsheeps.OpsheepsDataGenerator"
 		],
 		"clients": [
-			"com.dwhincandi.opsheeps.OpsheepsClient"
+			"com.chilllounge.opsheeps.OpsheepsClient"
 		]
 	},
 	"depends": {
 		"fabricloader": ">=0.16.10",
-		"minecraft": "~1.21.1",
+		"minecraft": "~1.21.4",
 		"java": ">=21",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
