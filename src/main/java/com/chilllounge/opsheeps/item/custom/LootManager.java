@@ -110,14 +110,11 @@ public class LootManager {
                 new ItemStack(Items.SHULKER_SHELL, random.nextInt(3) + 3),       // 3-5
                 new ItemStack(Items.SHULKER_SHELL, random.nextInt(3) + 3),
 
-                new ItemStack(Items.TOTEM_OF_UNDYING, random.nextInt(1) + 1),      // Fixed 1
-                new ItemStack(Items.TOTEM_OF_UNDYING, random.nextInt(1) + 1),
-
                 new ItemStack(Items.EXPERIENCE_BOTTLE, random.nextInt(8) + 8),     // 8-15
                 new ItemStack(Items.EXPERIENCE_BOTTLE, random.nextInt(8) + 8),
 
-                new ItemStack(Items.GOLD_BLOCK, random.nextInt(2) + 1),          // 1-2
-                new ItemStack(Items.GOLD_BLOCK, random.nextInt(2) + 1)
+                new ItemStack(Items.GOLD_BLOCK, random.nextInt(8) + 1),          // 1-2
+                new ItemStack(Items.GOLD_BLOCK, random.nextInt(4) + 1)
         };
     }
 
@@ -126,7 +123,7 @@ public class LootManager {
         return new ItemStack[]{
                 new ItemStack(Items.DRAGON_EGG),
                 new ItemStack(Items.NETHERITE_BLOCK, random.nextInt(2) + 1),
-                new ItemStack(Items.EMERALD_BLOCK, random.nextInt(3) + 1),
+                new ItemStack(Items.EMERALD_BLOCK, random.nextInt(8) + 1),
                 new ItemStack(Items.DIAMOND_BLOCK, random.nextInt(3) + 1),
                 new ItemStack(Items.BEACON),
                 new ItemStack(Items.TOTEM_OF_UNDYING, random.nextInt(5) + 1),
@@ -136,10 +133,10 @@ public class LootManager {
                 new ItemStack(Items.SHULKER_SHELL, random.nextInt(6) + 2),
                 new ItemStack(Items.BLAZE_ROD, random.nextInt(5) + 2),
                 new ItemStack(Items.PHANTOM_MEMBRANE, random.nextInt(4) + 1),
-                new ItemStack(Items.DIAMOND, random.nextInt(5) + 2),
+                new ItemStack(Items.DIAMOND, random.nextInt(16) + 2),
                 new ItemStack(Items.NETHERITE_SCRAP, random.nextInt(3) + 1),
                 new ItemStack(Items.TOTEM_OF_UNDYING),
-                new ItemStack(Items.GOLDEN_CARROT, random.nextInt(5) + 2),
+                new ItemStack(Items.GOLDEN_CARROT, random.nextInt(32) + 2),
                 new ItemStack(Items.ENDER_PEARL, random.nextInt(5) + 2),
                 new ItemStack(Items.ENDER_DRAGON_SPAWN_EGG),
                 new ItemStack(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, random.nextInt(2) + 1),
