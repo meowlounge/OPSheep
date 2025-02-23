@@ -17,5 +17,7 @@
   "rarity.opsheeps.legendary": "LEGENDÄR",
   "rarity.opsheeps.dev": "ENTWICKLER",
 
-  "item.opsheeps.shear_drops": "Das Scheren eines OP Schafs lässt %s Gegenstände fallen."
+  "item.opsheeps.shear_drops": "Das Scheren eines OP Schafs lässt %s Gegenstände fallen.",
+
+  "enchantment.opsheeps.diamond_extractor": "Diamant Erschnüfler"
 }
