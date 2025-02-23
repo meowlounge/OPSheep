@@ -5,10 +5,11 @@ import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+//import net.minecraft.nbt.NbtCompound;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Hand;
-// import com.chilllounge.opsheeps.entity.SheepEntityData;
+ import com.chilllounge.opsheeps.entity.SheepEntityData;
 
 import java.util.Arrays;
 import java.util.List;
@@ -17,6 +18,9 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class SuperDyeItem extends Item {
     private static final List<DyeColor> RAINBOW_COLORS = Arrays.asList(
@@ -27,6 +31,7 @@ public class SuperDyeItem extends Item {
     );
 
     private static final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
+    private static final Logger LOGGER = LoggerFactory.getLogger(SuperDyeItem.class);
 
     public SuperDyeItem(Settings settings) {
         super(settings);
@@ -47,10 +52,15 @@ public class SuperDyeItem extends Item {
             sheep.setColor(RAINBOW_COLORS.getFirst());
         }
 
-        // TODO: Uncomment and update when SheepEntityData is ready.
-        // sheep.getDataTracker().set(SheepEntityData.IS_OP_SHEEP, true);
-
         startRainbowEffect(sheep);
+
+//        NbtCompound nbt = new NbtCompound();
+//        sheep.writeNbt(nbt);
+//        nbt.putBoolean("IsOpSheep", true);
+//        sheep.readNbt(nbt);
+//
+//        System.out.println("Applied Spectral Dye to sheep at (" + sheep.getBlockX() + ", "
+//                + sheep.getBlockY() + ", " + sheep.getBlockZ() + "). Marked as OP Sheep.");
 
         if (!player.isCreative()) {
             stack.decrement(1);

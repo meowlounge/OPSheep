@@ -6,9 +6,12 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.passive.SheepEntity;
-import net.minecraft.particle.ParticleTypes;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.text.Style;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import net.minecraft.world.World;
 
@@ -36,12 +39,22 @@ public class SuperShearItem extends ShearsItem {
 
         World world = sheep.getWorld();
 
-        // TODO: Uncomment and fix when the OP Sheep data is ready.
-        // if (!sheep.getDataTracker().get(SheepEntityData.IS_OP_SHEEP)) {
-        //     player.sendMessage(Text.literal("This sheep is not powerful enough for the OP Shears!")
-        //             .setStyle(Style.EMPTY.withColor(Formatting.RED)), true);
-        //     return ActionResult.FAIL;
-        // }
+//        NbtCompound nbt = new NbtCompound();
+//        sheep.writeNbt(nbt);
+//        boolean isOpSheep = nbt.getBoolean("IsOpSheep");
+//
+//        // Logging to check NBT data
+//        System.out.println("Attempting to shear sheep at (" + sheep.getBlockX() + ", " + sheep.getBlockY() + ", " + sheep.getBlockZ() + ")");
+//        System.out.println("Sheep NBT Data: " + nbt);
+//        System.out.println("Is OP Sheep? " + isOpSheep);
+//
+//        if (!isOpSheep) {
+//            // Notify the player that this sheep is not OP
+//            player.sendMessage(Text.literal("This sheep is not powerful enough for the OP Shears!")
+//                    .setStyle(Style.EMPTY.withColor(Formatting.RED)), true);
+//            System.out.println("Shearing failed: Sheep is NOT an OP Sheep.");
+//            return ActionResult.FAIL;
+//        }
 
         if (sheep.isSheared()) {
             return ActionResult.PASS;
