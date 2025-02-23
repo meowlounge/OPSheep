@@ -1,10 +1,21 @@
 {
-  "item.opsheeps.super_dye": "Spektralfarbe",
-  "item.opsheeps.super_shear_v1": "Titan-Schere v1",
-  "item.opsheeps.super_shear_v2": "Titan-Schere v2",
-  "item.opsheeps.super_shear_v3": "Titan-Schere v3",
-  "item.opsheeps.super_shear_v4": "Titan-Schere v4",
-  "item.opsheeps.super_shear_v5": "Titan-Schere v5",
-  "item.opsheeps.super_shear_v69": "Älteste Schere",
-  "itemgroups.opsheeps.super_items": "OP Schafe"
+  "item.opsheeps.super_dye": "Super Farbe",
+
+  "item.opsheeps.super_shear_v1": "Titan Schere 1.0",
+  "item.opsheeps.super_shear_v2": "Titan Schere 2.0",
+  "item.opsheeps.super_shear_v3": "Titan Schere 3.0",
+  "item.opsheeps.super_shear_v4": "Titan Schere 4.0",
+  "item.opsheeps.super_shear_v5": "Titan Schere 5.0",
+  "item.opsheeps.super_shear_v69": "Titan Schere",
+
+  "itemgroups.opsheeps.super_items": "OP-Schafe",
+
+  "rarity.opsheeps.common": "GEWÖHNLICH",
+  "rarity.opsheeps.uncommon": "UNGEWÖHNLICH",
+  "rarity.opsheeps.rare": "SELTEN",
+  "rarity.opsheeps.epic": "EPISCH",
+  "rarity.opsheeps.legendary": "LEGENDÄR",
+  "rarity.opsheeps.dev": "ENTWICKLER",
+
+  "item.opsheeps.shear_drops": "Das Scheren eines OP Schafs lässt %s Gegenstände fallen."
 }
