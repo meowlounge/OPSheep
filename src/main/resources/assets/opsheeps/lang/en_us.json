@@ -1,10 +1,21 @@
 {
-    "item.opsheeps.super_dye": "Spectral Dye",
-    "item.opsheeps.super_shear_v1": "Titan Shears v1",
-    "item.opsheeps.super_shear_v2": "Titan Shears v2",
-    "item.opsheeps.super_shear_v3": "Titan Shears v3",
-    "item.opsheeps.super_shear_v4": "Titan Shears v4",
-    "item.opsheeps.super_shear_v5": "Titan Shears v5",
-    "item.opsheeps.super_shear_v69": "Elder Shear",
-    "itemgroups.opsheeps.super_items": "OP Sheeps"
+    "item.opsheeps.super_dye": "Super Dye",
+
+    "item.opsheeps.super_shear_v1": "Titan Shear 1.0",
+    "item.opsheeps.super_shear_v2": "Titan Shear 2.0",
+    "item.opsheeps.super_shear_v3": "Titan Shear 3.0",
+    "item.opsheeps.super_shear_v4": "Titan Shear 4.0",
+    "item.opsheeps.super_shear_v5": "Titan Shear 5.0",
+    "item.opsheeps.super_shear_v69": "Titan Shear",
+
+    "itemgroups.opsheeps.super_items": "OP Sheeps",
+
+    "rarity.opsheeps.common": "COMMON",
+    "rarity.opsheeps.uncommon": "UNCOMMON",
+    "rarity.opsheeps.rare": "RARE",
+    "rarity.opsheeps.epic": "EPIC",
+    "rarity.opsheeps.legendary": "LEGENDARY",
+    "rarity.opsheeps.dev": "DEVELOPER",
+
+    "item.opsheeps.shear_drops": "Shearing an OP Sheep drops %s items."
 }

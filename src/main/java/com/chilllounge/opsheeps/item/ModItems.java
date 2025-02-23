@@ -14,7 +14,6 @@ import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.Rarity;
 
 import java.util.List;
 
@@ -30,91 +29,185 @@ public class ModItems {
     public static final Item SUPER_DYE = registerItem(SUPER_DYE_KEY, new SuperDyeItem(new Item.Settings()
             .maxCount(99)
             .registryKey(SUPER_DYE_KEY)
+            .component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.super_dye")
+                    .setStyle(Style.EMPTY.withColor(Formatting.AQUA).withBold(true).withItalic(false)))
+
             .component(DataComponentTypes.LORE, new LoreComponent(List.of(
                     Text.literal("Whisper its secret to a sheep, and witness the impossible.")
-                            .setStyle(Style.EMPTY.withColor(Formatting.DARK_PURPLE).withItalic(true))
+                            .setStyle(Style.EMPTY.withColor(Formatting.GRAY)),
+                    Text.literal(""), // KEEP EMPTY TO ADD AN EMPTY LINE
+                    Text.translatable("rarity.opsheeps.common")
+                            .setStyle(Style.EMPTY.withColor(Formatting.GREEN).withBold(true).withItalic(false)
             ))))
+    ));
+    public static final Item SUPER_SHEAR_V1 = registerItem(
+            SUPER_SHEAR_V1_KEY,
+            new SuperShearItem(
+                    new Item.Settings()
+                            .maxDamage(64)
+                            .registryKey(SUPER_SHEAR_V1_KEY)
+                            .component(
+                                    DataComponentTypes.CUSTOM_NAME,
+                                    Text.translatable("item.opsheeps.super_shear_v1")
+                                            .setStyle(
+                                                    Style.EMPTY.withColor(Formatting.AQUA).withBold(true)
+                                            )
+                            )
+                            .component(
+                                    DataComponentTypes.LORE,
+                                    new LoreComponent(List.of(
+                                            Text.translatable("item.opsheeps.shear_drops",
+                                                            Text.literal("4").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
+                                                    .setStyle(Style.EMPTY),
+                                            Text.literal(""), // KEEP EMPTY TO ADD AN EMPTY LINE
+                                            Text.translatable("rarity.opsheeps.common")
+                                                    .setStyle(Style.EMPTY.withColor(Formatting.GREEN).withBold(true).withItalic(false))
+                                    ))
+                            ),
+                    4,
+                    1
+            )
     );
-    public static final Item SUPER_SHEAR_V1 = registerItem(SUPER_SHEAR_V1_KEY, new SuperShearItem(
-            new Item.Settings()
-                    .maxDamage(64)
-                    .rarity(Rarity.COMMON)
-                    .registryKey(SUPER_SHEAR_V1_KEY)
-                    .component(DataComponentTypes.LORE, new LoreComponent(List.of(
-                            Text.literal("A simple, yet effective shear.").setStyle(Style.EMPTY.withColor(Formatting.GRAY)),
-                            Text.literal("Shearing an OP Sheep drops ").setStyle(Style.EMPTY)
-                                    .append(Text.literal("2").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
-                                    .append(" items.")
-                    ))),
-            2, 1
-    ));
-
-    public static final Item SUPER_SHEAR_V2 = registerItem(SUPER_SHEAR_V2_KEY, new SuperShearItem(
-            new Item.Settings()
-                    .maxDamage(128)
-                    .rarity(Rarity.COMMON)
-                    .registryKey(SUPER_SHEAR_V2_KEY)
-                    .component(DataComponentTypes.LORE, new LoreComponent(List.of(
-                            Text.literal("Sharper and more durable.").setStyle(Style.EMPTY.withColor(Formatting.YELLOW)),
-                            Text.literal("Shearing an OP Sheep drops ").setStyle(Style.EMPTY)
-                                    .append(Text.literal("5").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
-                                    .append(" items.")
-                    ))),
-            5, 2
-    ));
-    public static final Item SUPER_SHEAR_V3 = registerItem(SUPER_SHEAR_V3_KEY, new SuperShearItem(
-            new Item.Settings()
-                    .maxDamage(256)
-                    .rarity(Rarity.UNCOMMON)
-                    .registryKey(SUPER_SHEAR_V3_KEY)
-                    .component(DataComponentTypes.LORE, new LoreComponent(List.of(
-                            Text.literal("Forged by skilled artisans.").setStyle(Style.EMPTY.withColor(Formatting.GREEN)),
-                            Text.literal("Shearing an OP Sheep drops ").setStyle(Style.EMPTY)
-                                    .append(Text.literal("10").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
-                                    .append(" items.")
-                    ))),
-            10, 3
-    ));
-    public static final Item SUPER_SHEAR_V4 = registerItem(SUPER_SHEAR_V4_KEY, new SuperShearItem(
-            new Item.Settings()
-                    .maxDamage(512)
-                    .rarity(Rarity.UNCOMMON)
-                    .registryKey(SUPER_SHEAR_V4_KEY)
-                    .component(DataComponentTypes.LORE, new LoreComponent(List.of(
-                            Text.literal("Infused with arcane energy.").setStyle(Style.EMPTY.withColor(Formatting.BLUE)),
-                            Text.literal("Shearing an OP Sheep drops ").setStyle(Style.EMPTY)
-                                    .append(Text.literal("30").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
-                                    .append(" items.")
-                    ))),
-            30, 4
-    ));
-    public static final Item SUPER_SHEAR_V5 = registerItem(SUPER_SHEAR_V5_KEY, new SuperShearItem(
-            new Item.Settings()
-                    .maxDamage(1024)
-                    .rarity(Rarity.EPIC)
-                    .registryKey(SUPER_SHEAR_V5_KEY)
-                    .component(DataComponentTypes.LORE, new LoreComponent(List.of(
-                            Text.literal("A legendary tool of the Shear Masters.").setStyle(Style.EMPTY.withColor(Formatting.DARK_PURPLE)),
-                            Text.literal("Shearing an OP Sheep drops ").setStyle(Style.EMPTY)
-                                    .append(Text.literal("100").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
-                                    .append(" items.")
-                    ))),
-            100, 5
-    ));
-    public static final Item SUPER_SHEAR_V69 = registerItem(SUPER_SHEAR_V69_KEY, new SuperShearItem(
-            new Item.Settings()
-                    .maxDamage(-1)
-                    .rarity(Rarity.EPIC)
-                    .registryKey(SUPER_SHEAR_V69_KEY)
-                    .component(DataComponentTypes.LORE, new LoreComponent(List.of(
-                            Text.literal("DEVELOPER ITEM").setStyle(Style.EMPTY.withColor(Formatting.RED)),
-                            Text.literal("Shearing an OP Sheep drops ").setStyle(Style.EMPTY)
-                                    .append(Text.literal("250").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
-                                    .append(" items.")
-                    ))),
-            250, 69
-    ));
-
+    public static final Item SUPER_SHEAR_V2 = registerItem(
+            SUPER_SHEAR_V2_KEY,
+            new SuperShearItem(
+                    new Item.Settings()
+                            .maxDamage(128)
+                            .registryKey(SUPER_SHEAR_V2_KEY)
+                            .component(
+                                    DataComponentTypes.CUSTOM_NAME,
+                                    Text.translatable("item.opsheeps.super_shear_v2")
+                                            .setStyle(
+                                                    Style.EMPTY.withColor(Formatting.BLUE).withBold(true)
+                                            )
+                            )
+                            .component(
+                                    DataComponentTypes.LORE,
+                                    new LoreComponent(List.of(
+                                            Text.translatable("item.opsheeps.shear_drops",
+                                                            Text.literal("8").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
+                                                    .setStyle(Style.EMPTY),
+                                            Text.literal(""),
+                                            Text.translatable("rarity.opsheeps.uncommon")
+                                                    .setStyle(Style.EMPTY.withColor(Formatting.DARK_GREEN).withBold(true).withItalic(false))
+                                    ))
+                            ),
+                    8,
+                    2
+            )
+    );
+    public static final Item SUPER_SHEAR_V3 = registerItem(
+            SUPER_SHEAR_V3_KEY,
+            new SuperShearItem(
+                    new Item.Settings()
+                            .maxDamage(256)
+                            .registryKey(SUPER_SHEAR_V3_KEY)
+                            .component(
+                                    DataComponentTypes.CUSTOM_NAME,
+                                    Text.translatable("item.opsheeps.super_shear_v3")
+                                            .setStyle(
+                                                    Style.EMPTY.withColor(Formatting.DARK_BLUE).withBold(true)
+                                            )
+                            )
+                            .component(
+                                    DataComponentTypes.LORE,
+                                    new LoreComponent(List.of(
+                                            Text.translatable("item.opsheeps.shear_drops",
+                                                            Text.literal("32").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
+                                                    .setStyle(Style.EMPTY),
+                                            Text.literal(""), // KEEP EMPTY TO ADD AN EMPTY LINE
+                                            Text.translatable("rarity.opsheeps.rare")
+                                                    .setStyle(Style.EMPTY.withColor(Formatting.BLUE).withBold(true).withItalic(false))
+                                    ))
+                            ),
+                    32,
+                    3
+            )
+    );
+    public static final Item SUPER_SHEAR_V4 = registerItem(
+            SUPER_SHEAR_V4_KEY,
+            new SuperShearItem(
+                    new Item.Settings()
+                            .maxDamage(512)
+                            .registryKey(SUPER_SHEAR_V4_KEY)
+                            .component(
+                                    DataComponentTypes.CUSTOM_NAME,
+                                    Text.translatable("item.opsheeps.super_shear_v4")
+                                            .setStyle(
+                                                    Style.EMPTY.withColor(Formatting.DARK_GRAY).withBold(true)
+                                            )
+                            )
+                            .component(
+                                    DataComponentTypes.LORE,
+                                    new LoreComponent(List.of(
+                                            Text.translatable("item.opsheeps.shear_drops",
+                                                            Text.literal("64").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
+                                                    .setStyle(Style.EMPTY),
+                                            Text.literal(""), // KEEP EMPTY TO ADD AN EMPTY LINE
+                                            Text.translatable("rarity.opsheeps.epic")
+                                                    .setStyle(Style.EMPTY.withColor(Formatting.DARK_PURPLE).withBold(true).withItalic(false))
+                                    ))
+                            ),
+                    64,
+                    4
+            )
+    );
+    public static final Item SUPER_SHEAR_V5 = registerItem(
+            SUPER_SHEAR_V5_KEY,
+            new SuperShearItem(
+                    new Item.Settings()
+                            .maxDamage(1024)
+                            .registryKey(SUPER_SHEAR_V5_KEY)
+                            .component(
+                                    DataComponentTypes.CUSTOM_NAME,
+                                    Text.translatable("item.opsheeps.super_shear_v5")
+                                            .setStyle(
+                                                    Style.EMPTY.withColor(Formatting.BLACK).withBold(true)
+                                            )
+                            )
+                            .component(
+                                    DataComponentTypes.LORE,
+                                    new LoreComponent(List.of(
+                                            Text.translatable("item.opsheeps.shear_drops",
+                                                            Text.literal("128").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
+                                                    .setStyle(Style.EMPTY),
+                                            Text.literal(""), // KEEP EMPTY TO ADD AN EMPTY LINE
+                                            Text.translatable("rarity.opsheeps.legendary")
+                                                    .setStyle(Style.EMPTY.withColor(Formatting.GOLD).withBold(true).withItalic(false))
+                                    ))
+                            ),
+                    128,
+                    5
+            )
+    );
+    public static final Item SUPER_SHEAR_V69 = registerItem(
+            SUPER_SHEAR_V69_KEY,
+            new SuperShearItem(
+                    new Item.Settings()
+                            .maxDamage(-1)
+                            .registryKey(SUPER_SHEAR_V69_KEY)
+                            .component(
+                                    DataComponentTypes.CUSTOM_NAME,
+                                    Text.translatable("item.opsheeps.super_shear_v69")
+                                            .setStyle(
+                                                    Style.EMPTY.withColor(Formatting.WHITE).withBold(true)
+                                            )
+                            )
+                            .component(
+                                    DataComponentTypes.LORE,
+                                    new LoreComponent(List.of(
+                                            Text.translatable("item.opsheeps.shear_drops",
+                                            Text.literal("512").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
+                                                    .setStyle(Style.EMPTY),
+                                            Text.literal(""), // KEEP EMPTY TO ADD AN EMPTY LINE
+                                            Text.translatable("rarity.opsheeps.dev")
+                                                    .setStyle(Style.EMPTY.withColor(Formatting.DARK_RED).withBold(true).withItalic(false))
+                                    ))
+                            ),
+                    512,
+                    69
+            )
+    );
     private static Item registerItem(RegistryKey<Item> key, Item item) {
         return Registry.register(Registries.ITEM, key.getValue(), item);
     }
