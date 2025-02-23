@@ -43,8 +43,6 @@ public class SuperShearItem extends ShearsItem {
         //     return ActionResult.FAIL;
         // }
 
-        sheep.setOnFire(true);
-
         if (sheep.isSheared()) {
             return ActionResult.PASS;
         }
