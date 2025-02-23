@@ -43,10 +43,10 @@ public class ModItems {
                     .component(DataComponentTypes.LORE, new LoreComponent(List.of(
                             Text.literal("A simple, yet effective shear.").setStyle(Style.EMPTY.withColor(Formatting.GRAY)),
                             Text.literal("Shearing an OP Sheep drops ").setStyle(Style.EMPTY)
-                                    .append(Text.literal("2").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
+                                    .append(Text.literal("4").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
                                     .append(" items.")
                     ))),
-            2, 1
+            4, 1
     ));
 
     public static final Item SUPER_SHEAR_V2 = registerItem(SUPER_SHEAR_V2_KEY, new SuperShearItem(
@@ -57,10 +57,10 @@ public class ModItems {
                     .component(DataComponentTypes.LORE, new LoreComponent(List.of(
                             Text.literal("Sharper and more durable.").setStyle(Style.EMPTY.withColor(Formatting.YELLOW)),
                             Text.literal("Shearing an OP Sheep drops ").setStyle(Style.EMPTY)
-                                    .append(Text.literal("5").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
+                                    .append(Text.literal("8").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
                                     .append(" items.")
                     ))),
-            5, 2
+            8, 2
     ));
     public static final Item SUPER_SHEAR_V3 = registerItem(SUPER_SHEAR_V3_KEY, new SuperShearItem(
             new Item.Settings()
@@ -70,10 +70,10 @@ public class ModItems {
                     .component(DataComponentTypes.LORE, new LoreComponent(List.of(
                             Text.literal("Forged by skilled artisans.").setStyle(Style.EMPTY.withColor(Formatting.GREEN)),
                             Text.literal("Shearing an OP Sheep drops ").setStyle(Style.EMPTY)
-                                    .append(Text.literal("10").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
+                                    .append(Text.literal("32").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
                                     .append(" items.")
                     ))),
-            10, 3
+            32, 3
     ));
     public static final Item SUPER_SHEAR_V4 = registerItem(SUPER_SHEAR_V4_KEY, new SuperShearItem(
             new Item.Settings()
@@ -83,10 +83,10 @@ public class ModItems {
                     .component(DataComponentTypes.LORE, new LoreComponent(List.of(
                             Text.literal("Infused with arcane energy.").setStyle(Style.EMPTY.withColor(Formatting.BLUE)),
                             Text.literal("Shearing an OP Sheep drops ").setStyle(Style.EMPTY)
-                                    .append(Text.literal("30").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
+                                    .append(Text.literal("64").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
                                     .append(" items.")
                     ))),
-            30, 4
+            64, 4
     ));
     public static final Item SUPER_SHEAR_V5 = registerItem(SUPER_SHEAR_V5_KEY, new SuperShearItem(
             new Item.Settings()
@@ -96,10 +96,10 @@ public class ModItems {
                     .component(DataComponentTypes.LORE, new LoreComponent(List.of(
                             Text.literal("A legendary tool of the Shear Masters.").setStyle(Style.EMPTY.withColor(Formatting.DARK_PURPLE)),
                             Text.literal("Shearing an OP Sheep drops ").setStyle(Style.EMPTY)
-                                    .append(Text.literal("100").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
+                                    .append(Text.literal("128").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
                                     .append(" items.")
                     ))),
-            100, 5
+            128, 5
     ));
     public static final Item SUPER_SHEAR_V69 = registerItem(SUPER_SHEAR_V69_KEY, new SuperShearItem(
             new Item.Settings()
@@ -107,12 +107,12 @@ public class ModItems {
                     .rarity(Rarity.EPIC)
                     .registryKey(SUPER_SHEAR_V69_KEY)
                     .component(DataComponentTypes.LORE, new LoreComponent(List.of(
-                            Text.literal("DEVELOPER ITEM").setStyle(Style.EMPTY.withColor(Formatting.RED)),
+                            Text.literal("DEVELOPER ITEM").setStyle(Style.EMPTY.withColor(Formatting.RED).withBold(true)),
                             Text.literal("Shearing an OP Sheep drops ").setStyle(Style.EMPTY)
-                                    .append(Text.literal("250").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
+                                    .append(Text.literal("512").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
                                     .append(" items.")
                     ))),
-            250, 69
+            512, 69
     ));
 
     private static Item registerItem(RegistryKey<Item> key, Item item) {
