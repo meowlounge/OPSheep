@@ -1,23 +1,16 @@
 package com.chilllounge.opsheeps.item.custom;
 
 import com.chilllounge.opsheeps.Opsheeps;
-import com.chilllounge.opsheeps.entity.SheepEntityData;
 import net.minecraft.item.ShearsItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.text.Style;
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import net.minecraft.world.World;
-import net.minecraft.text.Text;
-
-import java.util.Random;
 
 public class SuperShearItem extends ShearsItem {
     private final int opDropCount;
@@ -30,86 +23,51 @@ public class SuperShearItem extends ShearsItem {
         Opsheeps.LOGGER.info("SuperShearItem created with version: {}", this.opShearVersion);
     }
 
+    @Override
     public boolean hasGlint(ItemStack stack) {
         return true;
     }
 
+    @Override
     public ActionResult useOnEntity(ItemStack stack, PlayerEntity player, LivingEntity entity, Hand hand) {
-        if (entity instanceof SheepEntity sheep) {
+        if (!(entity instanceof SheepEntity sheep)) {
+            return super.useOnEntity(stack, player, entity, hand);
+        }
 
-            if (!sheep.getDataTracker().get(SheepEntityData.IS_OP_SHEEP)) {
-                player.sendMessage(Text.literal("This sheep is not powerful enough for the OP Shears!").setStyle(Style.EMPTY.withColor(Formatting.RED)), true);
-            }
-            
-            World world = sheep.getWorld();
-            Random random = new Random();
+        World world = sheep.getWorld();
 
-            if (!sheep.isSheared()) {
-                sheep.setSheared(true);
+        // TODO: Uncomment and fix when the OP Sheep data is ready.
+        // if (!sheep.getDataTracker().get(SheepEntityData.IS_OP_SHEEP)) {
+        //     player.sendMessage(Text.literal("This sheep is not powerful enough for the OP Shears!")
+        //             .setStyle(Style.EMPTY.withColor(Formatting.RED)), true);
+        //     return ActionResult.FAIL;
+        // }
 
-                sheep.setSheared(false);
+        sheep.setOnFire(true);
 
-                if (!world.isClient) {
-                    ItemStack[] lootTable = switch (this.opShearVersion) {
-                        case 1 -> new ItemStack[]{
-                                new ItemStack(Items.STICK, random.nextInt(6) + 1),
-                                new ItemStack(Items.STRING, random.nextInt(3) + 1)
-                        };
-                        case 2 -> new ItemStack[]{
-                                new ItemStack(Items.NETHERITE_SCRAP, random.nextInt(2) + 1),
-                                new ItemStack(Items.DIAMOND, random.nextInt(4) + 1),
-                                new ItemStack(Items.ENCHANTED_GOLDEN_APPLE, random.nextInt(3) + 1),
-                                new ItemStack(Items.EXPERIENCE_BOTTLE, random.nextInt(16) + 1)
-                        };
-                        case 3 -> new ItemStack[]{
-                                new ItemStack(Items.NETHERITE_BLOCK),
-                                new ItemStack(Items.NETHER_STAR, random.nextInt(4) + 1),
-                                new ItemStack(Items.TOTEM_OF_UNDYING)
-                        };
-                        case 4 -> new ItemStack[]{
-                                new ItemStack(Items.GLOWSTONE_DUST, random.nextInt(16) + 1),
-                                new ItemStack(Items.ELYTRA, random.nextInt(1) + 1),
-                                new ItemStack(Items.GOLDEN_APPLE, random.nextInt(16) + 1)
-                        };
-                        case 5 -> new ItemStack[]{
-                                new ItemStack(Items.DRAGON_BREATH, random.nextInt(16) + 1),
-                                new ItemStack(Items.POPPED_CHORUS_FRUIT, random.nextInt(32) + 1),
-                                new ItemStack(Items.BEACON),
-                                new ItemStack(Items.SHULKER_SHELL, random.nextInt(16) + 1),
-                                new ItemStack(Items.END_CRYSTAL),
-                                new ItemStack(Items.DRAGON_EGG)
-                        };
-                        case 69 -> new ItemStack[]{
-                                new ItemStack(Items.BONE_BLOCK, random.nextInt(16) + 1),
-                                new ItemStack(Items.AMETHYST_BLOCK, random.nextInt(32) + 1),
-                                new ItemStack(Items.COPPER_BLOCK, random.nextInt(16) + 1),
-                                new ItemStack(Items.BONE_BLOCK, random.nextInt(16) + 1),
-                                new ItemStack(Items.RAW_COPPER_BLOCK, random.nextInt(16) + 1),
-                                new ItemStack(Items.HONEYCOMB_BLOCK, random.nextInt(16) + 1)
-                        };
-                        default -> new ItemStack[]{
-                                new ItemStack(Items.SKELETON_SKULL)
-                        };
-                    };
+        if (sheep.isSheared()) {
+            return ActionResult.PASS;
+        }
 
-                    for (int i = 0; i < opDropCount; i++) {
-                        ItemStack drop = lootTable[random.nextInt(lootTable.length)];
+        sheep.setSheared(true);
 
-                        if (world instanceof ServerWorld serverWorld) {
-                            sheep.dropStack(serverWorld, drop, 0.5f);
-                        }
-                    }
-                }
+        if (Opsheeps.DEV_MODE) {
+            sheep.setSheared(false);
+        }
 
-                sheep.getWorld().addParticle(ParticleTypes.HAPPY_VILLAGER,
-                        sheep.getX(), sheep.getY() + 2, sheep.getZ(),
-                        3, 3, 3);
+        //! damage stays at 0 and item doesn't break
+        if (!player.isCreative() && stack.isDamageable()) {
+            stack.damage(1, player);
+            // The call to willBreakNextUse() is typically handled internally after damage().
+        }
 
-                return ActionResult.SUCCESS;
-            } else {
-                player.sendMessage(Text.of("This sheep has already been sheared. Skipping"), false);
+        if (world instanceof ServerWorld serverWorld) {
+            ItemStack[] drops = LootManager.generateLoot(this.opShearVersion, this.opDropCount);
+            for (ItemStack drop : drops) {
+                sheep.dropStack(serverWorld, drop, 1.0f);
             }
         }
-        return super.useOnEntity(stack, player, entity, hand);
+
+        return ActionResult.SUCCESS;
     }
 }
