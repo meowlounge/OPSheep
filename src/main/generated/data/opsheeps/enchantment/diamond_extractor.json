@@ -1,0 +1,23 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "enchantment.opsheeps.diamond_extractor",
+    "color": "blue",
+    "shadow_color": 736923,
+    "bold": true
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 36
+  },
+  "max_level": 7,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 12
+  },
+  "slots": [
+    "hand"
+  ],
+  "supported_items": "#minecraft:pickaxes",
+  "weight": 8
+}
