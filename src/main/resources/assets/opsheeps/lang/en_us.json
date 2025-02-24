@@ -19,5 +19,15 @@
 
     "item.opsheeps.shear_drops": "Shearing an OP Sheep drops %s items.",
 
-    "enchantment.opsheeps.diamond_extractor": "Diamond Extractor"
+    "enchantment.opsheeps.mineral_extractor": "Mineral Extractor",
+
+    "item.opsheeps.super_dye_description": "Whisper its secret to a sheep, and witness the impossible...",
+
+    "opsheeps.help.page1": "§lWelcome to OPSheeps!\n\nOPSheeps adds powerful features to the world of Minecraft, allowing you to create OP Sheep and collect rare items by shearing them.\n\nFollow the steps to craft your SuperDye and start your journey!",
+    "opsheeps.help.page2": "§lStep 1: Craft SuperDye\n\nTo create SuperDye, arrange 8 different dyes (any color and order) around a Diamond Block in the crafting grid.\nThe result will be a SuperDye that you can use to transform any sheep into an OP Sheep!",
+    "opsheeps.help.page3": "§lStep 2: Transform Sheep\n\nOnce you have your SuperDye, simply right-click on a sheep to transform it into an OP Sheep. These OP Sheep drop powerful loot when sheared.",
+    "opsheeps.help.page4": "§lStep 3: Use Titan Shears\n\nTitan Shears are your tool for shearing OP Sheep. Use versions 1 to 5 of Titan Shears to get valuable resources from OP Sheep.\nRemember, only OP Sheep will drop loot when sheared.",
+    "opsheeps.help.page5": "§lEnjoy the game and have fun collecting rare resources with OPSheeps!",
+    "command.opsheeps.help.client": "This command can only be executed by a server player.",
+    "command.opsheeps.help.book_received": "You have received the OPSheeps help book! Open it to get all the details."
 }

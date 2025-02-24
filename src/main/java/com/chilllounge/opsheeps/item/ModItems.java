@@ -29,41 +29,17 @@ public class ModItems {
     public static final Item SUPER_DYE = registerItem(SUPER_DYE_KEY, new SuperDyeItem(new Item.Settings()
             .maxCount(99)
             .registryKey(SUPER_DYE_KEY)
-            .component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.super_dye")
-                    .setStyle(Style.EMPTY.withColor(Formatting.AQUA).withBold(true).withItalic(false)))
-
-            .component(DataComponentTypes.LORE, new LoreComponent(List.of(
-                    Text.literal("Whisper its secret to a sheep, and witness the impossible.")
-                            .setStyle(Style.EMPTY.withColor(Formatting.GRAY)),
-                    Text.literal(""), // KEEP EMPTY TO ADD AN EMPTY LINE
-                    Text.translatable("rarity.opsheeps.common")
-                            .setStyle(Style.EMPTY.withColor(Formatting.GREEN).withBold(true).withItalic(false)
-            ))))
-    ));
+            .component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.super_dye").setStyle(Style.EMPTY.withColor(Formatting.WHITE).withBold(true).withItalic(false)))
+            .component(DataComponentTypes.LORE, new LoreComponent(List.of(Text.translatable("item.opsheeps.super_dye_description").setStyle(Style.EMPTY.withColor(Formatting.GRAY))))))
+    );
     public static final Item SUPER_SHEAR_V1 = registerItem(
             SUPER_SHEAR_V1_KEY,
             new SuperShearItem(
                     new Item.Settings()
                             .maxDamage(64)
                             .registryKey(SUPER_SHEAR_V1_KEY)
-                            .component(
-                                    DataComponentTypes.CUSTOM_NAME,
-                                    Text.translatable("item.opsheeps.super_shear_v1")
-                                            .setStyle(
-                                                    Style.EMPTY.withColor(Formatting.AQUA).withBold(true)
-                                            )
-                            )
-                            .component(
-                                    DataComponentTypes.LORE,
-                                    new LoreComponent(List.of(
-                                            Text.translatable("item.opsheeps.shear_drops",
-                                                            Text.literal("4").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
-                                                    .setStyle(Style.EMPTY),
-                                            Text.literal(""), // KEEP EMPTY TO ADD AN EMPTY LINE
-                                            Text.translatable("rarity.opsheeps.common")
-                                                    .setStyle(Style.EMPTY.withColor(Formatting.GREEN).withBold(true).withItalic(false))
-                                    ))
-                            ),
+                            .component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.super_shear_v1").setStyle(Style.EMPTY.withColor(Formatting.WHITE).withBold(true).withItalic(false)))
+                            .component(DataComponentTypes.LORE, new LoreComponent(List.of(Text.translatable("item.opsheeps.shear_drops", Text.literal("4").setStyle(Style.EMPTY.withColor(Formatting.GOLD).withBold(true))).setStyle(Style.EMPTY).withColor(11184810)))),
                     4,
                     1
             )
@@ -74,24 +50,8 @@ public class ModItems {
                     new Item.Settings()
                             .maxDamage(128)
                             .registryKey(SUPER_SHEAR_V2_KEY)
-                            .component(
-                                    DataComponentTypes.CUSTOM_NAME,
-                                    Text.translatable("item.opsheeps.super_shear_v2")
-                                            .setStyle(
-                                                    Style.EMPTY.withColor(Formatting.BLUE).withBold(true)
-                                            )
-                            )
-                            .component(
-                                    DataComponentTypes.LORE,
-                                    new LoreComponent(List.of(
-                                            Text.translatable("item.opsheeps.shear_drops",
-                                                            Text.literal("8").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
-                                                    .setStyle(Style.EMPTY),
-                                            Text.literal(""),
-                                            Text.translatable("rarity.opsheeps.uncommon")
-                                                    .setStyle(Style.EMPTY.withColor(Formatting.DARK_GREEN).withBold(true).withItalic(false))
-                                    ))
-                            ),
+                            .component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.super_shear_v2").setStyle(Style.EMPTY.withColor(Formatting.WHITE).withBold(true).withItalic(false)))
+                            .component(DataComponentTypes.LORE, new LoreComponent(List.of(Text.translatable("item.opsheeps.shear_drops", Text.literal("8").setStyle(Style.EMPTY.withColor(Formatting.GOLD).withBold(true))).setStyle(Style.EMPTY).withColor(11184810)))),
                     8,
                     2
             )
@@ -102,24 +62,8 @@ public class ModItems {
                     new Item.Settings()
                             .maxDamage(256)
                             .registryKey(SUPER_SHEAR_V3_KEY)
-                            .component(
-                                    DataComponentTypes.CUSTOM_NAME,
-                                    Text.translatable("item.opsheeps.super_shear_v3")
-                                            .setStyle(
-                                                    Style.EMPTY.withColor(Formatting.DARK_BLUE).withBold(true)
-                                            )
-                            )
-                            .component(
-                                    DataComponentTypes.LORE,
-                                    new LoreComponent(List.of(
-                                            Text.translatable("item.opsheeps.shear_drops",
-                                                            Text.literal("32").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
-                                                    .setStyle(Style.EMPTY),
-                                            Text.literal(""), // KEEP EMPTY TO ADD AN EMPTY LINE
-                                            Text.translatable("rarity.opsheeps.rare")
-                                                    .setStyle(Style.EMPTY.withColor(Formatting.BLUE).withBold(true).withItalic(false))
-                                    ))
-                            ),
+                            .component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.super_shear_v3").setStyle(Style.EMPTY.withColor(Formatting.WHITE).withBold(true).withItalic(false)))
+                            .component(DataComponentTypes.LORE, new LoreComponent(List.of(Text.translatable("item.opsheeps.shear_drops", Text.literal("32").setStyle(Style.EMPTY.withColor(Formatting.GOLD).withBold(true))).setStyle(Style.EMPTY).withColor(11184810)))),
                     32,
                     3
             )
@@ -130,24 +74,8 @@ public class ModItems {
                     new Item.Settings()
                             .maxDamage(512)
                             .registryKey(SUPER_SHEAR_V4_KEY)
-                            .component(
-                                    DataComponentTypes.CUSTOM_NAME,
-                                    Text.translatable("item.opsheeps.super_shear_v4")
-                                            .setStyle(
-                                                    Style.EMPTY.withColor(Formatting.DARK_GRAY).withBold(true)
-                                            )
-                            )
-                            .component(
-                                    DataComponentTypes.LORE,
-                                    new LoreComponent(List.of(
-                                            Text.translatable("item.opsheeps.shear_drops",
-                                                            Text.literal("64").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
-                                                    .setStyle(Style.EMPTY),
-                                            Text.literal(""), // KEEP EMPTY TO ADD AN EMPTY LINE
-                                            Text.translatable("rarity.opsheeps.epic")
-                                                    .setStyle(Style.EMPTY.withColor(Formatting.DARK_PURPLE).withBold(true).withItalic(false))
-                                    ))
-                            ),
+                            .component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.super_shear_v4").setStyle(Style.EMPTY.withColor(Formatting.WHITE).withBold(true).withItalic(false)))
+                            .component(DataComponentTypes.LORE, new LoreComponent(List.of(Text.translatable("item.opsheeps.shear_drops", Text.literal("64").setStyle(Style.EMPTY.withColor(Formatting.GOLD).withBold(true))).setStyle(Style.EMPTY).withColor(11184810)))),
                     64,
                     4
             )
@@ -158,24 +86,8 @@ public class ModItems {
                     new Item.Settings()
                             .maxDamage(1024)
                             .registryKey(SUPER_SHEAR_V5_KEY)
-                            .component(
-                                    DataComponentTypes.CUSTOM_NAME,
-                                    Text.translatable("item.opsheeps.super_shear_v5")
-                                            .setStyle(
-                                                    Style.EMPTY.withColor(Formatting.BLACK).withBold(true)
-                                            )
-                            )
-                            .component(
-                                    DataComponentTypes.LORE,
-                                    new LoreComponent(List.of(
-                                            Text.translatable("item.opsheeps.shear_drops",
-                                                            Text.literal("128").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
-                                                    .setStyle(Style.EMPTY),
-                                            Text.literal(""), // KEEP EMPTY TO ADD AN EMPTY LINE
-                                            Text.translatable("rarity.opsheeps.legendary")
-                                                    .setStyle(Style.EMPTY.withColor(Formatting.GOLD).withBold(true).withItalic(false))
-                                    ))
-                            ),
+                            .component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.super_shear_v5").setStyle(Style.EMPTY.withColor(Formatting.WHITE).withBold(true).withItalic(false)))
+                            .component(DataComponentTypes.LORE, new LoreComponent(List.of(Text.translatable("item.opsheeps.shear_drops", Text.literal("128").setStyle(Style.EMPTY.withColor(Formatting.GOLD).withBold(true))).setStyle(Style.EMPTY).withColor(11184810)))),
                     128,
                     5
             )
@@ -186,24 +98,8 @@ public class ModItems {
                     new Item.Settings()
                             .maxDamage(-1)
                             .registryKey(SUPER_SHEAR_V69_KEY)
-                            .component(
-                                    DataComponentTypes.CUSTOM_NAME,
-                                    Text.translatable("item.opsheeps.super_shear_v69")
-                                            .setStyle(
-                                                    Style.EMPTY.withColor(Formatting.WHITE).withBold(true)
-                                            )
-                            )
-                            .component(
-                                    DataComponentTypes.LORE,
-                                    new LoreComponent(List.of(
-                                            Text.translatable("item.opsheeps.shear_drops",
-                                            Text.literal("512").setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE).withBold(true)))
-                                                    .setStyle(Style.EMPTY),
-                                            Text.literal(""), // KEEP EMPTY TO ADD AN EMPTY LINE
-                                            Text.translatable("rarity.opsheeps.dev")
-                                                    .setStyle(Style.EMPTY.withColor(Formatting.DARK_RED).withBold(true).withItalic(false))
-                                    ))
-                            ),
+                            .component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.super_shear_v69").setStyle(Style.EMPTY.withColor(Formatting.DARK_RED).withBold(true).withItalic(false)))
+                            .component(DataComponentTypes.LORE, new LoreComponent(List.of(Text.translatable("item.opsheeps.shear_drops", Text.literal("512").setStyle(Style.EMPTY.withColor(Formatting.GOLD).withBold(true))).setStyle(Style.EMPTY).withColor(11184810)))),
                     512,
                     69
             )
@@ -213,6 +109,6 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        Opsheeps.LOGGER.info("Registering Mod Items for " + Opsheeps.MOD_ID);
+        Opsheeps.LOGGER.info("🐑 REGISTER MODITEMS");
     }
 }

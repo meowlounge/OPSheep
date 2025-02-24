@@ -20,7 +20,6 @@ public class SuperShearItem extends ShearsItem {
         super(settings);
         this.opDropCount = opDropCount;
         this.opShearVersion = opShearVersion;
-        Opsheeps.LOGGER.info("SuperShearItem created with version: {}", this.opShearVersion);
     }
 
     @Override
@@ -53,7 +52,6 @@ public class SuperShearItem extends ShearsItem {
         //! damage stays at 0 and item doesn't break
         if (!player.isCreative() && stack.isDamageable()) {
             stack.damage(1, player);
-            // The call to willBreakNextUse() is typically handled internally after damage().
         }
 
         if (world instanceof ServerWorld serverWorld) {
