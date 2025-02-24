@@ -42,6 +42,10 @@ public class SuperDyeItem extends Item {
             return super.useOnEntity(stack, player, entity, hand);
         }
 
+        if (sheep instanceof OpSheepAccessor opSheep && opSheep.opsheeps$isOpSheep()) {
+            return ActionResult.FAIL;
+        }
+
         if (sheep.getColor() == null) {
             sheep.setColor(RAINBOW_COLORS.getFirst());
         }
