@@ -2,6 +2,7 @@ package com.chilllounge.opsheeps.item.custom;
 
 import com.chilllounge.opsheeps.Opsheeps;
 import com.chilllounge.opsheeps.util.OpSheepAccessor;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ShearsItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
@@ -49,9 +50,15 @@ public class SuperShearItem extends ShearsItem {
             sheep.setSheared(false);
         }
 
-        //! damage stays at 0 and item doesn't break
-        if (!player.isCreative() && stack.isDamageable()) {
-            stack.damage(1, player);
+        if (!world.isClient && stack.isDamageable()) {
+            stack.damage(1, entity, EquipmentSlot.MAINHAND); // Keine Methode// notwendig
+
+            if (stack.getDamage() >= stack.getMaxDamage()) {
+                world.playSound(null, player.getX(), player.getY(), player.getZ(),
+                        net.minecraft.sound.SoundEvents.ENTITY_ITEM_BREAK,
+                        net.minecraft.sound.SoundCategory.PLAYERS, 999.0F, 1.0F);
+                player.getInventory().removeOne(stack);
+            }
         }
 
         if (world instanceof ServerWorld serverWorld) {
