@@ -1,12 +1,12 @@
 package com.chilllounge.opsheeps.item.custom;
 
 import com.chilllounge.opsheeps.Opsheeps;
+import com.chilllounge.opsheeps.util.OpSheepAccessor;
 import net.minecraft.item.ShearsItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.passive.SheepEntity;
-import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -36,12 +36,9 @@ public class SuperShearItem extends ShearsItem {
 
         World world = sheep.getWorld();
 
-        // TODO: Uncomment and fix when the OP Sheep data is ready.
-        // if (!sheep.getDataTracker().get(SheepEntityData.IS_OP_SHEEP)) {
-        //     player.sendMessage(Text.literal("This sheep is not powerful enough for the OP Shears!")
-        //             .setStyle(Style.EMPTY.withColor(Formatting.RED)), true);
-        //     return ActionResult.FAIL;
-        // }
+        if (!(sheep instanceof OpSheepAccessor opSheep) || !opSheep.opsheeps$isOpSheep()) {
+            return ActionResult.FAIL;
+        }
 
         if (sheep.isSheared()) {
             return ActionResult.PASS;

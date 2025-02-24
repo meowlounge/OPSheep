@@ -1,5 +1,6 @@
 package com.chilllounge.opsheeps.item.custom;
 
+import com.chilllounge.opsheeps.util.OpSheepAccessor;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -8,8 +9,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Hand;
-// import com.chilllounge.opsheeps.entity.SheepEntityData;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.WeakHashMap;
@@ -47,10 +46,11 @@ public class SuperDyeItem extends Item {
             sheep.setColor(RAINBOW_COLORS.getFirst());
         }
 
-        // TODO: Uncomment and update when SheepEntityData is ready.
-        // sheep.getDataTracker().set(SheepEntityData.IS_OP_SHEEP, true);
-
         startRainbowEffect(sheep);
+
+        if (sheep instanceof OpSheepAccessor opSheep) {
+            opSheep.opsheeps$setOpSheep(true);
+        }
 
         if (!player.isCreative()) {
             stack.decrement(1);

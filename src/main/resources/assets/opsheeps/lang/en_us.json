@@ -17,5 +17,7 @@
     "rarity.opsheeps.legendary": "LEGENDARY",
     "rarity.opsheeps.dev": "DEVELOPER",
 
-    "item.opsheeps.shear_drops": "Shearing an OP Sheep drops %s items."
+    "item.opsheeps.shear_drops": "Shearing an OP Sheep drops %s items.",
+
+    "enchantment.opsheeps.diamond_extractor": "Diamond Extractor"
 }

@@ -1,5 +1,6 @@
 package com.chilllounge.opsheeps;
 
+import com.chilllounge.opsheeps.enchantment.ModEnchantmentEffects;
 import com.chilllounge.opsheeps.item.ModItemGroups;
 import com.chilllounge.opsheeps.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -15,5 +16,6 @@ public class Opsheeps implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModEnchantmentEffects.registerModEnchantmentEffects();
 	}
 }

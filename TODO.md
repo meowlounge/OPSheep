@@ -1,3 +1,0 @@
-- Fix Tagging Sheeps when clicked with shear/dye
-- ✅ ~~Fix Textures not loading~~
-- ✅ ~~Bump Version to 1.21.4~~
