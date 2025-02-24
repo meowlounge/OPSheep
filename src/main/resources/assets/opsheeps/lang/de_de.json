@@ -21,5 +21,13 @@
 
   "enchantment.opsheeps.mineral_extractor": "Mineralien Erschnüfler",
 
-  "item.opsheeps.super_dye_description": "Flüster dein Geheimnis, einem Schaf und siehe was passiert..."
+  "item.opsheeps.super_dye_description": "Flüster dein Geheimnis, einem Schaf und siehe was passiert...",
+
+  "opsheeps.help.page1": "§lWillkommen bei OPSheeps!\n\nOPSheeps fügt der Welt von Minecraft leistungsstarke Funktionen hinzu, mit denen du OP-Schafe erstellen und seltene Gegenstände durch Scheren sammeln kannst.\n\nFolge den Schritten, um deinen SuperFärbemittel herzustellen und deine Reise zu beginnen!",
+  "opsheeps.help.page2": "§lSchritt 1: SuperFärbemittel herstellen\n\nUm SuperFärbemittel herzustellen, ordne 8 verschiedene Farbstoffe (beliebige Farbe und Reihenfolge) um einen Diamantblock im Crafting-Feld an.\nDas Ergebnis ist ein SuperFärbemittel, mit dem du jedes Schaf in ein OP-Schaf verwandeln kannst!",
+  "opsheeps.help.page3": "§lSchritt 2: Schafe verwandeln\n\nSobald du dein SuperFärbemittel hast, klicke einfach mit der rechten Maustaste auf ein Schaf, um es in ein OP-Schaf zu verwandeln. Diese OP-Schafe lassen, wenn sie geschoren werden, mächtige Beute fallen.",
+  "opsheeps.help.page4": "§lSchritt 3: Titan Scheren verwenden\n\nTitan Scheren sind dein Werkzeug zum Scheren von OP-Schafen. Verwende Versionen 1 bis 5 der Titan Scheren, um wertvolle Ressourcen aus OP-Schafen zu erhalten.\nDenke daran, dass nur OP-Schafe Beute abwerfen, wenn sie geschoren werden.",
+  "opsheeps.help.page5": "§lViel Spaß beim Spiel und beim Sammeln seltener Ressourcen mit OPSheeps!",
+  "command.opsheeps.help.client": "Dieser Befehl kann nur von einem Spieler ausgeführt werden.",
+  "command.opsheeps.help.book_received": "Du hast das OPSheeps-Hilfebuch erhalten! Öffne es, um alle Details zu erfahren."
 }
