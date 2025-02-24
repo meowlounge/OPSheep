@@ -62,7 +62,7 @@ public class SuperDyeItem extends Item {
         private static final WeakHashMap<SheepEntity, ScheduledFuture<?>> activeRainbowTasks = new WeakHashMap<>();
     }
 
-    private void startRainbowEffect(SheepEntity sheep) {
+    public static void startRainbowEffect(SheepEntity sheep) {
 
         synchronized (ActiveRainbowTasksHolder.activeRainbowTasks) {
             if (ActiveRainbowTasksHolder.activeRainbowTasks.containsKey(sheep)) {
@@ -84,7 +84,7 @@ public class SuperDyeItem extends Item {
             int nextIndex = (RAINBOW_COLORS.indexOf(currentColor) + 1) % RAINBOW_COLORS.size();
             DyeColor newColor = RAINBOW_COLORS.get(nextIndex);
             sheep.setColor(newColor);
-        }, 0, 100, TimeUnit.MILLISECONDS);
+        }, 0, 300, TimeUnit.MILLISECONDS);
 
         synchronized (ActiveRainbowTasksHolder.activeRainbowTasks) {
             ActiveRainbowTasksHolder.activeRainbowTasks.put(sheep, futureHolder[0]);
