@@ -39,13 +39,13 @@ public record MineralExtractorEnchantmentEffect(EnchantmentLevelBasedValue chanc
 	public void apply(ServerWorld world, int level, EnchantmentEffectContext context, Entity target, Vec3d pos) {
 		if (target instanceof LivingEntity victim) {
 			if (context.owner() instanceof PlayerEntity player) {
-				float chanceValue = 3 * level; // Base chance per level
+				float chanceValue = 3 * level;
 				float dropChance = chanceValue / 100f;
 				Random random = world.getRandom();
 
 				if (random.nextFloat() < dropChance) {
 					BlockPos spawnPos = victim.getBlockPos();
-					ItemStack drop = MINERAL_DROPS.get(random.nextInt(MINERAL_DROPS.size())); // Random mineral drop
+					ItemStack drop = MINERAL_DROPS.get(random.nextInt(MINERAL_DROPS.size()));
 
 					ItemEntity itemEntity = new ItemEntity(world, spawnPos.getX() + 0.5, spawnPos.getY() + 1.0, spawnPos.getZ() + 0.5, drop);
 					world.spawnEntity(itemEntity);
