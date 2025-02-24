@@ -29,7 +29,7 @@ public class ModItems {
     public static final RegistryKey<Item> GROW_BACK_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "grow_back"));
 
     public static final Item SUPER_DYE = registerItem(SUPER_DYE_KEY, new SuperDyeItem(new Item.Settings()
-            .maxCount(99)
+            .maxCount(1)
             .registryKey(SUPER_DYE_KEY)
             .component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.super_dye").setStyle(Style.EMPTY.withColor(Formatting.WHITE).withBold(true).withItalic(false)))
             .component(DataComponentTypes.LORE, new LoreComponent(List.of(Text.translatable("item.opsheeps.super_dye_description").setStyle(Style.EMPTY.withColor(Formatting.GRAY))))))

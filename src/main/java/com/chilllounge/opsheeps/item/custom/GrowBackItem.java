@@ -46,9 +46,6 @@ public class GrowBackItem extends ShearsItem {
 						0.1, 0.1, 0.1);
 			}
 
-			if (!player.isCreative()) {
-				stack.decrement(1);
-			}
 
 			return ActionResult.SUCCESS;
 		}
