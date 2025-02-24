@@ -51,7 +51,7 @@ public class SuperShearItem extends ShearsItem {
         }
 
         if (!world.isClient && stack.isDamageable()) {
-            stack.damage(1, entity, EquipmentSlot.MAINHAND); // Keine Methode// notwendig
+            stack.damage(1, entity, EquipmentSlot.MAINHAND);
 
             if (stack.getDamage() >= stack.getMaxDamage()) {
                 world.playSound(null, player.getX(), player.getY(), player.getZ(),
