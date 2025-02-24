@@ -33,7 +33,7 @@ public class ModItems {
                     .setStyle(Style.EMPTY.withColor(Formatting.AQUA).withBold(true).withItalic(false)))
 
             .component(DataComponentTypes.LORE, new LoreComponent(List.of(
-                    Text.literal("Whisper its secret to a sheep, and witness the impossible.")
+                    Text.translatable("item.opsheeps.super_dye_description")
                             .setStyle(Style.EMPTY.withColor(Formatting.GRAY)),
                     Text.literal(""), // KEEP EMPTY TO ADD AN EMPTY LINE
                     Text.translatable("rarity.opsheeps.common")

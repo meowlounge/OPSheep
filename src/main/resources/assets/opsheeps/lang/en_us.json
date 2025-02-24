@@ -19,5 +19,7 @@
 
     "item.opsheeps.shear_drops": "Shearing an OP Sheep drops %s items.",
 
-    "enchantment.opsheeps.diamond_extractor": "Diamond Extractor"
+    "enchantment.opsheeps.mineral_extractor": "Mineral Extractor",
+
+    "item.opsheeps.super_dye_description": "Whisper its secret to a sheep, and witness the impossible..."
 }

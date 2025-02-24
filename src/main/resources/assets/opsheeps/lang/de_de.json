@@ -19,5 +19,7 @@
 
   "item.opsheeps.shear_drops": "Das Scheren eines OP Schafs lässt %s Gegenstände fallen.",
 
-  "enchantment.opsheeps.diamond_extractor": "Diamant Erschnüfler"
+  "enchantment.opsheeps.mineral_extractor": "Mineralien Erschnüfler",
+
+  "item.opsheeps.super_dye_description": "Flüster dein Geheimnis, einem Schaf und siehe was passiert..."
 }
