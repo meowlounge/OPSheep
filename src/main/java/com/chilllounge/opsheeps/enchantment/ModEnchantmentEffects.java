@@ -1,7 +1,7 @@
 package com.chilllounge.opsheeps.enchantment;
 
 import com.chilllounge.opsheeps.Opsheeps;
-import com.chilllounge.opsheeps.enchantment.effect.DiamondExtractorEnchantmentEffect;
+import com.chilllounge.opsheeps.enchantment.effect.MineralExtractorEnchantmentEffect;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.effect.EnchantmentEntityEffect;
@@ -12,8 +12,8 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 public class ModEnchantmentEffects {
-	public static final RegistryKey<Enchantment> DIAMOND_EXTRACTOR = of("diamond_extractor");
-	public static MapCodec<DiamondExtractorEnchantmentEffect> DIAMOND_EXTRACTOR_EFFECT = register("diamond_extractor_effect", DiamondExtractorEnchantmentEffect.CODEC);
+	public static final RegistryKey<Enchantment> MINERAL_EXTRACTOR = of("mineral_extractor");
+	public static MapCodec<MineralExtractorEnchantmentEffect> MINERAL_EXTRACTOR_EFFECT = register("mineral_extractor_effect", MineralExtractorEnchantmentEffect.CODEC);
 
 	private static RegistryKey<Enchantment> of(String path) {
 		Identifier id = Identifier.of(Opsheeps.MOD_ID, path);

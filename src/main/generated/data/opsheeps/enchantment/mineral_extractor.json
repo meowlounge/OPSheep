@@ -1,16 +1,13 @@
 {
-  "anvil_cost": 4,
+  "anvil_cost": 6,
   "description": {
-    "translate": "enchantment.opsheeps.diamond_extractor",
-    "color": "blue",
-    "shadow_color": 736923,
-    "bold": true
+    "translate": "enchantment.opsheeps.mineral_extractor"
   },
   "max_cost": {
     "base": 1,
-    "per_level_above_first": 36
+    "per_level_above_first": 18
   },
-  "max_level": 7,
+  "max_level": 5,
   "min_cost": {
     "base": 1,
     "per_level_above_first": 12
