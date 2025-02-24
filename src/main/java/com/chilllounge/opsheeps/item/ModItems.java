@@ -1,6 +1,7 @@
 package com.chilllounge.opsheeps.item;
 
 import com.chilllounge.opsheeps.Opsheeps;
+import com.chilllounge.opsheeps.item.custom.GrowBackItem;
 import com.chilllounge.opsheeps.item.custom.SuperDyeItem;
 import com.chilllounge.opsheeps.item.custom.SuperShearItem;
 import net.minecraft.component.DataComponentTypes;
@@ -25,6 +26,7 @@ public class ModItems {
     public static final RegistryKey<Item> SUPER_SHEAR_V4_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "super_shear_v4"));
     public static final RegistryKey<Item> SUPER_SHEAR_V5_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "super_shear_v5"));
     public static final RegistryKey<Item> SUPER_SHEAR_V69_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "super_shear_v69"));
+    public static final RegistryKey<Item> GROW_BACK_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "grow_back"));
 
     public static final Item SUPER_DYE = registerItem(SUPER_DYE_KEY, new SuperDyeItem(new Item.Settings()
             .maxCount(99)
@@ -104,6 +106,14 @@ public class ModItems {
                     69
             )
     );
+    public static final Item GROW_BACK = registerItem(GROW_BACK_KEY,
+            new GrowBackItem(
+                    new Item.Settings()
+                            .maxDamage(-1)
+                            .registryKey(GROW_BACK_KEY)
+                            .component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.grow_back").setStyle(Style.EMPTY.withColor(Formatting.WHITE).withBold(true).withItalic(false))))
+    );
+
     private static Item registerItem(RegistryKey<Item> key, Item item) {
         return Registry.register(Registries.ITEM, key.getValue(), item);
     }
