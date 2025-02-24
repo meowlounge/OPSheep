@@ -19,6 +19,7 @@
   "rarity.opsheeps.legendary": "LEGENDÄR",
   "rarity.opsheeps.dev": "ENTWICKLER",
 
+  "item.opsheeps.grow_back_description": "Gibt dem angeklickten Schaf sofort seine Wolle wieder.",
   "item.opsheeps.shear_drops": "Das Scheren eines OP Schafs lässt %s Gegenstände fallen.",
 
   "enchantment.opsheeps.mineral_extractor": "Mineralien Erschnüfler",
