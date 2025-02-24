@@ -20,6 +20,7 @@
     "rarity.opsheeps.dev": "DEVELOPER",
 
     "item.opsheeps.shear_drops": "Shearing an OP Sheep drops %s items.",
+    "item.opsheeps.grow_back_description": "Instantly give the Clicked Sheep its Wool Back.",
 
     "enchantment.opsheeps.mineral_extractor": "Mineral Extractor",
 

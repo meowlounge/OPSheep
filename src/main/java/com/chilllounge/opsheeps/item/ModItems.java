@@ -111,6 +111,7 @@ public class ModItems {
                     new Item.Settings()
                             .maxDamage(-1)
                             .registryKey(GROW_BACK_KEY)
+                            .component(DataComponentTypes.LORE, new LoreComponent(List.of(Text.translatable("item.opsheeps.grow_back_description").setStyle(Style.EMPTY.withColor(Formatting.GRAY)))))
                             .component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.grow_back").setStyle(Style.EMPTY.withColor(Formatting.WHITE).withBold(true).withItalic(false))))
     );
 
