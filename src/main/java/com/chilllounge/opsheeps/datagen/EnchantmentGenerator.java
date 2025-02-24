@@ -13,11 +13,6 @@ import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
-//import com.chilllounge.opsheeps.enchantment.effect.MineralExtractorEnchantmentEffect;
-//import net.minecraft.component.EnchantmentEffectComponentTypes;
-//import net.minecraft.enchantment.EnchantmentLevelBasedValue;
-//import net.minecraft.enchantment.effect.EnchantmentEffectTarget;
-
 public class EnchantmentGenerator extends FabricDynamicRegistryProvider {
 	public EnchantmentGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
 		super(output, registriesFuture);
@@ -37,12 +32,6 @@ public class EnchantmentGenerator extends FabricDynamicRegistryProvider {
 										AttributeModifierSlot.HAND
 								)
 						)
-//						.addEffect(
-//								EnchantmentEffectComponentTypes.POST_ATTACK,
-//								EnchantmentEffectTarget.ATTACKER,
-//								EnchantmentEffectTarget.VICTIM,
-//								new MineralExtractorEnchantmentEffect(EnchantmentLevelBasedValue.linear(1.0f, 1.0f))
-//						)
 		);
 	}
 
