@@ -29,7 +29,7 @@ public class ModItems {
     public static final Item SUPER_DYE = registerItem(SUPER_DYE_KEY, new SuperDyeItem(new Item.Settings()
             .maxCount(99)
             .registryKey(SUPER_DYE_KEY)
-            .component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.super_dye").setStyle(Style.EMPTY.withColor(Formatting.GOLD).withBold(true).withItalic(false)))
+            .component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.super_dye").setStyle(Style.EMPTY.withColor(Formatting.YELLOW).withBold(true).withItalic(false)))
             .component(DataComponentTypes.LORE, new LoreComponent(List.of(Text.translatable("item.opsheeps.super_dye_description").setStyle(Style.EMPTY.withColor(Formatting.GRAY))))))
     );
     public static final Item SUPER_SHEAR_V1 = registerItem(
@@ -109,6 +109,6 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        Opsheeps.LOGGER.info("Registering Mod Items for " + Opsheeps.MOD_ID);
+        Opsheeps.LOGGER.info("🐑 REGISTER MODITEMS");
     }
 }

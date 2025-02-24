@@ -20,7 +20,6 @@ public class SuperShearItem extends ShearsItem {
         super(settings);
         this.opDropCount = opDropCount;
         this.opShearVersion = opShearVersion;
-        Opsheeps.LOGGER.info("SuperShearItem created with version: {}", this.opShearVersion);
     }
 
     @Override

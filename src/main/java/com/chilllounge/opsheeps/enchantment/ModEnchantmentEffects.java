@@ -25,6 +25,6 @@ public class ModEnchantmentEffects {
 	}
 
 	public static void registerModEnchantmentEffects() {
-		Opsheeps.LOGGER.info("Registering EnchantmentEffects for " + Opsheeps.MOD_ID);
+		Opsheeps.LOGGER.info("🐑 REGISTER ITEMGROUPS");
 	}
 }
