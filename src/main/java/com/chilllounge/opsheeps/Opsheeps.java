@@ -5,7 +5,7 @@ import com.chilllounge.opsheeps.enchantment.ModEnchantmentEffects;
 import com.chilllounge.opsheeps.enchantment.effect.MineralExtractorBlockHandler;
 import com.chilllounge.opsheeps.item.ModItemGroups;
 import com.chilllounge.opsheeps.item.ModItems;
-import com.chilllounge.opsheeps.item.OPLootTableItems;
+import com.chilllounge.opsheeps.item.OpSetLoot;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import org.slf4j.Logger;
@@ -20,7 +20,7 @@ public class Opsheeps implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
-		OPLootTableItems.registerLootTableItems();
+		OpSetLoot.registerLootTableItems();
 		ModEnchantmentEffects.registerModEnchantmentEffects();
 		MineralExtractorBlockHandler.register();
 

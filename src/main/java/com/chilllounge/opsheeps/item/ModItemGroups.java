@@ -27,16 +27,16 @@ public class ModItemGroups {
                         entries.add(ModItems.GROW_BACK);
 
                         //? OP SET ( v5 Loot (ultra rare, but ultra op)
-                        entries.add(OPLootTableItems.OP_HELMET);
-                        entries.add(OPLootTableItems.OP_CHESTPLATE);
-                        entries.add(OPLootTableItems.OP_LEGGINGS);
-                        entries.add(OPLootTableItems.OP_BOOTS);
+                        entries.add(OpSetLoot.OP_HELMET);
+                        entries.add(OpSetLoot.OP_CHESTPLATE);
+                        entries.add(OpSetLoot.OP_LEGGINGS);
+                        entries.add(OpSetLoot.OP_BOOTS);
 
-                        entries.add(OPLootTableItems.OP_SWORD);
-                        entries.add(OPLootTableItems.OP_AXE);
-                        entries.add(OPLootTableItems.OP_PICKAXE);
-                        entries.add(OPLootTableItems.OP_SHOVEL);
-                        entries.add(OPLootTableItems.OP_HOE);
+                        entries.add(OpSetLoot.OP_SWORD);
+                        entries.add(OpSetLoot.OP_AXE);
+                        entries.add(OpSetLoot.OP_PICKAXE);
+                        entries.add(OpSetLoot.OP_SHOVEL);
+                        entries.add(OpSetLoot.OP_HOE);
                     })
                     .build());
 
