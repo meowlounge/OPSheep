@@ -19,7 +19,7 @@ public class MineralExtractorBlockHandler {
             if (!world.isClient && world instanceof ServerWorld serverWorld) {
                 ItemStack tool = player.getMainHandStack();
 
-                if (!state.isIn(BlockTags.PICKAXE_MINEABLE)) {
+                if (!state.isIn(BlockTags.PICKAXE_MINEABLE) || !player.isCreative()) {
                     return;
                 }
 
