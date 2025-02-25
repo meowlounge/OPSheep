@@ -2,8 +2,10 @@ package com.chilllounge.opsheeps;
 
 import com.chilllounge.opsheeps.command.HelpCommand;
 import com.chilllounge.opsheeps.enchantment.ModEnchantmentEffects;
+import com.chilllounge.opsheeps.enchantment.effect.MineralExtractorBlockHandler;
 import com.chilllounge.opsheeps.item.ModItemGroups;
 import com.chilllounge.opsheeps.item.ModItems;
+import com.chilllounge.opsheeps.item.OPLootTableItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import org.slf4j.Logger;
@@ -18,7 +20,9 @@ public class Opsheeps implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		OPLootTableItems.registerLootTableItems();
 		ModEnchantmentEffects.registerModEnchantmentEffects();
+		MineralExtractorBlockHandler.register();
 
 		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> HelpCommand.register(dispatcher));
 	}
