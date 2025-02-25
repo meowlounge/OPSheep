@@ -12,14 +12,18 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.registry.tag.BlockTags;
 import com.chilllounge.opsheeps.enchantment.ModEnchantmentEffects;
 
-public class MineralExtractorBlockHandler {
+public class MineralExtractorHandler {
 
     public static void register() {
         PlayerBlockBreakEvents.AFTER.register((world, player, pos, state, blockEntity) -> {
             if (!world.isClient && world instanceof ServerWorld serverWorld) {
                 ItemStack tool = player.getMainHandStack();
 
-                if (!state.isIn(BlockTags.PICKAXE_MINEABLE) || !player.isCreative()) {
+                if (player.isCreative()) {
+                    return;
+                }
+
+                if (!state.isIn(BlockTags.PICKAXE_MINEABLE)) {
                     return;
                 }
 
