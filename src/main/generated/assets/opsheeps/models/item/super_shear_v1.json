@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "opsheeps:item/super_shear_v1"
+  }
+}
