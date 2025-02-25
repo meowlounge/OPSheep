@@ -1,5 +1,7 @@
+// EnchantmentGenerator.java
 package com.chilllounge.opsheeps.datagen;
 
+import com.chilllounge.opsheeps.Opsheeps;
 import com.chilllounge.opsheeps.enchantment.ModEnchantmentEffects;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricDynamicRegistryProvider;
@@ -21,16 +23,16 @@ public class EnchantmentGenerator extends FabricDynamicRegistryProvider {
 	@Override
 	protected void configure(RegistryWrapper.WrapperLookup registries, Entries entries) {
 		register(entries, ModEnchantmentEffects.MINERAL_EXTRACTOR, Enchantment.builder(
-								Enchantment.definition(
-										registries.getOrThrow(RegistryKeys.ITEM).getOrThrow(ItemTags.PICKAXES),
-										8,
-										5,
-										Enchantment.leveledCost(1, 12),
-										Enchantment.leveledCost(1, 18),
-										6,
-										AttributeModifierSlot.HAND
-								)
+						Enchantment.definition(
+								registries.getOrThrow(RegistryKeys.ITEM).getOrThrow(ItemTags.PICKAXES),
+								8,
+								5,
+								Enchantment.leveledCost(1, 12),
+								Enchantment.leveledCost(1, 18),
+								6,
+								AttributeModifierSlot.HAND
 						)
+				)
 		);
 	}
 
@@ -41,5 +43,9 @@ public class EnchantmentGenerator extends FabricDynamicRegistryProvider {
 	@Override
 	public String getName() {
 		return "ReferenceDocEnchantmentGenerator";
+	}
+
+	public static void registerMineralExtractor() {
+		Opsheeps.LOGGER.info("🐑 REGISTER MINERAL EXTRACTOR");
 	}
 }
