@@ -1,7 +1,8 @@
+// EnchantmentGenerator.java
 package com.chilllounge.opsheeps.datagen;
 
+import com.chilllounge.opsheeps.Opsheeps;
 import com.chilllounge.opsheeps.enchantment.ModEnchantmentEffects;
-import com.chilllounge.opsheeps.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricDynamicRegistryProvider;
 import net.fabricmc.fabric.api.resource.conditions.v1.ResourceCondition;
@@ -22,28 +23,17 @@ public class EnchantmentGen extends FabricDynamicRegistryProvider {
 	@Override
 	protected void configure(RegistryWrapper.WrapperLookup registries, Entries entries) {
 		register(entries, ModEnchantmentEffects.MINERAL_EXTRACTOR, Enchantment.builder(
-				Enchantment.definition(
-						registries.getOrThrow(RegistryKeys.ITEM).getOrThrow(ItemTags.PICKAXES),
-						8,
-						5,
-						Enchantment.leveledCost(1, 12),
-						Enchantment.leveledCost(1, 18),
-						6,
-						AttributeModifierSlot.HAND
+						Enchantment.definition(
+								registries.getOrThrow(RegistryKeys.ITEM).getOrThrow(ItemTags.PICKAXES),
+								3,
+								7,
+								Enchantment.leveledCost(1, 12),
+								Enchantment.leveledCost(1, 18),
+								16,
+								AttributeModifierSlot.HAND
+						)
 				)
-		));
-
-		register(entries, ModEnchantmentEffects.ECHO_SHEAR, Enchantment.builder(
-				Enchantment.definition(
-						registries.getOrThrow(RegistryKeys.ITEM).getOrThrow(ModTags.Items.SUPER_SHEARS),
-						5,
-						3,
-						Enchantment.leveledCost(1, 10),
-						Enchantment.leveledCost(1, 15),
-						2,
-						AttributeModifierSlot.HAND
-				)
-		));
+		);
 	}
 
 	private void register(Entries entries, RegistryKey<Enchantment> key, Enchantment.Builder builder, ResourceCondition... resourceConditions) {
@@ -52,6 +42,10 @@ public class EnchantmentGen extends FabricDynamicRegistryProvider {
 
 	@Override
 	public String getName() {
-		return "ReferenceDocEnchantmentGenerator";
+		return "EnchantmentGen";
+	}
+
+	public static void registerMineralExtractor() {
+		Opsheeps.LOGGER.info("🐑 REGISTER MINERAL EXTRACTOR");
 	}
 }
