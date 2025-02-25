@@ -1,4 +1,3 @@
-// EnchantmentGenerator.java
 package com.chilllounge.opsheeps.datagen;
 
 import com.chilllounge.opsheeps.Opsheeps;
@@ -26,7 +25,7 @@ public class EnchantmentGen extends FabricDynamicRegistryProvider {
 						Enchantment.definition(
 								registries.getOrThrow(RegistryKeys.ITEM).getOrThrow(ItemTags.PICKAXES),
 								3,
-								7,
+								6,
 								Enchantment.leveledCost(1, 12),
 								Enchantment.leveledCost(1, 18),
 								16,
