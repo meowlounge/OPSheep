@@ -2,7 +2,7 @@ package com.chilllounge.opsheeps;
 
 import com.chilllounge.opsheeps.command.HelpCommand;
 import com.chilllounge.opsheeps.enchantment.ModEnchantmentEffects;
-import com.chilllounge.opsheeps.enchantment.effect.MineralExtractorBlockHandler;
+import com.chilllounge.opsheeps.enchantment.effect.MineralExtractorHandler;
 import com.chilllounge.opsheeps.item.ModItemGroups;
 import com.chilllounge.opsheeps.item.ModItems;
 import com.chilllounge.opsheeps.item.OpSetLoot;
@@ -22,7 +22,7 @@ public class Opsheeps implements ModInitializer {
 		ModItems.registerModItems();
 		OpSetLoot.registerLootTableItems();
 		ModEnchantmentEffects.registerModEnchantmentEffects();
-		MineralExtractorBlockHandler.register();
+		MineralExtractorHandler.register();
 
 		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> HelpCommand.register(dispatcher));
 	}
