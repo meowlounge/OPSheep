@@ -14,8 +14,8 @@ import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
-public class EnchantmentGenerator extends FabricDynamicRegistryProvider {
-	public EnchantmentGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+public class EnchantmentGen extends FabricDynamicRegistryProvider {
+	public EnchantmentGen(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
 		super(output, registriesFuture);
 	}
 

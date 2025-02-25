@@ -8,8 +8,8 @@ import com.chilllounge.opsheeps.item.ModItems;
 
 import java.util.concurrent.CompletableFuture;
 
-public class ShearsTagGenerator extends FabricTagProvider.ItemTagProvider {
-	public ShearsTagGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+public class ShearsTagGen extends FabricTagProvider.ItemTagProvider {
+	public ShearsTagGen(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
 		super(output, registriesFuture);
 	}
 
