@@ -1,9 +1,9 @@
 package com.chilllounge.opsheeps.datagen;
 
+import com.chilllounge.opsheeps.item.ModItems;
 import com.chilllounge.opsheeps.item.OPLootTableItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import com.chilllounge.opsheeps.item.ModItems;
 import net.minecraft.client.data.BlockStateModelGenerator;
 import net.minecraft.client.data.ItemModelGenerator;
 import net.minecraft.client.data.Models;
@@ -41,4 +41,5 @@ public class ItemModelGen extends FabricModelProvider {
 //		itemModelGenerator.registerArmor(((ArmorItem) OPLootTableItems.OP_HELMET));
 //		itemModelGenerator.registerArmor(((ArmorItem) OPLootTableItems.OP_LEGGINGS));
 //		itemModelGenerator.registerArmor(((ArmorItem) OPLootTableItems.OP_BOOTS));
-}}
+	}
+}
