@@ -1,10 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "111",
-    "1D1",
-    "111"
-  ],
+  "category": "misc",
   "key": {
     "1": [
       "minecraft:black_dye",
@@ -26,6 +22,11 @@
     ],
     "D": "minecraft:diamond_block"
   },
+  "pattern": [
+    "111",
+    "1D1",
+    "111"
+  ],
   "result": {
     "count": 1,
     "id": "opsheeps:super_dye"

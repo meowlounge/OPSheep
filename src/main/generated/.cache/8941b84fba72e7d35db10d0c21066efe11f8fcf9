@@ -1,0 +1,13 @@
+// 1.21.4	-999999999-01-01T00:00:00	OP Sheeps/OPSheeps Recipe Provider
+18058ba88998cb1b1ae51c69ee2f378228af155d data/opsheeps/advancement/recipes/misc/super_dye.json
+a7737d1e205e0cfccc5c35594c0f9855830f211f data/opsheeps/advancement/recipes/tools/super_shear_v1.json
+8d65e56e87eb8d67d52114d112651c79b87d2dc8 data/opsheeps/advancement/recipes/tools/super_shear_v2.json
+9bc0135621daef4602e197b9704b6ab47b280418 data/opsheeps/advancement/recipes/tools/super_shear_v3.json
+fce63e8eaefb4abcec0a8319c05bd735f34be210 data/opsheeps/advancement/recipes/tools/super_shear_v4.json
+0098f7b77eb3a048a9bc55c6c9e373c031d9e939 data/opsheeps/advancement/recipes/tools/super_shear_v5.json
+43d4aeed5e662a87698d53140ec375f09640feca data/opsheeps/recipe/super_dye.json
+427927e464686db9bafc84555be936bea6315a48 data/opsheeps/recipe/super_shear_v1.json
+9efec710302700119b3d043d9fd6800ffaa35781 data/opsheeps/recipe/super_shear_v2.json
+bde4434b910dea49ca23a81d77d147703764d49e data/opsheeps/recipe/super_shear_v3.json
+3eb712a47b8e6176e74af7dad94f152ea6f024b8 data/opsheeps/recipe/super_shear_v4.json
+9226e3cbab2b4b90d09a4cd6bb810ccfcc211a5b data/opsheeps/recipe/super_shear_v5.json

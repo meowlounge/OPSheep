@@ -1,5 +1,5 @@
 {
-  "anvil_cost": 6,
+  "anvil_cost": 16,
   "description": {
     "translate": "enchantment.opsheeps.mineral_extractor"
   },
@@ -7,7 +7,7 @@
     "base": 1,
     "per_level_above_first": 18
   },
-  "max_level": 5,
+  "max_level": 7,
   "min_cost": {
     "base": 1,
     "per_level_above_first": 12
@@ -16,5 +16,5 @@
     "hand"
   ],
   "supported_items": "#minecraft:pickaxes",
-  "weight": 8
+  "weight": 3
 }
