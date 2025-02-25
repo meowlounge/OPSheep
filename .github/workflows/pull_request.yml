@@ -1,0 +1,33 @@
+name: Pull Request Checks
+
+on:
+  pull_request:
+    branches:
+      - main
+      - eagle
+      - andi
+
+jobs:
+  build:
+    name: Build and Validate
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+          cache: 'gradle'
+
+      - name: Grant Execute Permission for Gradlew
+        run: chmod +x gradlew
+
+      - name: Run Build
+        run: ./gradlew build --stacktrace --warning-mode fail
+
+      - name: Run Data Generation
+        run: ./gradlew runDatagen --stacktrace --warning-mode fail
