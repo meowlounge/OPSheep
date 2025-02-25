@@ -9,25 +9,31 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.registry.tag.BlockTags;
 import com.chilllounge.opsheeps.enchantment.ModEnchantmentEffects;
 
 public class MineralExtractorBlockHandler {
-	public static void register() {
-		PlayerBlockBreakEvents.AFTER.register((world, player, pos, state, blockEntity) -> {
-			if (!world.isClient && world instanceof ServerWorld serverWorld) {
-				ItemStack tool = player.getMainHandStack();
 
-				DynamicRegistryManager registryManager = serverWorld.getRegistryManager();
-				Registry<Enchantment> enchantmentRegistry = registryManager.getOrThrow(RegistryKeys.ENCHANTMENT);
+    public static void register() {
+        PlayerBlockBreakEvents.AFTER.register((world, player, pos, state, blockEntity) -> {
+            if (!world.isClient && world instanceof ServerWorld serverWorld) {
+                ItemStack tool = player.getMainHandStack();
 
-				RegistryEntry<Enchantment> enchantmentEntry = enchantmentRegistry.getOrThrow(ModEnchantmentEffects.MINERAL_EXTRACTOR);
-				Enchantment enchantment = enchantmentEntry.value();
+                if (!state.isIn(BlockTags.PICKAXE_MINEABLE)) {
+                    return;
+                }
 
-				int level = EnchantmentHelper.getLevel(enchantmentEntry, tool);
-				if (level > 0) {
-					MineralExtractorEffects.applyBlockEffect(serverWorld, pos, level);
-				}
-			}
-		});
-	}
+                DynamicRegistryManager registryManager = serverWorld.getRegistryManager();
+                Registry<Enchantment> enchantmentRegistry = registryManager.getOrThrow(RegistryKeys.ENCHANTMENT);
+
+                RegistryEntry<Enchantment> enchantmentEntry = enchantmentRegistry.getOrThrow(ModEnchantmentEffects.MINERAL_EXTRACTOR);
+                Enchantment enchantment = enchantmentEntry.value();
+
+                int level = EnchantmentHelper.getLevel(enchantmentEntry, tool);
+                if (level > 0) {
+                    MineralExtractorEffects.applyBlockEffect(serverWorld, pos, level);
+                }
+            }
+        });
+    }
 }
