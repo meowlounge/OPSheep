@@ -23,4 +23,9 @@ public class ShearsTagGen extends FabricTagProvider.ItemTagProvider {
 				.add(ModItems.SUPER_SHEAR_V5)
 				.add(ModItems.SUPER_SHEAR_V69);
 	}
+
+	@Override
+	public String getName() {
+		return "ShearsTagGen";
+	}
 }
