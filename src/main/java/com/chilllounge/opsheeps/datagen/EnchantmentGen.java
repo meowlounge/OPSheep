@@ -22,15 +22,14 @@ public class EnchantmentGen extends FabricDynamicRegistryProvider {
 	@Override
 	protected void configure(RegistryWrapper.WrapperLookup registries, Entries entries) {
 		register(entries, ModEnchantmentEffects.MINERAL_EXTRACTOR, Enchantment.builder(
-						Enchantment.definition(
-								registries.getOrThrow(RegistryKeys.ITEM).getOrThrow(ItemTags.PICKAXES),
-								3,
-								6,
-								Enchantment.leveledCost(1, 12),
-								Enchantment.leveledCost(1, 18),
-								16,
-								AttributeModifierSlot.HAND
-						)
+				Enchantment.definition(
+						registries.getOrThrow(RegistryKeys.ITEM).getOrThrow(ItemTags.PICKAXES),
+						3,
+						6,
+						Enchantment.leveledCost(1, 12),
+						Enchantment.leveledCost(1, 18),
+						16,
+						AttributeModifierSlot.HAND)
 				)
 		);
 	}

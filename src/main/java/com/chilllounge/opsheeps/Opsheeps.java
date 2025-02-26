@@ -23,7 +23,6 @@ public class Opsheeps implements ModInitializer {
 		OpSetLoot.registerLootTableItems();
 		ModEnchantmentEffects.registerModEnchantmentEffects();
 		MineralExtractorHandler.register();
-
 		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> HelpCommand.register(dispatcher));
 	}
 }

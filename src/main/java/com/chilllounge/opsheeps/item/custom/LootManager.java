@@ -7,9 +7,7 @@ import java.util.Random;
 import java.util.function.Supplier;
 
 public class LootManager {
-
 	private static final Random random = new Random();
-
 	private record LootEntry(Supplier<ItemStack> stackSupplier, int weight) {
 	}
 
@@ -110,26 +108,22 @@ public class LootManager {
 		};
 	}
 
-	// 5. Final Stage loot: a mix of items from all themes with much more op loot.
 	private static LootEntry[] generateFinalStageLoot() {
 		return new LootEntry[]{
 				new LootEntry(() -> new ItemStack(Items.IRON_INGOT), 5000),
 				new LootEntry(() -> new ItemStack(Items.GOLD_INGOT), 4000),
 				new LootEntry(() -> new ItemStack(Items.DIAMOND), 3000),
 				new LootEntry(() -> new ItemStack(Items.NETHERITE_SCRAP), 300),
-				// Netherite block stays extremely rare.
 				new LootEntry(() -> new ItemStack(Items.NETHERITE_BLOCK), 1),
 				new LootEntry(() -> new ItemStack(Items.ENCHANTED_GOLDEN_APPLE), 200),
 				new LootEntry(() -> new ItemStack(Items.TNT), 100),
 				new LootEntry(() -> new ItemStack(Items.POTION), 50),
-				// Include some thematic items from other dimensions.
 				new LootEntry(() -> new ItemStack(Items.ENDER_PEARL), 100),
 				new LootEntry(() -> new ItemStack(Items.BLAZE_POWDER), 100),
 				new LootEntry(() -> new ItemStack(Items.REDSTONE), 150)
 		};
 	}
 
-	// Developer loot: intentionally overpowered and varied for testing purposes.
 	private static LootEntry[] generateDeveloperLoot() {
 		return new LootEntry[]{
 				new LootEntry(() -> new ItemStack(Items.NETHERITE_BLOCK), 10),
@@ -144,7 +138,6 @@ public class LootManager {
 		};
 	}
 
-	// Fallback loot: a basic item in case of an unknown version.
 	private static LootEntry[] generateFallbackLoot() {
 		return new LootEntry[]{
 				new LootEntry(() -> new ItemStack(Items.WHITE_WOOL), 10)
