@@ -1,6 +1,6 @@
 package com.chilllounge.opsheeps.command;
 
-import com.chilllounge.opsheeps.item.ModItemGroups;
+import com.chilllounge.opsheeps.item.OpSheepsItemGroups;
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.CommandDispatcher;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -22,7 +22,7 @@ public class HelpCommand {
 	public static void register(CommandDispatcher<ServerCommandSource> dispatcher) {
 		dispatcher.register(
 				CommandManager.literal("opsheeps")
-						.then(CommandManager.literal("help")
+						.then(CommandManager.literal("get-help-book")
 								.executes(context -> {
 									ServerCommandSource source = context.getSource();
 									Entity entity = source.getEntity();
@@ -36,7 +36,7 @@ public class HelpCommand {
 						)
 		);
 
-		ItemGroupEvents.modifyEntriesEvent(ModItemGroups.SUPER_ITEM_GROUP_KEY)
+		ItemGroupEvents.modifyEntriesEvent(OpSheepsItemGroups.SUPER_ITEM_GROUP_KEY)
 				.register((entries) -> entries.add(createBookItem()));
 	}
 

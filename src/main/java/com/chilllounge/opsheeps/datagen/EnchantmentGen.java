@@ -1,7 +1,7 @@
 package com.chilllounge.opsheeps.datagen;
 
 import com.chilllounge.opsheeps.Opsheeps;
-import com.chilllounge.opsheeps.enchantment.ModEnchantmentEffects;
+import com.chilllounge.opsheeps.enchantment.OpSheepsEnchantmentEffects;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricDynamicRegistryProvider;
 import net.fabricmc.fabric.api.resource.conditions.v1.ResourceCondition;
@@ -21,7 +21,7 @@ public class EnchantmentGen extends FabricDynamicRegistryProvider {
 
 	@Override
 	protected void configure(RegistryWrapper.WrapperLookup registries, Entries entries) {
-		register(entries, ModEnchantmentEffects.MINERAL_EXTRACTOR, Enchantment.builder(
+		register(entries, OpSheepsEnchantmentEffects.MINERAL_EXTRACTOR, Enchantment.builder(
 				Enchantment.definition(
 						registries.getOrThrow(RegistryKeys.ITEM).getOrThrow(ItemTags.PICKAXES),
 						3,

@@ -18,7 +18,7 @@ import net.minecraft.util.Identifier;
 
 import java.util.List;
 
-public class ModItems {
+public class OpSheepsItems {
 	public static final RegistryKey<Item> SUPER_DYE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "super_dye"));
 	public static final RegistryKey<Item> SUPER_SHEAR_V1_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "super_shear_v1"));
 	public static final RegistryKey<Item> SUPER_SHEAR_V2_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "super_shear_v2"));
