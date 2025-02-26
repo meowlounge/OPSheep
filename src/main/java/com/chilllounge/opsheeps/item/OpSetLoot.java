@@ -18,134 +18,269 @@ import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 
 public class OpSetLoot {
-	public static final ToolMaterial OP_TOOL_MATERIAL = new ToolMaterial(
-			BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 4062, 18.0F, 8.0F, 30, ItemTags.NETHERITE_TOOL_MATERIALS
+	public static final ToolMaterial OP_TOOL_MATERIAL_V1 = new ToolMaterial(
+			BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 4062, 30.0F, 0.0F, 14, ItemTags.NETHERITE_TOOL_MATERIALS
+	);
+	public static final ToolMaterial OP_TOOL_MATERIAL_V2 = new ToolMaterial(
+			BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 8062, 999.0F, 8.0F, 30, ItemTags.NETHERITE_TOOL_MATERIALS
 	);
 
-	public static final ArmorMaterial OP_ARMOR_MATERIAL = OpArmorMaterial.INSTANCE;
+	public static final ArmorMaterial OP_ARMOR_MATERIAL_V1 = OpArmorMaterial.INSTANCE_V1;
+	public static final ArmorMaterial OP_ARMOR_MATERIAL_V2 = OpArmorMaterial.INSTANCE_V2;
 
-	public static final RegistryKey<Item> OP_HELMET_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_helmet"));
-	public static final RegistryKey<Item> OP_CHESTPLATE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_chestplate"));
-	public static final RegistryKey<Item> OP_LEGGINGS_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_leggings"));
-	public static final RegistryKey<Item> OP_BOOTS_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_boots"));
-	public static final RegistryKey<Item> OP_SWORD_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_sword"));
-	public static final RegistryKey<Item> OP_AXE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_axe"));
-	public static final RegistryKey<Item> OP_PICKAXE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_pickaxe"));
-	public static final RegistryKey<Item> OP_SHOVEL_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_shovel"));
-	public static final RegistryKey<Item> OP_HOE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_hoe"));
+	public static final RegistryKey<Item> OP_HELMET_V1_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_helmet_v1"));
+	public static final RegistryKey<Item> OP_CHESTPLATE_V1_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_chestplate_v1"));
+	public static final RegistryKey<Item> OP_LEGGINGS_V1_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_leggings_v1"));
+	public static final RegistryKey<Item> OP_BOOTS_V1_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_boots_v1"));
+	public static final RegistryKey<Item> OP_SWORD_V1_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_sword_v1"));
+	public static final RegistryKey<Item> OP_AXE_V1_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_axe_v1"));
+	public static final RegistryKey<Item> OP_PICKAXE_V1_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_pickaxe_v1"));
+	public static final RegistryKey<Item> OP_SHOVEL_V1_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_shovel_v1"));
+	public static final RegistryKey<Item> OP_HOE_V1_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_hoe_v1"));
 
-	public static final Item OP_HELMET = registerItem(OP_HELMET_KEY,
-			new ArmorItem(OP_ARMOR_MATERIAL, EquipmentType.HELMET,
+	public static final RegistryKey<Item> OP_HELMET_V2_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_helmet_v2"));
+	public static final RegistryKey<Item> OP_CHESTPLATE_V2_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_chestplate_v2"));
+	public static final RegistryKey<Item> OP_LEGGINGS_V2_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_leggings_v2"));
+	public static final RegistryKey<Item> OP_BOOTS_V2_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_boots_v2"));
+	public static final RegistryKey<Item> OP_SWORD_V2_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_sword_v2"));
+	public static final RegistryKey<Item> OP_AXE_V2_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_axe_v2"));
+	public static final RegistryKey<Item> OP_PICKAXE_V2_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_pickaxe_v2"));
+	public static final RegistryKey<Item> OP_SHOVEL_V2_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_shovel_v2"));
+	public static final RegistryKey<Item> OP_HOE_V2_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Opsheeps.MOD_ID, "op_hoe_v2"));
+
+	public static final Item OP_HELMET_V1 = registerItem(OP_HELMET_V1_KEY,
+			new ArmorItem(OP_ARMOR_MATERIAL_V1, EquipmentType.HELMET,
 					new Item.Settings()
-							.registryKey(OP_HELMET_KEY)
+							.registryKey(OP_HELMET_V1_KEY)
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
-							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_helmet")
+							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_helmet_v1")
 									.setStyle(Style.EMPTY.withColor(Formatting.RED)
 											.withBold(true)
 											.withItalic(false)))
 			)
 	);
 
-	public static final Item OP_CHESTPLATE = registerItem(OP_CHESTPLATE_KEY,
-			new ArmorItem(OP_ARMOR_MATERIAL, EquipmentType.CHESTPLATE,
+	public static final Item OP_CHESTPLATE_V1 = registerItem(OP_CHESTPLATE_V1_KEY,
+			new ArmorItem(OP_ARMOR_MATERIAL_V1, EquipmentType.CHESTPLATE,
 					new Item.Settings()
-							.registryKey(OP_CHESTPLATE_KEY)
+							.registryKey(OP_CHESTPLATE_V1_KEY)
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
-							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_chestplate")
+							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_chestplate_v1")
 									.setStyle(Style.EMPTY.withColor(Formatting.RED)
 											.withBold(true)
 											.withItalic(false)))
 			)
 	);
 
-	public static final Item OP_LEGGINGS = registerItem(OP_LEGGINGS_KEY,
-			new ArmorItem(OP_ARMOR_MATERIAL, EquipmentType.LEGGINGS,
+	public static final Item OP_LEGGINGS_V1 = registerItem(OP_LEGGINGS_V1_KEY,
+			new ArmorItem(OP_ARMOR_MATERIAL_V1, EquipmentType.LEGGINGS,
 					new Item.Settings()
-							.registryKey(OP_LEGGINGS_KEY)
+							.registryKey(OP_LEGGINGS_V1_KEY)
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
-							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_leggings")
+							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_leggings_v1")
 									.setStyle(Style.EMPTY.withColor(Formatting.RED)
 											.withBold(true)
 											.withItalic(false)))
 			)
 	);
 
-	public static final Item OP_BOOTS = registerItem(OP_BOOTS_KEY,
-			new ArmorItem(OP_ARMOR_MATERIAL, EquipmentType.BOOTS,
+	public static final Item OP_BOOTS_V1 = registerItem(OP_BOOTS_V1_KEY,
+			new ArmorItem(OP_ARMOR_MATERIAL_V1, EquipmentType.BOOTS,
 					new Item.Settings()
-							.registryKey(OP_BOOTS_KEY)
+							.registryKey(OP_BOOTS_V1_KEY)
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
-							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_boots")
+							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_boots_v1")
 									.setStyle(Style.EMPTY.withColor(Formatting.RED)
 											.withBold(true)
 											.withItalic(false)))
 			)
 	);
 
-	public static final Item OP_SWORD = registerItem(OP_SWORD_KEY,
-			new SwordItem(OP_TOOL_MATERIAL, 6, -1.4F,
+	public static final Item OP_SWORD_V1 = registerItem(OP_SWORD_V1_KEY,
+			new SwordItem(OP_TOOL_MATERIAL_V1, 6, -1.4F,
 					new Item.Settings()
-							.registryKey(OP_SWORD_KEY)
+							.registryKey(OP_SWORD_V1_KEY)
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
-							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_sword")
+							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_sword_v1")
 									.setStyle(Style.EMPTY.withColor(Formatting.RED)
 											.withBold(true)
 											.withItalic(false)))
 			)
 	);
 
-	public static final Item OP_AXE = registerItem(OP_AXE_KEY,
-			new AxeItem(OP_TOOL_MATERIAL, 11, -3.0F,
+	public static final Item OP_AXE_V1 = registerItem(OP_AXE_V1_KEY,
+			new AxeItem(OP_TOOL_MATERIAL_V1, 11, -3.0F,
 					new Item.Settings()
-							.registryKey(OP_AXE_KEY)
+							.registryKey(OP_AXE_V1_KEY)
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
-							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_axe")
+							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_axe_v1")
 									.setStyle(Style.EMPTY.withColor(Formatting.RED)
 											.withBold(true)
 											.withItalic(false)))
 			)
 	);
 
-	public static final Item OP_PICKAXE = registerItem(OP_PICKAXE_KEY,
-			new PickaxeItem(OP_TOOL_MATERIAL, -3, -2.8F,
+	public static final Item OP_PICKAXE_V1 = registerItem(OP_PICKAXE_V1_KEY,
+			new PickaxeItem(OP_TOOL_MATERIAL_V1, -3, -2.8F,
 					new Item.Settings()
-							.registryKey(OP_PICKAXE_KEY)
+							.registryKey(OP_PICKAXE_V1_KEY)
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
-							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_pickaxe")
+							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_pickaxe_v1")
 									.setStyle(Style.EMPTY.withColor(Formatting.RED)
 											.withBold(true)
 											.withItalic(false)))
 			)
 	);
 
-	public static final Item OP_SHOVEL = registerItem(OP_SHOVEL_KEY,
-			new ShovelItem(OP_TOOL_MATERIAL, -3.5F, -3.0F,
+	public static final Item OP_SHOVEL_V1 = registerItem(OP_SHOVEL_V1_KEY,
+			new ShovelItem(OP_TOOL_MATERIAL_V1, -3.5F, -3.0F,
 					new Item.Settings()
-							.registryKey(OP_SHOVEL_KEY)
+							.registryKey(OP_SHOVEL_V1_KEY)
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
-							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_shovel")
+							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_shovel_v1")
 									.setStyle(Style.EMPTY.withColor(Formatting.RED)
 											.withBold(true)
 											.withItalic(false)))
 			)
 	);
 
-	public static final Item OP_HOE = registerItem(OP_HOE_KEY,
-			new HoeItem(OP_TOOL_MATERIAL, -10, -1.0F,
+	public static final Item OP_HOE_V1 = registerItem(OP_HOE_V1_KEY,
+			new HoeItem(OP_TOOL_MATERIAL_V1, -10, -1.0F,
 					new Item.Settings()
-							.registryKey(OP_HOE_KEY)
+							.registryKey(OP_HOE_V1_KEY)
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
-							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_hoe")
+							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_hoe_v1")
 									.setStyle(Style.EMPTY.withColor(Formatting.RED)
+											.withBold(true)
+											.withItalic(false)))
+			)
+	);
+
+	//? OP SET V2
+	//? OP SET V2
+	//? OP SET V2
+
+	public static final Item OP_HELMET_V2 = registerItem(OP_HELMET_V2_KEY,
+			new ArmorItem(OP_ARMOR_MATERIAL_V2, EquipmentType.HELMET,
+					new Item.Settings()
+							.registryKey(OP_HELMET_V2_KEY)
+							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
+							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
+							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_helmet_v2")
+									.setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE)
+											.withBold(true)
+											.withItalic(false)))
+			)
+	);
+
+	public static final Item OP_CHESTPLATE_V2 = registerItem(OP_CHESTPLATE_V2_KEY,
+			new ArmorItem(OP_ARMOR_MATERIAL_V2, EquipmentType.CHESTPLATE,
+					new Item.Settings()
+							.registryKey(OP_CHESTPLATE_V2_KEY)
+							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
+							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
+							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_chestplate_v2")
+									.setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE)
+											.withBold(true)
+											.withItalic(false)))
+			)
+	);
+
+	public static final Item OP_LEGGINGS_V2 = registerItem(OP_LEGGINGS_V2_KEY,
+			new ArmorItem(OP_ARMOR_MATERIAL_V2, EquipmentType.LEGGINGS,
+					new Item.Settings()
+							.registryKey(OP_LEGGINGS_V2_KEY)
+							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
+							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
+							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_leggings_v2")
+									.setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE)
+											.withBold(true)
+											.withItalic(false)))
+			)
+	);
+
+	public static final Item OP_BOOTS_V2 = registerItem(OP_BOOTS_V2_KEY,
+			new ArmorItem(OP_ARMOR_MATERIAL_V2, EquipmentType.BOOTS,
+					new Item.Settings()
+							.registryKey(OP_BOOTS_V2_KEY)
+							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
+							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
+							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_boots_v2")
+									.setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE)
+											.withBold(true)
+											.withItalic(false)))
+			)
+	);
+
+	public static final Item OP_SWORD_V2 = registerItem(OP_SWORD_V2_KEY,
+			new SwordItem(OP_TOOL_MATERIAL_V2, 6, -1.4F,
+					new Item.Settings()
+							.registryKey(OP_SWORD_V2_KEY)
+							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
+							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
+							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_sword_v2")
+									.setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE)
+											.withBold(true)
+											.withItalic(false)))
+			)
+	);
+
+	public static final Item OP_AXE_V2 = registerItem(OP_AXE_V2_KEY,
+			new AxeItem(OP_TOOL_MATERIAL_V2, 11, -3.0F,
+					new Item.Settings()
+							.registryKey(OP_AXE_V2_KEY)
+							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
+							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
+							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_axe_v2")
+									.setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE)
+											.withBold(true)
+											.withItalic(false)))
+			)
+	);
+
+	public static final Item OP_PICKAXE_V2 = registerItem(OP_PICKAXE_V2_KEY,
+			new PickaxeItem(OP_TOOL_MATERIAL_V2, -3, -2.8F,
+					new Item.Settings()
+							.registryKey(OP_PICKAXE_V2_KEY)
+							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
+							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
+							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_pickaxe_v2")
+									.setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE)
+											.withBold(true)
+											.withItalic(false)))
+			)
+	);
+
+	public static final Item OP_SHOVEL_V2 = registerItem(OP_SHOVEL_V2_KEY,
+			new ShovelItem(OP_TOOL_MATERIAL_V2, -3.5F, -3.0F,
+					new Item.Settings()
+							.registryKey(OP_SHOVEL_V2_KEY)
+							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
+							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
+							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_shovel_v2")
+									.setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE)
+											.withBold(true)
+											.withItalic(false)))
+			)
+	);
+
+	public static final Item OP_HOE_V2 = registerItem(OP_HOE_V2_KEY,
+			new HoeItem(OP_TOOL_MATERIAL_V2, -10, -1.0F,
+					new Item.Settings()
+							.registryKey(OP_HOE_V2_KEY)
+							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
+							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
+							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_hoe_v2")
+									.setStyle(Style.EMPTY.withColor(Formatting.LIGHT_PURPLE)
 											.withBold(true)
 											.withItalic(false)))
 			)
