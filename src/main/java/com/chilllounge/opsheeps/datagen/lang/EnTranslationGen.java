@@ -58,6 +58,12 @@ public class EnTranslationGen extends FabricLanguageProvider {
 
 		translationBuilder.add("command.opsheeps.help.client", "This command can only be executed by a server player.");
 		translationBuilder.add("command.opsheeps.help.book_received", "You have received the OPSheeps help book!");
+
+		translationBuilder.add("item.opsheeps.supershear_perk_v5", "§6[OPSheeps] §eTreasure Drop: ");
+		translationBuilder.add("item.opsheeps.supershear_perk_v4", "§6[OPSheeps] §bAOE Shear! §7(3x3 Area)");
+		translationBuilder.add("item.opsheeps.supershear_perk_v2", "§6[OPSheeps] §aExtra Shear! §7(Double Drop)");
+		translationBuilder.add("item.opsheeps.supershear_perk_v3", "§6[OPSheeps] §dRare Drops! §7(25% chance for rare items)");
+
 	}
 
 	@Override
