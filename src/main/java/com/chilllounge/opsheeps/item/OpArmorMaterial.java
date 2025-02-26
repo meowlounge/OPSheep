@@ -35,19 +35,19 @@ public class OpArmorMaterial {
 			DEFENSE_V1,
 			7,
 			SoundEvents.ITEM_ARMOR_EQUIP_CHAIN,
-			1.0F,
-			0.1F,
+			2.0F,
+			0.3F,
 			ItemTags.EMERALD_ORES,
 			OP_ARMOR_MATERIAL_KEY_V1
 	);
 
 	public static final ArmorMaterial INSTANCE_V2 = new ArmorMaterial(
-			4062,
+			8062,
 			DEFENSE_V2,
 			7,
 			SoundEvents.ITEM_ARMOR_EQUIP_CHAIN,
-			1.0F,
-			0.1F,
+			4.0F,
+			0.6F,
 			ItemTags.EMERALD_ORES,
 			OP_ARMOR_MATERIAL_KEY_V2
 	);
