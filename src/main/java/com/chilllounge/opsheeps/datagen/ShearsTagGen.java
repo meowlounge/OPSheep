@@ -1,10 +1,10 @@
 package com.chilllounge.opsheeps.datagen;
 
+import com.chilllounge.opsheeps.item.ModItems;
 import com.chilllounge.opsheeps.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
-import com.chilllounge.opsheeps.item.ModItems;
 
 import java.util.concurrent.CompletableFuture;
 

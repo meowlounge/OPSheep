@@ -4,9 +4,9 @@ import com.chilllounge.opsheeps.item.custom.SuperDyeItem;
 import com.chilllounge.opsheeps.util.OpSheepAccessor;
 import net.minecraft.entity.passive.SheepEntity;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import org.spongepowered.asm.mixin.injection.At;
 
 @Mixin(SheepEntity.class)
 public abstract class SheepTickMixin {
