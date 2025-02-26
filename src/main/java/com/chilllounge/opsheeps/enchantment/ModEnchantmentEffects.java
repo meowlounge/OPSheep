@@ -1,4 +1,3 @@
-// ModEnchantmentEffects.java
 package com.chilllounge.opsheeps.enchantment;
 
 import com.chilllounge.opsheeps.Opsheeps;
