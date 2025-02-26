@@ -1,10 +1,10 @@
 package com.chilllounge.opsheeps;
 
 import com.chilllounge.opsheeps.command.HelpCommand;
-import com.chilllounge.opsheeps.enchantment.ModEnchantmentEffects;
+import com.chilllounge.opsheeps.enchantment.OpSheepsEnchantmentEffects;
 import com.chilllounge.opsheeps.enchantment.effect.MineralExtractorHandler;
-import com.chilllounge.opsheeps.item.ModItemGroups;
-import com.chilllounge.opsheeps.item.ModItems;
+import com.chilllounge.opsheeps.item.OpSheepsItemGroups;
+import com.chilllounge.opsheeps.item.OpSheepsItems;
 import com.chilllounge.opsheeps.item.OpSetLoot;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
@@ -18,10 +18,10 @@ public class Opsheeps implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItemGroups.registerItemGroups();
-		ModItems.registerModItems();
+		OpSheepsItemGroups.registerItemGroups();
+		OpSheepsItems.registerModItems();
 		OpSetLoot.registerLootTableItems();
-		ModEnchantmentEffects.registerModEnchantmentEffects();
+		OpSheepsEnchantmentEffects.registerModEnchantmentEffects();
 		MineralExtractorHandler.register();
 		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> HelpCommand.register(dispatcher));
 	}

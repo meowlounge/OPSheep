@@ -1,7 +1,7 @@
 package com.chilllounge.opsheeps.datagen;
 
 import com.chilllounge.opsheeps.Opsheeps;
-import com.chilllounge.opsheeps.item.ModItems;
+import com.chilllounge.opsheeps.item.OpSheepsItems;
 import com.chilllounge.opsheeps.item.OpSetLoot;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -29,14 +29,14 @@ public class ItemModelGen extends FabricModelProvider {
 	}
 
 	public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-		itemModelGenerator.register(ModItems.GROW_BACK, Models.GENERATED);
-		itemModelGenerator.register(ModItems.SUPER_DYE, Models.GENERATED);
-		itemModelGenerator.register(ModItems.SUPER_SHEAR_V1, Models.GENERATED);
-		itemModelGenerator.register(ModItems.SUPER_SHEAR_V2, Models.GENERATED);
-		itemModelGenerator.register(ModItems.SUPER_SHEAR_V3, Models.GENERATED);
-		itemModelGenerator.register(ModItems.SUPER_SHEAR_V4, Models.GENERATED);
-		itemModelGenerator.register(ModItems.SUPER_SHEAR_V5, Models.GENERATED);
-		itemModelGenerator.register(ModItems.SUPER_SHEAR_V69, Models.GENERATED);
+		itemModelGenerator.register(OpSheepsItems.GROW_BACK, Models.GENERATED);
+		itemModelGenerator.register(OpSheepsItems.SUPER_DYE, Models.GENERATED);
+		itemModelGenerator.register(OpSheepsItems.SUPER_SHEAR_V1, Models.GENERATED);
+		itemModelGenerator.register(OpSheepsItems.SUPER_SHEAR_V2, Models.GENERATED);
+		itemModelGenerator.register(OpSheepsItems.SUPER_SHEAR_V3, Models.GENERATED);
+		itemModelGenerator.register(OpSheepsItems.SUPER_SHEAR_V4, Models.GENERATED);
+		itemModelGenerator.register(OpSheepsItems.SUPER_SHEAR_V5, Models.GENERATED);
+		itemModelGenerator.register(OpSheepsItems.SUPER_SHEAR_V69, Models.GENERATED);
 
 		itemModelGenerator.register(OpSetLoot.OP_HOE, Models.HANDHELD);
 		itemModelGenerator.register(OpSetLoot.OP_SHOVEL, Models.HANDHELD);

@@ -1,6 +1,6 @@
 package com.chilllounge.opsheeps.datagen;
 
-import com.chilllounge.opsheeps.item.ModItems;
+import com.chilllounge.opsheeps.item.OpSheepsItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.recipe.RecipeExporter;
@@ -22,7 +22,7 @@ public class RecipeGen extends FabricRecipeProvider {
 		return new RecipeGenerator(registryLookup, exporter) {
 			@Override
 			public void generate() {
-				createShaped(RecipeCategory.MISC, ModItems.SUPER_DYE)
+				createShaped(RecipeCategory.MISC, OpSheepsItems.SUPER_DYE)
 						.pattern("111")
 						.pattern("1D1")
 						.pattern("111")
@@ -35,7 +35,7 @@ public class RecipeGen extends FabricRecipeProvider {
 						.criterion(hasItem(Items.DIAMOND_BLOCK), conditionsFromItem(Items.DIAMOND_BLOCK))
 						.offerTo(exporter);
 
-				createShaped(RecipeCategory.TOOLS, ModItems.SUPER_SHEAR_V1)
+				createShaped(RecipeCategory.TOOLS, OpSheepsItems.SUPER_SHEAR_V1)
 						.pattern("111")
 						.pattern("1D1")
 						.pattern("111")
@@ -44,38 +44,38 @@ public class RecipeGen extends FabricRecipeProvider {
 						.criterion(hasItem(Items.SHEARS), conditionsFromItem(Items.SHEARS))
 						.offerTo(exporter);
 
-				createShaped(RecipeCategory.TOOLS, ModItems.SUPER_SHEAR_V2)
+				createShaped(RecipeCategory.TOOLS, OpSheepsItems.SUPER_SHEAR_V2)
 						.pattern("111")
 						.pattern("1D1")
 						.pattern("111")
-						.input('1', ModItems.SUPER_SHEAR_V1)
+						.input('1', OpSheepsItems.SUPER_SHEAR_V1)
 						.input('D', Items.DIAMOND_BLOCK)
 						.criterion(hasItem(Items.SHEARS), conditionsFromItem(Items.SHEARS))
 						.offerTo(exporter);
 
-				createShaped(RecipeCategory.TOOLS, ModItems.SUPER_SHEAR_V3)
+				createShaped(RecipeCategory.TOOLS, OpSheepsItems.SUPER_SHEAR_V3)
 						.pattern("111")
 						.pattern("1D1")
 						.pattern("111")
-						.input('1', ModItems.SUPER_SHEAR_V2)
+						.input('1', OpSheepsItems.SUPER_SHEAR_V2)
 						.input('D', Items.DIAMOND_BLOCK)
 						.criterion(hasItem(Items.SHEARS), conditionsFromItem(Items.SHEARS))
 						.offerTo(exporter);
 
-				createShaped(RecipeCategory.TOOLS, ModItems.SUPER_SHEAR_V4)
+				createShaped(RecipeCategory.TOOLS, OpSheepsItems.SUPER_SHEAR_V4)
 						.pattern("111")
 						.pattern("1D1")
 						.pattern("111")
-						.input('1', ModItems.SUPER_SHEAR_V3)
+						.input('1', OpSheepsItems.SUPER_SHEAR_V3)
 						.input('D', Items.DIAMOND_BLOCK)
 						.criterion(hasItem(Items.SHEARS), conditionsFromItem(Items.SHEARS))
 						.offerTo(exporter);
 
-				createShaped(RecipeCategory.TOOLS, ModItems.SUPER_SHEAR_V5)
+				createShaped(RecipeCategory.TOOLS, OpSheepsItems.SUPER_SHEAR_V5)
 						.pattern("111")
 						.pattern("1D1")
 						.pattern("111")
-						.input('1', ModItems.SUPER_SHEAR_V4)
+						.input('1', OpSheepsItems.SUPER_SHEAR_V4)
 						.input('D', Items.DIAMOND_BLOCK)
 						.criterion(hasItem(Items.SHEARS), conditionsFromItem(Items.SHEARS))
 						.offerTo(exporter);

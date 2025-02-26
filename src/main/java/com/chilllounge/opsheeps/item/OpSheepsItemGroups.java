@@ -10,7 +10,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-public class ModItemGroups {
+public class OpSheepsItemGroups {
 
 	public static final RegistryKey<ItemGroup> SUPER_ITEM_GROUP_KEY = RegistryKey.of(
 			Registries.ITEM_GROUP.getKey(),
@@ -21,17 +21,17 @@ public class ModItemGroups {
 			Registries.ITEM_GROUP,
 			SUPER_ITEM_GROUP_KEY.getValue(),
 			FabricItemGroup.builder()
-					.icon(() -> new ItemStack(ModItems.SUPER_DYE))
+					.icon(() -> new ItemStack(OpSheepsItems.SUPER_DYE))
 					.displayName(Text.translatable("itemgroups.opsheeps.super_items"))
 					.entries((displayContext, entries) -> {
-						entries.add(ModItems.SUPER_DYE);
-						entries.add(ModItems.SUPER_SHEAR_V69);
-						entries.add(ModItems.SUPER_SHEAR_V1);
-						entries.add(ModItems.SUPER_SHEAR_V2);
-						entries.add(ModItems.SUPER_SHEAR_V3);
-						entries.add(ModItems.SUPER_SHEAR_V4);
-						entries.add(ModItems.SUPER_SHEAR_V5);
-						entries.add(ModItems.GROW_BACK);
+						entries.add(OpSheepsItems.SUPER_DYE);
+						entries.add(OpSheepsItems.SUPER_SHEAR_V69);
+						entries.add(OpSheepsItems.SUPER_SHEAR_V1);
+						entries.add(OpSheepsItems.SUPER_SHEAR_V2);
+						entries.add(OpSheepsItems.SUPER_SHEAR_V3);
+						entries.add(OpSheepsItems.SUPER_SHEAR_V4);
+						entries.add(OpSheepsItems.SUPER_SHEAR_V5);
+						entries.add(OpSheepsItems.GROW_BACK);
 
 						entries.add(OpSetLoot.OP_HELMET);
 						entries.add(OpSetLoot.OP_CHESTPLATE);
