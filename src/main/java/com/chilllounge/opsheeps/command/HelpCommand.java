@@ -1,11 +1,18 @@
 package com.chilllounge.opsheeps.command;
 
+import com.chilllounge.opsheeps.item.ModItemGroups;
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.CommandDispatcher;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.WrittenBookContentComponent;
 import net.minecraft.entity.Entity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.text.RawFilteredPair;
 import net.minecraft.text.Text;
 
 import java.util.ArrayList;
@@ -23,18 +30,44 @@ public class HelpCommand {
 										source.sendFeedback(() -> Text.translatable("command.opsheeps.help.client"), false);
 										return 0;
 									}
-									sendHelpMessage(player);
+									sendHelpBook(player);
 									return Command.SINGLE_SUCCESS;
 								})
 						)
 		);
+
+		ItemGroupEvents.modifyEntriesEvent(ModItemGroups.SUPER_ITEM_GROUP_KEY)
+				.register((entries) -> entries.add(createBookItem()));
 	}
 
-	public static void sendHelpMessage(ServerPlayerEntity player) {
-		List<Text> pages = createHelpPages();
-		for (Text page : pages) {
-			player.sendMessage(page, false);
+	public static void sendHelpBook(ServerPlayerEntity player) {
+		ItemStack book = createBookItem();
+
+		boolean added = player.giveItemStack(book);
+		if (!added) {
+			player.dropItem(book, false);
 		}
+	}
+
+	private static ItemStack createBookItem() {
+		List<Text> helpPages = createHelpPages();
+
+		List<RawFilteredPair<Text>> rawPages = helpPages.stream()
+				.map(RawFilteredPair::of)
+				.toList();
+
+		WrittenBookContentComponent content = new WrittenBookContentComponent(
+				RawFilteredPair.of("Help Guide"),
+				"OPSheeps Guide",
+				0,
+				rawPages,
+				true
+		);
+
+		ItemStack book = new ItemStack(Items.WRITTEN_BOOK);
+		book.set(DataComponentTypes.WRITTEN_BOOK_CONTENT, content);
+
+		return book;
 	}
 
 	private static List<Text> createHelpPages() {

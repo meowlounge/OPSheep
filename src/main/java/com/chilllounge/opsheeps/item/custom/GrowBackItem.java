@@ -10,7 +10,6 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 
 public class GrowBackItem extends ShearsItem {
-
 	public GrowBackItem(Settings settings) {
 		super(settings);
 	}
@@ -35,7 +34,6 @@ public class GrowBackItem extends ShearsItem {
 		if (Opsheeps.DEV_MODE || !player.isCreative()) {
 			stack.increment(1);
 		}
-
 
 		return super.useOnEntity(stack, player, entity, hand);
 	}

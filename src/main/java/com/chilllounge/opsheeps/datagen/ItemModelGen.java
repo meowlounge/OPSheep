@@ -1,10 +1,10 @@
 package com.chilllounge.opsheeps.datagen;
 
 import com.chilllounge.opsheeps.Opsheeps;
+import com.chilllounge.opsheeps.item.ModItems;
 import com.chilllounge.opsheeps.item.OpSetLoot;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import com.chilllounge.opsheeps.item.ModItems;
 import net.minecraft.client.data.BlockStateModelGenerator;
 import net.minecraft.client.data.ItemModelGenerator;
 import net.minecraft.client.data.Models;
@@ -18,7 +18,6 @@ public class ItemModelGen extends FabricModelProvider {
 		super(output);
 	}
 
-
 	final RegistryKey<Registry<EquipmentAsset>> EQUIPMENT_ASSET_REGISTRY = RegistryKey.ofRegistry(Identifier.of(Opsheeps.MOD_ID, "op_equipment"));
 	final RegistryKey<EquipmentAsset> HELMET_ASSET = RegistryKey.of(EQUIPMENT_ASSET_REGISTRY, Identifier.of(Opsheeps.MOD_ID, "op_helmet"));
 	final RegistryKey<EquipmentAsset> CHESTPLATE_ASSET = RegistryKey.of(EQUIPMENT_ASSET_REGISTRY, Identifier.of(Opsheeps.MOD_ID, "op_chestplate"));
@@ -26,7 +25,8 @@ public class ItemModelGen extends FabricModelProvider {
 	final RegistryKey<EquipmentAsset> BOOTS_ASSET = RegistryKey.of(EQUIPMENT_ASSET_REGISTRY, Identifier.of(Opsheeps.MOD_ID, "op_boots"));
 
 	@Override
-	public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {}
+	public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+	}
 
 	public void generateItemModels(ItemModelGenerator itemModelGenerator) {
 		itemModelGenerator.register(ModItems.GROW_BACK, Models.GENERATED);
@@ -47,4 +47,5 @@ public class ItemModelGen extends FabricModelProvider {
 		itemModelGenerator.registerArmor(OpSetLoot.OP_HELMET, HELMET_ASSET, "helmet", false);
 		itemModelGenerator.registerArmor(OpSetLoot.OP_LEGGINGS, LEGGINGS_ASSET, "leggings", false);
 		itemModelGenerator.registerArmor(OpSetLoot.OP_BOOTS, BOOTS_ASSET, "boots", false);
-}}
+	}
+}

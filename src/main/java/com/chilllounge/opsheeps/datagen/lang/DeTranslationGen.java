@@ -50,11 +50,11 @@ public class DeTranslationGen extends FabricLanguageProvider {
 
 		translationBuilder.add("item.opsheeps.super_dye_description", "Flüster dein Geheimnis, einem Schaf und siehe was passiert...");
 
-		translationBuilder.add("opsheeps.help.page1", "§lWillkommen bei OPSheeps!\n\nOPSheeps fügt der Welt...");
-		translationBuilder.add("opsheeps.help.page2", "§lSchritt 1: SuperFärbemittel herstellen\n\nUm SuperFärbemittel...");
-		translationBuilder.add("opsheeps.help.page3", "§lSchritt 2: Schafe verwandeln\n\nSobald du dein SuperFärbemittel...");
-		translationBuilder.add("opsheeps.help.page4", "§lSchritt 3: Titan Scheren verwenden\n\nTitan Scheren sind dein Werkzeug...");
-		translationBuilder.add("opsheeps.help.page5", "§lViel Spaß beim Spiel und beim Sammeln seltener Ressourcen mit OPSheeps!");
+		translationBuilder.add("opsheeps.help.page1", "§lWillkommen bei OPSheeps!\n\nEntdecke fortschrittliche Features, die deiner Kreativität Flügel verleihen. OPSheeps vereint Innovation und Spaß für ein einzigartiges Spielerlebnis.");
+		translationBuilder.add("opsheeps.help.page2", "§lSchritt 1: SuperFärbemittel herstellen\n\nSammle seltene Zutaten und nutze die Werkbank, um das SuperFärbemittel zu kreieren – der Schlüssel zu außergewöhnlichen Verwandlungen.");
+		translationBuilder.add("opsheeps.help.page3", "§lSchritt 2: Verwandle deine Schafe\n\nTrage das SuperFärbemittel auf deine Schafe auf und beobachte, wie sie sich in lebendige, kraftvolle Wesen verwandeln.");
+		translationBuilder.add("opsheeps.help.page4", "§lSchritt 3: Titan-Scheren einsetzen\n\nTitan-Scheren sind dein ultimativer Helfer zum Ernten von Ressourcen. Setze sie ein, um Materialien mühelos zu sammeln und deine Ausrüstung zu verbessern.");
+		translationBuilder.add("opsheeps.help.page5", "§lLetzte Tipps\n\nProbiere die vielfältigen Funktionen von OPSheeps aus, entdecke neue Möglichkeiten und sammle seltene Ressourcen. Viel Spaß und möge dein Abenteuer episch werden!");
 
 		translationBuilder.add("command.opsheeps.help.client", "Dieser Befehl kann nur von einem Spieler ausgeführt werden.");
 		translationBuilder.add("command.opsheeps.help.book_received", "Du hast das OPSheeps-Hilfebuch erhalten!");

@@ -12,13 +12,13 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 public class OpsheepsDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
-	FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
+		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
-	pack.addProvider(EnchantmentGen::new);
-	pack.addProvider(ShearsTagGen::new);
-	pack.addProvider(ItemModelGen::new);
-	pack.addProvider(RecipeGen::new);
-	pack.addProvider(EnTranslationGen::new);
-	pack.addProvider(DeTranslationGen::new);
+		pack.addProvider(EnchantmentGen::new);
+		pack.addProvider(ShearsTagGen::new);
+		pack.addProvider(ItemModelGen::new);
+		pack.addProvider(RecipeGen::new);
+		pack.addProvider(EnTranslationGen::new);
+		pack.addProvider(DeTranslationGen::new);
 	}
 }
