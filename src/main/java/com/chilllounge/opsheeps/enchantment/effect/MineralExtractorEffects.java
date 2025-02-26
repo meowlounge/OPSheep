@@ -16,10 +16,12 @@ public class MineralExtractorEffects {
 	private static int totalWeight = 0;
 
 	static {
-		addWeightedDrop(new ItemStack(Items.RAW_COPPER), 400);
-		addWeightedDrop(new ItemStack(Items.RAW_IRON), 300);
+		addWeightedDrop(new ItemStack(Items.RAW_COPPER), 200);
+		addWeightedDrop(new ItemStack(Items.RAW_IRON), 200);
 		addWeightedDrop(new ItemStack(Items.RAW_GOLD), 200);
-		addWeightedDrop(new ItemStack(Items.DIAMOND), 1);
+		addWeightedDrop(new ItemStack(Items.DIAMOND), 15);
+		addWeightedDrop(new ItemStack(Items.LAPIS_LAZULI, 3), 100);
+		addWeightedDrop(new ItemStack(Items.QUARTZ), 50);
 	}
 
 	private static void addWeightedDrop(ItemStack item, int weight) {
@@ -38,7 +40,7 @@ public class MineralExtractorEffects {
 	}
 
 	public static void applyBlockEffect(ServerWorld world, BlockPos pos, int level) {
-		float chanceValue = 3 * level;
+		float chanceValue = 2 * level;
 		float dropChance = chanceValue / 100f;
 		Random random = world.getRandom();
 

@@ -17,7 +17,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 
-public class OPLootTableItems {
+public class OpSetLoot {
 	public static final ToolMaterial OP_TOOL_MATERIAL = new ToolMaterial(
 			BlockTags.INCORRECT_FOR_NETHERITE_TOOL, -1, 16.0F, 1.5F, 22, ItemTags.DIAMOND_TOOL_MATERIALS
 	);
@@ -36,10 +36,9 @@ public class OPLootTableItems {
 			new ArmorItem(ArmorMaterials.GOLD, EquipmentType.HELMET,
 					new Item.Settings()
 							.registryKey(OP_HELMET_KEY)
-							.enchantable(200)
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
-							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("c")
+							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_helmet")
 									.setStyle(Style.EMPTY.withColor(Formatting.RED)
 											.withBold(true)
 											.withItalic(false)))
@@ -88,7 +87,6 @@ public class OPLootTableItems {
 	public static final Item OP_SWORD = registerItem(OP_SWORD_KEY,
 			new SwordItem(OP_TOOL_MATERIAL, 6, -1.4F,
 					new Item.Settings()
-							.enchantable(200)
 							.registryKey(OP_SWORD_KEY)
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
@@ -102,7 +100,6 @@ public class OPLootTableItems {
 	public static final Item OP_AXE = registerItem(OP_AXE_KEY,
 			new AxeItem(OP_TOOL_MATERIAL, 11, -3.0F,
 					new Item.Settings()
-							.enchantable(200)
 							.registryKey(OP_AXE_KEY)
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
@@ -116,7 +113,6 @@ public class OPLootTableItems {
 	public static final Item OP_PICKAXE = registerItem(OP_PICKAXE_KEY,
 			new PickaxeItem(OP_TOOL_MATERIAL, 1, -2.8F,
 					new Item.Settings()
-							.enchantable(200)
 							.registryKey(OP_PICKAXE_KEY)
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
