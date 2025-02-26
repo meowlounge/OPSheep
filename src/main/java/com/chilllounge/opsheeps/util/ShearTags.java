@@ -6,7 +6,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
-public class ModTags {
+public class ShearTags {
 	public static class Items {
 		public static final TagKey<Item> SUPER_SHEARS = createTag("super_shears");
 

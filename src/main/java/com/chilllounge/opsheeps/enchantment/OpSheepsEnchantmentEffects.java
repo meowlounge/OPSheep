@@ -11,7 +11,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
-public class ModEnchantmentEffects {
+public class OpSheepsEnchantmentEffects {
 	public static final RegistryKey<Enchantment> MINERAL_EXTRACTOR = of("mineral_extractor");
 
 	private static RegistryKey<Enchantment> of(String path) {

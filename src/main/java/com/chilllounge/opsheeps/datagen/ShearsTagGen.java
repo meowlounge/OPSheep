@@ -1,7 +1,7 @@
 package com.chilllounge.opsheeps.datagen;
 
-import com.chilllounge.opsheeps.item.ModItems;
-import com.chilllounge.opsheeps.util.ModTags;
+import com.chilllounge.opsheeps.item.OpSheepsItems;
+import com.chilllounge.opsheeps.util.ShearTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -15,13 +15,13 @@ public class ShearsTagGen extends FabricTagProvider.ItemTagProvider {
 
 	@Override
 	protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-		getOrCreateTagBuilder(ModTags.Items.SUPER_SHEARS)
-				.add(ModItems.SUPER_SHEAR_V1)
-				.add(ModItems.SUPER_SHEAR_V2)
-				.add(ModItems.SUPER_SHEAR_V3)
-				.add(ModItems.SUPER_SHEAR_V4)
-				.add(ModItems.SUPER_SHEAR_V5)
-				.add(ModItems.SUPER_SHEAR_V69);
+		getOrCreateTagBuilder(ShearTags.Items.SUPER_SHEARS)
+				.add(OpSheepsItems.SUPER_SHEAR_V1)
+				.add(OpSheepsItems.SUPER_SHEAR_V2)
+				.add(OpSheepsItems.SUPER_SHEAR_V3)
+				.add(OpSheepsItems.SUPER_SHEAR_V4)
+				.add(OpSheepsItems.SUPER_SHEAR_V5)
+				.add(OpSheepsItems.SUPER_SHEAR_V69);
 	}
 
 	@Override

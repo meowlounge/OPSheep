@@ -1,6 +1,6 @@
 package com.chilllounge.opsheeps.enchantment.effect;
 
-import com.chilllounge.opsheeps.enchantment.ModEnchantmentEffects;
+import com.chilllounge.opsheeps.enchantment.OpSheepsEnchantmentEffects;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
@@ -30,7 +30,7 @@ public class MineralExtractorHandler {
 				DynamicRegistryManager registryManager = serverWorld.getRegistryManager();
 				Registry<Enchantment> enchantmentRegistry = registryManager.getOrThrow(RegistryKeys.ENCHANTMENT);
 
-				RegistryEntry<Enchantment> enchantmentEntry = enchantmentRegistry.getOrThrow(ModEnchantmentEffects.MINERAL_EXTRACTOR);
+				RegistryEntry<Enchantment> enchantmentEntry = enchantmentRegistry.getOrThrow(OpSheepsEnchantmentEffects.MINERAL_EXTRACTOR);
 				Enchantment enchantment = enchantmentEntry.value();
 
 				int level = EnchantmentHelper.getLevel(enchantmentEntry, tool);
