@@ -50,11 +50,11 @@ public class EnTranslationGen extends FabricLanguageProvider {
 
 		translationBuilder.add("item.opsheeps.super_dye_description", "Whisper its secret to a sheep, and witness the impossible...");
 
-		translationBuilder.add("opsheeps.help.page1", "§lWelcome to OPSheeps!\n\nOPSheeps adds powerful features...");
-		translationBuilder.add("opsheeps.help.page2", "§lStep 1: Craft SuperDye\n\nTo create SuperDye...");
-		translationBuilder.add("opsheeps.help.page3", "§lStep 2: Transform Sheep\n\nOnce you have your SuperDye...");
-		translationBuilder.add("opsheeps.help.page4", "§lStep 3: Use Titan Shears\n\nTitan Shears are your tool...");
-		translationBuilder.add("opsheeps.help.page5", "§lEnjoy the game and have fun collecting rare resources...");
+		translationBuilder.add("opsheeps.help.page1", "§lWelcome to OPSheeps!\n\nDiscover advanced features that empower your creativity. OPSheeps blends innovation and fun, offering you a unique gameplay experience.");
+		translationBuilder.add("opsheeps.help.page2", "§lStep 1: Craft the SuperDye\n\nCollect rare ingredients and use your crafting table to create SuperDye – the essential ingredient for unlocking extraordinary transformations.");
+		translationBuilder.add("opsheeps.help.page3", "§lStep 2: Transform Your Sheep\n\nApply SuperDye to your sheep and watch as they undergo a stunning metamorphosis into vibrant, powerful creatures.");
+		translationBuilder.add("opsheeps.help.page4", "§lStep 3: Wield the Titan Shears\n\nTitan Shears are your ultimate tool for harvesting resources. Use them to gather materials effortlessly and enhance your gear.");
+		translationBuilder.add("opsheeps.help.page5", "§lFinal Tips\n\nExperiment with OPSheeps' features, explore creative possibilities, and collect rare resources. Enjoy your adventure and may your journeys be epic!");
 
 		translationBuilder.add("command.opsheeps.help.client", "This command can only be executed by a server player.");
 		translationBuilder.add("command.opsheeps.help.book_received", "You have received the OPSheeps help book!");
