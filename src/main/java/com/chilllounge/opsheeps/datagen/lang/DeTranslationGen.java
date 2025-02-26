@@ -58,6 +58,11 @@ public class DeTranslationGen extends FabricLanguageProvider {
 
 		translationBuilder.add("command.opsheeps.help.client", "Dieser Befehl kann nur von einem Spieler ausgeführt werden.");
 		translationBuilder.add("command.opsheeps.help.book_received", "Du hast das OPSheeps-Hilfebuch erhalten!");
+
+		translationBuilder.add("item.opsheeps.supershear_perk_v5", "§6[OPSheeps] §eSchatz Drop: ");
+		translationBuilder.add("item.opsheeps.supershear_perk_v4", "§6[OPSheeps] §bAOE Schur! §7(3x3 Bereich)");
+		translationBuilder.add("item.opsheeps.supershear_perk_v2", "§6[OPSheeps] §aExtra Schur! §7(Doppelter Drop)");
+		translationBuilder.add("item.opsheeps.supershear_perk_v3", "§6[OPSheeps] §dSeltene Drops! §7(25% Chance auf seltene Items)");
 	}
 
 	@Override
