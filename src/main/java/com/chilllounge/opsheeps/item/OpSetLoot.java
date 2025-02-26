@@ -19,10 +19,10 @@ import net.minecraft.util.Identifier;
 
 public class OpSetLoot {
 	public static final ToolMaterial OP_TOOL_MATERIAL_V1 = new ToolMaterial(
-			BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 4062, 18.0F, 8.0F, 22, ItemTags.NETHERITE_TOOL_MATERIALS
+			BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 4062, 30.0F, 0.0F, 14, ItemTags.NETHERITE_TOOL_MATERIALS
 	);
 	public static final ToolMaterial OP_TOOL_MATERIAL_V2 = new ToolMaterial(
-			BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 8062, 26.0F, 14.0F, 30, ItemTags.NETHERITE_TOOL_MATERIALS
+			BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 8062, 999.0F, 8.0F, 30, ItemTags.NETHERITE_TOOL_MATERIALS
 	);
 
 	public static final ArmorMaterial OP_ARMOR_MATERIAL_V1 = OpArmorMaterial.INSTANCE_V1;
