@@ -1,14 +1,9 @@
 name: Pull Request Checks
 
-on:
-  pull_request:
-    branches:
-      - master
-      - eagle
-      - andi
+on: [pull_request]
 
 jobs:
-  build:
+  main:
     name: Build and Validate
     runs-on: ubuntu-latest
 
