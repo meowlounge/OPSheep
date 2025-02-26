@@ -38,6 +38,7 @@ public class OpSetLoot {
 			new ArmorItem(OP_ARMOR_MATERIAL, EquipmentType.HELMET,
 					new Item.Settings()
 							.registryKey(OP_HELMET_KEY)
+							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_helmet")
 									.setStyle(Style.EMPTY.withColor(Formatting.RED)
@@ -50,6 +51,7 @@ public class OpSetLoot {
 			new ArmorItem(OP_ARMOR_MATERIAL, EquipmentType.CHESTPLATE,
 					new Item.Settings()
 							.registryKey(OP_CHESTPLATE_KEY)
+							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_chestplate")
 									.setStyle(Style.EMPTY.withColor(Formatting.RED)
@@ -62,6 +64,7 @@ public class OpSetLoot {
 			new ArmorItem(OP_ARMOR_MATERIAL, EquipmentType.LEGGINGS,
 					new Item.Settings()
 							.registryKey(OP_LEGGINGS_KEY)
+							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_leggings")
 									.setStyle(Style.EMPTY.withColor(Formatting.RED)
@@ -74,6 +77,7 @@ public class OpSetLoot {
 			new ArmorItem(OP_ARMOR_MATERIAL, EquipmentType.BOOTS,
 					new Item.Settings()
 							.registryKey(OP_BOOTS_KEY)
+							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_boots")
 									.setStyle(Style.EMPTY.withColor(Formatting.RED)
@@ -86,6 +90,7 @@ public class OpSetLoot {
 			new SwordItem(OP_TOOL_MATERIAL, 6, -1.4F,
 					new Item.Settings()
 							.registryKey(OP_SWORD_KEY)
+							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_sword")
 									.setStyle(Style.EMPTY.withColor(Formatting.RED)
@@ -98,6 +103,7 @@ public class OpSetLoot {
 			new AxeItem(OP_TOOL_MATERIAL, 11, -3.0F,
 					new Item.Settings()
 							.registryKey(OP_AXE_KEY)
+							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_axe")
 									.setStyle(Style.EMPTY.withColor(Formatting.RED)
@@ -110,6 +116,7 @@ public class OpSetLoot {
 			new PickaxeItem(OP_TOOL_MATERIAL, -3, -2.8F,
 					new Item.Settings()
 							.registryKey(OP_PICKAXE_KEY)
+							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_pickaxe")
 									.setStyle(Style.EMPTY.withColor(Formatting.RED)
