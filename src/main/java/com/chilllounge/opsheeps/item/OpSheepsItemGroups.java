@@ -33,16 +33,25 @@ public class OpSheepsItemGroups {
 						entries.add(OpSheepsItems.SUPER_SHEAR_V5);
 						entries.add(OpSheepsItems.GROW_BACK);
 
-						entries.add(OpSetLoot.OP_HELMET);
-						entries.add(OpSetLoot.OP_CHESTPLATE);
-						entries.add(OpSetLoot.OP_LEGGINGS);
-						entries.add(OpSetLoot.OP_BOOTS);
+						entries.add(OpSetLoot.OP_HELMET_V1);
+						entries.add(OpSetLoot.OP_CHESTPLATE_V1);
+						entries.add(OpSetLoot.OP_LEGGINGS_V1);
+						entries.add(OpSetLoot.OP_BOOTS_V1);
+						entries.add(OpSetLoot.OP_SWORD_V1);
+						entries.add(OpSetLoot.OP_PICKAXE_V1);
+						entries.add(OpSetLoot.OP_AXE_V1);
+						entries.add(OpSetLoot.OP_SHOVEL_V1);
+						entries.add(OpSetLoot.OP_HOE_V1);
 
-						entries.add(OpSetLoot.OP_SWORD);
-						entries.add(OpSetLoot.OP_AXE);
-						entries.add(OpSetLoot.OP_PICKAXE);
-						entries.add(OpSetLoot.OP_SHOVEL);
-						entries.add(OpSetLoot.OP_HOE);
+						entries.add(OpSetLoot.OP_HELMET_V2);
+						entries.add(OpSetLoot.OP_CHESTPLATE_V2);
+						entries.add(OpSetLoot.OP_LEGGINGS_V2);
+						entries.add(OpSetLoot.OP_BOOTS_V2);
+						entries.add(OpSetLoot.OP_SWORD_V2);
+						entries.add(OpSetLoot.OP_AXE_V2);
+						entries.add(OpSetLoot.OP_PICKAXE_V2);
+						entries.add(OpSetLoot.OP_SHOVEL_V2);
+						entries.add(OpSetLoot.OP_HOE_V2);
 					})
 					.build()
 	);

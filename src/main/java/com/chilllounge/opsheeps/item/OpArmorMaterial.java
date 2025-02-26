@@ -13,23 +13,42 @@ import net.minecraft.util.Identifier;
 import java.util.Map;
 
 public class OpArmorMaterial {
-	public static final RegistryKey<EquipmentAsset> OP_ARMOR_MATERIAL_KEY = RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, Identifier.of(Opsheeps.MOD_ID, "op_armor_material"));
+	public static final RegistryKey<EquipmentAsset> OP_ARMOR_MATERIAL_KEY_V1 = RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, Identifier.of(Opsheeps.MOD_ID, "op_armor_v1"));
+	public static final RegistryKey<EquipmentAsset> OP_ARMOR_MATERIAL_KEY_V2 = RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, Identifier.of(Opsheeps.MOD_ID, "op_armor_v2"));
 
-	private static final Map<EquipmentType, Integer> DEFENSE = Map.of(
-			EquipmentType.HELMET, 5,
-			EquipmentType.CHESTPLATE, 12,
-			EquipmentType.LEGGINGS, 8,
-			EquipmentType.BOOTS, 6
+	private static final Map<EquipmentType, Integer> DEFENSE_V1 = Map.of(
+			EquipmentType.HELMET, 3,
+			EquipmentType.CHESTPLATE, 9,
+			EquipmentType.LEGGINGS, 7,
+			EquipmentType.BOOTS, 4
 	);
 
-	public static final ArmorMaterial INSTANCE = new ArmorMaterial(
-			6062,
-			DEFENSE,
-			10,
-			SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
-			3.0F,
-			0.2F,
-			ItemTags.GOLD_ORES,
-			OP_ARMOR_MATERIAL_KEY
+	private static final Map<EquipmentType, Integer> DEFENSE_V2 = Map.of(
+			EquipmentType.HELMET, 6,
+			EquipmentType.CHESTPLATE, 12,
+			EquipmentType.LEGGINGS, 9,
+			EquipmentType.BOOTS, 7
+	);
+
+	public static final ArmorMaterial INSTANCE_V1 = new ArmorMaterial(
+			4062,
+			DEFENSE_V1,
+			7,
+			SoundEvents.ITEM_ARMOR_EQUIP_CHAIN,
+			1.0F,
+			0.1F,
+			ItemTags.EMERALD_ORES,
+			OP_ARMOR_MATERIAL_KEY_V1
+	);
+
+	public static final ArmorMaterial INSTANCE_V2 = new ArmorMaterial(
+			4062,
+			DEFENSE_V2,
+			7,
+			SoundEvents.ITEM_ARMOR_EQUIP_CHAIN,
+			1.0F,
+			0.1F,
+			ItemTags.EMERALD_ORES,
+			OP_ARMOR_MATERIAL_KEY_V2
 	);
 }

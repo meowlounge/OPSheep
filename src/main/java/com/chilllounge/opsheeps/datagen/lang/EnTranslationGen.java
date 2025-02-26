@@ -22,15 +22,25 @@ public class EnTranslationGen extends FabricLanguageProvider {
 		translationBuilder.add("item.opsheeps.super_shear_v5", "Titan Shear 5.0");
 		translationBuilder.add("item.opsheeps.super_shear_v69", "Titan Shear");
 
-		translationBuilder.add("item.opsheeps.op_helmet", "OP Helmet");
-		translationBuilder.add("item.opsheeps.op_chestplate", "OP Chestplate");
-		translationBuilder.add("item.opsheeps.op_leggings", "OP Leggings");
-		translationBuilder.add("item.opsheeps.op_boots", "OP Boots");
-		translationBuilder.add("item.opsheeps.op_sword", "OP Sword");
-		translationBuilder.add("item.opsheeps.op_pickaxe", "OP Pickaxe");
-		translationBuilder.add("item.opsheeps.op_axe", "OP Axe");
-		translationBuilder.add("item.opsheeps.op_shovel", "OP Shovel");
-		translationBuilder.add("item.opsheeps.op_hoe", "OP Hoe");
+		translationBuilder.add("item.opsheeps.op_helmet_v1", "OP Helmet");
+		translationBuilder.add("item.opsheeps.op_chestplate_v1", "OP Chestplate");
+		translationBuilder.add("item.opsheeps.op_leggings_v1", "OP Leggings");
+		translationBuilder.add("item.opsheeps.op_boots_v1", "OP Boots");
+		translationBuilder.add("item.opsheeps.op_sword_v1", "OP Sword");
+		translationBuilder.add("item.opsheeps.op_pickaxe_v1", "OP Pickaxe");
+		translationBuilder.add("item.opsheeps.op_axe_v1", "OP Axe");
+		translationBuilder.add("item.opsheeps.op_shovel_v1", "OP Shovel");
+		translationBuilder.add("item.opsheeps.op_hoe_v1", "OP Hoe");
+
+		translationBuilder.add("item.opsheeps.op_helmet_v2", "ULTRA OP Helmet");
+		translationBuilder.add("item.opsheeps.op_chestplate_v2", "ULTRA OP Chestplate");
+		translationBuilder.add("item.opsheeps.op_leggings_v2", "ULTRA OP Leggings");
+		translationBuilder.add("item.opsheeps.op_boots_v2", "ULTRA OP Boots");
+		translationBuilder.add("item.opsheeps.op_sword_v2", "ULTRA OP Sword");
+		translationBuilder.add("item.opsheeps.op_pickaxe_v2", "ULTRA OP Pickaxe");
+		translationBuilder.add("item.opsheeps.op_axe_v2", "ULTRA OP Axe");
+		translationBuilder.add("item.opsheeps.op_shovel_v2", "ULTRA OP Shovel");
+		translationBuilder.add("item.opsheeps.op_hoe_v2", "ULTRA OP Hoe");
 
 		translationBuilder.add("item.opsheeps.grow_back", "Grow Back");
 
