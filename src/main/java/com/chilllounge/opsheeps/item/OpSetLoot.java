@@ -53,7 +53,7 @@ public class OpSetLoot {
 			new ArmorItem(OP_ARMOR_MATERIAL_V1, EquipmentType.HELMET,
 					new Item.Settings()
 							.registryKey(OP_HELMET_V1_KEY)
-							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(25))
+							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(13))
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_helmet_v1")
@@ -67,7 +67,7 @@ public class OpSetLoot {
 			new ArmorItem(OP_ARMOR_MATERIAL_V1, EquipmentType.CHESTPLATE,
 					new Item.Settings()
 							.registryKey(OP_CHESTPLATE_V1_KEY)
-							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(25))
+							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(13))
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_chestplate_v1")
@@ -81,7 +81,7 @@ public class OpSetLoot {
 			new ArmorItem(OP_ARMOR_MATERIAL_V1, EquipmentType.LEGGINGS,
 					new Item.Settings()
 							.registryKey(OP_LEGGINGS_V1_KEY)
-							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(25))
+							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(13))
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_leggings_v1")
@@ -95,7 +95,7 @@ public class OpSetLoot {
 			new ArmorItem(OP_ARMOR_MATERIAL_V1, EquipmentType.BOOTS,
 					new Item.Settings()
 							.registryKey(OP_BOOTS_V1_KEY)
-							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(25))
+							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(13))
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_boots_v1")
@@ -109,7 +109,7 @@ public class OpSetLoot {
 			new SwordItem(OP_TOOL_MATERIAL_V1, 6, -1.4F,
 					new Item.Settings()
 							.registryKey(OP_SWORD_V1_KEY)
-							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(25))
+							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(13))
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_sword_v1")
@@ -123,7 +123,7 @@ public class OpSetLoot {
 			new AxeItem(OP_TOOL_MATERIAL_V1, 11, -3.0F,
 					new Item.Settings()
 							.registryKey(OP_AXE_V1_KEY)
-							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(25))
+							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(13))
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_axe_v1")
@@ -137,7 +137,7 @@ public class OpSetLoot {
 			new PickaxeItem(OP_TOOL_MATERIAL_V1, -3, -2.8F,
 					new Item.Settings()
 							.registryKey(OP_PICKAXE_V1_KEY)
-							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(25))
+							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(12))
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_pickaxe_v1")
@@ -151,7 +151,7 @@ public class OpSetLoot {
 			new ShovelItem(OP_TOOL_MATERIAL_V1, -3.5F, -3.0F,
 					new Item.Settings()
 							.registryKey(OP_SHOVEL_V1_KEY)
-							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(25))
+							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(15))
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_shovel_v1")
@@ -165,7 +165,7 @@ public class OpSetLoot {
 			new HoeItem(OP_TOOL_MATERIAL_V1, -10, -1.0F,
 					new Item.Settings()
 							.registryKey(OP_HOE_V1_KEY)
-							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(25))
+							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(8))
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_hoe_v1")
@@ -183,7 +183,7 @@ public class OpSetLoot {
 			new ArmorItem(OP_ARMOR_MATERIAL_V2, EquipmentType.HELMET,
 					new Item.Settings()
 							.registryKey(OP_HELMET_V2_KEY)
-							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(25))
+							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(5))
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_helmet_v2")
@@ -197,7 +197,7 @@ public class OpSetLoot {
 			new ArmorItem(OP_ARMOR_MATERIAL_V2, EquipmentType.CHESTPLATE,
 					new Item.Settings()
 							.registryKey(OP_CHESTPLATE_V2_KEY)
-							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(25))
+							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(8))
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_chestplate_v2")
@@ -211,7 +211,7 @@ public class OpSetLoot {
 			new ArmorItem(OP_ARMOR_MATERIAL_V2, EquipmentType.LEGGINGS,
 					new Item.Settings()
 							.registryKey(OP_LEGGINGS_V2_KEY)
-							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(25))
+							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(4))
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_leggings_v2")
@@ -225,7 +225,7 @@ public class OpSetLoot {
 			new ArmorItem(OP_ARMOR_MATERIAL_V2, EquipmentType.BOOTS,
 					new Item.Settings()
 							.registryKey(OP_BOOTS_V2_KEY)
-							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(25))
+							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(2))
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_boots_v2")
@@ -239,7 +239,7 @@ public class OpSetLoot {
 			new SwordItem(OP_TOOL_MATERIAL_V2, 6, -1.4F,
 					new Item.Settings()
 							.registryKey(OP_SWORD_V2_KEY)
-							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(25))
+							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(12))
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_sword_v2")
@@ -253,7 +253,7 @@ public class OpSetLoot {
 			new AxeItem(OP_TOOL_MATERIAL_V2, 11, -3.0F,
 					new Item.Settings()
 							.registryKey(OP_AXE_V2_KEY)
-							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(25))
+							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(16))
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_axe_v2")
@@ -267,7 +267,7 @@ public class OpSetLoot {
 			new PickaxeItem(OP_TOOL_MATERIAL_V2, -3, -2.8F,
 					new Item.Settings()
 							.registryKey(OP_PICKAXE_V2_KEY)
-							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(25))
+							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(6))
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_pickaxe_v2")
@@ -281,7 +281,7 @@ public class OpSetLoot {
 			new ShovelItem(OP_TOOL_MATERIAL_V2, -3.5F, -3.0F,
 					new Item.Settings()
 							.registryKey(OP_SHOVEL_V2_KEY)
-							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(25))
+							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(9))
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_shovel_v2")
@@ -295,7 +295,7 @@ public class OpSetLoot {
 			new HoeItem(OP_TOOL_MATERIAL_V2, -10, -1.0F,
 					new Item.Settings()
 							.registryKey(OP_HOE_V2_KEY)
-							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(25))
+							.component(DataComponentTypes.ENCHANTABLE, new EnchantableComponent(12))
 							.component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(false))
 							.component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
 							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.op_hoe_v2")
