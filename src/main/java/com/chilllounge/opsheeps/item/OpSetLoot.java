@@ -175,10 +175,6 @@ public class OpSetLoot {
 			)
 	);
 
-	//? OP SET V2
-	//? OP SET V2
-	//? OP SET V2
-
 	public static final Item OP_HELMET_V2 = registerItem(OP_HELMET_V2_KEY,
 			new ArmorItem(OP_ARMOR_MATERIAL_V2, EquipmentType.HELMET,
 					new Item.Settings()

@@ -1,5 +1,4 @@
 // 1.21.4	-999999999-01-01T00:00:00	OP Sheeps/Model Definitions
-71ec5eb86546a88097342ce5b1ee72ba705e46df assets/opsheeps/items/grow_back.json
 f348ed11a6435fc8baf8c109569bbb87e68c3ec8 assets/opsheeps/items/op_axe_v1.json
 036f97614dcbc8c643c7efcfab39475563ef3538 assets/opsheeps/items/op_axe_v2.json
 2ef564135ab0c947557bd1abb7f356e0b81bd1e7 assets/opsheeps/items/op_boots_v1.json
@@ -24,8 +23,6 @@ c415891bb82e5b64695d8927906e9678854e607e assets/opsheeps/items/super_dye.json
 c3370e7d12e33428b493ed5b46a9e8ce58e84d63 assets/opsheeps/items/super_shear_v3.json
 1e0145ec8eced31a788019e6c261c560323f74ea assets/opsheeps/items/super_shear_v4.json
 344a0ac742b4fb0dcfc90d2e53342ab61f0e44fd assets/opsheeps/items/super_shear_v5.json
-5c7f32144d8212df68b21e4a06d01c5fc0a73e4f assets/opsheeps/items/super_shear_v69.json
-e0e2368516346058fd56caca74206c6900a276da assets/opsheeps/models/item/grow_back.json
 a1661646284703f09fcdd2a55621d79a335af959 assets/opsheeps/models/item/op_axe_v1.json
 569c6d1d7fd313781c0516fd395e7214ac7a8d5a assets/opsheeps/models/item/op_axe_v2.json
 01477d03195131f44b6b79b15d60505dd8d44e0a assets/opsheeps/models/item/op_boots_v1.json
@@ -138,4 +135,3 @@ c8b158cd82dccab0a5c6c2ceedff420194e4367b assets/opsheeps/models/item/super_shear
 2ce554304e16ebb4d27e7d0c69d2577cecfeb359 assets/opsheeps/models/item/super_shear_v3.json
 2e8b0ae3666962cc897d3aeadf01ce825308d534 assets/opsheeps/models/item/super_shear_v4.json
 036c69f7aab59711c2c4b72abbe939fe851b6bbf assets/opsheeps/models/item/super_shear_v5.json
-9f374f1074462cfbc062f30cf7b697835bf92a67 assets/opsheeps/models/item/super_shear_v69.json

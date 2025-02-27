@@ -34,7 +34,7 @@ public class ModItemsTagGen extends FabricTagProvider.ItemTagProvider {
 				.add(OpSheepsItems.SUPER_SHEAR_V3)
 				.add(OpSheepsItems.SUPER_SHEAR_V4)
 				.add(OpSheepsItems.SUPER_SHEAR_V5)
-				.add(OpSheepsItems.SUPER_SHEAR_V69)
+//				.add(OpSheepsItems.SUPER_SHEAR_V69)
 				.add(OpSetLoot.OP_PICKAXE_V1)
 				.add(OpSetLoot.OP_PICKAXE_V2);
 		getOrCreateTagBuilder(ItemTags.ARMOR_ENCHANTABLE)

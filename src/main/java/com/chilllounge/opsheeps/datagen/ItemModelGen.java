@@ -35,14 +35,14 @@ public class ItemModelGen extends FabricModelProvider {
 	}
 
 	public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-		itemModelGenerator.register(OpSheepsItems.GROW_BACK, Models.GENERATED);
+//		itemModelGenerator.register(OpSheepsItems.GROW_BACK, Models.GENERATED);
 		itemModelGenerator.register(OpSheepsItems.SUPER_DYE, Models.GENERATED);
 		itemModelGenerator.register(OpSheepsItems.SUPER_SHEAR_V1, Models.GENERATED);
 		itemModelGenerator.register(OpSheepsItems.SUPER_SHEAR_V2, Models.GENERATED);
 		itemModelGenerator.register(OpSheepsItems.SUPER_SHEAR_V3, Models.GENERATED);
 		itemModelGenerator.register(OpSheepsItems.SUPER_SHEAR_V4, Models.GENERATED);
 		itemModelGenerator.register(OpSheepsItems.SUPER_SHEAR_V5, Models.GENERATED);
-		itemModelGenerator.register(OpSheepsItems.SUPER_SHEAR_V69, Models.GENERATED);
+//		itemModelGenerator.register(OpSheepsItems.SUPER_SHEAR_V69, Models.GENERATED);
 
 		itemModelGenerator.register(OpSetLoot.OP_HOE_V1, Models.HANDHELD);
 		itemModelGenerator.register(OpSetLoot.OP_SHOVEL_V1, Models.HANDHELD);
