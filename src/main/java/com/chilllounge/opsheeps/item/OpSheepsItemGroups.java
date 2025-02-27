@@ -26,13 +26,13 @@ public class OpSheepsItemGroups {
 					.displayName(Text.translatable("itemgroups.opsheeps.super_items"))
 					.entries((displayContext, entries) -> {
 						entries.add(OpSheepsItems.SUPER_DYE);
-						entries.add(OpSheepsItems.SUPER_SHEAR_V69);
+//						entries.add(OpSheepsItems.SUPER_SHEAR_V69);
 						entries.add(OpSheepsItems.SUPER_SHEAR_V1);
 						entries.add(OpSheepsItems.SUPER_SHEAR_V2);
 						entries.add(OpSheepsItems.SUPER_SHEAR_V3);
 						entries.add(OpSheepsItems.SUPER_SHEAR_V4);
 						entries.add(OpSheepsItems.SUPER_SHEAR_V5);
-						entries.add(OpSheepsItems.GROW_BACK);
+//						entries.add(OpSheepsItems.GROW_BACK);
 
 						entries.add(OpSetLoot.OP_HELMET_V1);
 						entries.add(OpSetLoot.OP_CHESTPLATE_V1);
@@ -54,7 +54,7 @@ public class OpSheepsItemGroups {
 						entries.add(OpSetLoot.OP_SHOVEL_V2);
 						entries.add(OpSetLoot.OP_HOE_V2);
 
-						entries.add(Items.SHEEP_SPAWN_EGG);
+//						entries.add(Items.SHEEP_SPAWN_EGG);
 					})
 					.build()
 	);

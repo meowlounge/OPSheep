@@ -94,26 +94,26 @@ public class OpSheepsItems {
 					5
 			)
 	);
-	public static final Item SUPER_SHEAR_V69 = registerItem(
-			SUPER_SHEAR_V69_KEY,
-			new SuperShearItem(
-					new Item.Settings()
-							.maxDamage(-1)
-							.registryKey(SUPER_SHEAR_V69_KEY)
-							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.super_shear_v69").setStyle(Style.EMPTY.withColor(Formatting.DARK_RED).withBold(true).withItalic(false)))
-							.component(DataComponentTypes.LORE, new LoreComponent(List.of(Text.translatable("item.opsheeps.shear_drops", Text.literal("512").setStyle(Style.EMPTY.withColor(Formatting.GOLD).withBold(true))).setStyle(Style.EMPTY).withColor(11184810)))),
-					512,
-					69
-			)
-	);
-	public static final Item GROW_BACK = registerItem(GROW_BACK_KEY,
-			new GrowBackItem(
-					new Item.Settings()
-							.maxDamage(-1)
-							.registryKey(GROW_BACK_KEY)
-							.component(DataComponentTypes.LORE, new LoreComponent(List.of(Text.translatable("item.opsheeps.grow_back_description").setStyle(Style.EMPTY.withColor(Formatting.GRAY)))))
-							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.grow_back").setStyle(Style.EMPTY.withColor(Formatting.WHITE).withBold(true).withItalic(false))))
-	);
+//	public static final Item SUPER_SHEAR_V69 = registerItem(
+//			SUPER_SHEAR_V69_KEY,
+//			new SuperShearItem(
+//					new Item.Settings()
+//							.maxDamage(-1)
+//							.registryKey(SUPER_SHEAR_V69_KEY)
+//							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.super_shear_v69").setStyle(Style.EMPTY.withColor(Formatting.DARK_RED).withBold(true).withItalic(false)))
+//							.component(DataComponentTypes.LORE, new LoreComponent(List.of(Text.translatable("item.opsheeps.shear_drops", Text.literal("512").setStyle(Style.EMPTY.withColor(Formatting.GOLD).withBold(true))).setStyle(Style.EMPTY).withColor(11184810)))),
+//					512,
+//					69
+//			)
+//	);
+//	public static final Item GROW_BACK = registerItem(GROW_BACK_KEY,
+//			new GrowBackItem(
+//					new Item.Settings()
+//							.maxDamage(-1)
+//							.registryKey(GROW_BACK_KEY)
+//							.component(DataComponentTypes.LORE, new LoreComponent(List.of(Text.translatable("item.opsheeps.grow_back_description").setStyle(Style.EMPTY.withColor(Formatting.GRAY)))))
+//							.component(DataComponentTypes.CUSTOM_NAME, Text.translatable("item.opsheeps.grow_back").setStyle(Style.EMPTY.withColor(Formatting.WHITE).withBold(true).withItalic(false))))
+//	);
 
 	private static Item registerItem(RegistryKey<Item> key, Item item) {
 		return Registry.register(Registries.ITEM, key.getValue(), item);
