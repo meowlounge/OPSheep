@@ -1,6 +1,7 @@
 package com.chilllounge.opsheeps;
 
 import com.chilllounge.opsheeps.command.HelpCommand;
+import com.chilllounge.opsheeps.datagen.EnchantmentGen;
 import com.chilllounge.opsheeps.enchantment.OpSheepsEnchantmentEffects;
 import com.chilllounge.opsheeps.enchantment.effect.MineralExtractorHandler;
 import com.chilllounge.opsheeps.item.OpSheepsItemGroups;
@@ -22,6 +23,7 @@ public class Opsheeps implements ModInitializer {
 		OpSheepsItems.registerModItems();
 		OpSetLoot.registerLootTableItems();
 		OpSheepsEnchantmentEffects.registerModEnchantmentEffects();
+		EnchantmentGen.registerCustomEnchantments();
 		MineralExtractorHandler.register();
 		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> HelpCommand.register(dispatcher));
 	}

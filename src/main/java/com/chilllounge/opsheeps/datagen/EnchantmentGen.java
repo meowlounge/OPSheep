@@ -22,14 +22,14 @@ public class EnchantmentGen extends FabricDynamicRegistryProvider {
 	@Override
 	protected void configure(RegistryWrapper.WrapperLookup registries, Entries entries) {
 		register(entries, OpSheepsEnchantmentEffects.MINERAL_EXTRACTOR, Enchantment.builder(
-				Enchantment.definition(
-						registries.getOrThrow(RegistryKeys.ITEM).getOrThrow(ItemTags.PICKAXES),
-						3,
-						6,
-						Enchantment.leveledCost(1, 12),
-						Enchantment.leveledCost(1, 18),
-						16,
-						AttributeModifierSlot.HAND)
+						Enchantment.definition(
+								registries.getOrThrow(RegistryKeys.ITEM).getOrThrow(ItemTags.PICKAXES),
+								3,
+								6,
+								Enchantment.leveledCost(1, 12),
+								Enchantment.leveledCost(1, 18),
+								16,
+								AttributeModifierSlot.HAND)
 				)
 		);
 	}
@@ -43,7 +43,7 @@ public class EnchantmentGen extends FabricDynamicRegistryProvider {
 		return "EnchantmentGen";
 	}
 
-	public static void registerMineralExtractor() {
-		Opsheeps.LOGGER.info("🐑 REGISTER MINERAL EXTRACTOR");
+	public static void registerCustomEnchantments() {
+		Opsheeps.LOGGER.info("🐑 REGISTERING CUSTOM ENCHANTMENTS");
 	}
 }
