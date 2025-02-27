@@ -4,6 +4,7 @@ import com.chilllounge.opsheeps.Opsheeps;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -25,13 +26,13 @@ public class OpSheepsItemGroups {
 					.displayName(Text.translatable("itemgroups.opsheeps.super_items"))
 					.entries((displayContext, entries) -> {
 						entries.add(OpSheepsItems.SUPER_DYE);
-						entries.add(OpSheepsItems.SUPER_SHEAR_V69);
+//						entries.add(OpSheepsItems.SUPER_SHEAR_V69);
 						entries.add(OpSheepsItems.SUPER_SHEAR_V1);
 						entries.add(OpSheepsItems.SUPER_SHEAR_V2);
 						entries.add(OpSheepsItems.SUPER_SHEAR_V3);
 						entries.add(OpSheepsItems.SUPER_SHEAR_V4);
 						entries.add(OpSheepsItems.SUPER_SHEAR_V5);
-						entries.add(OpSheepsItems.GROW_BACK);
+//						entries.add(OpSheepsItems.GROW_BACK);
 
 						entries.add(OpSetLoot.OP_HELMET_V1);
 						entries.add(OpSetLoot.OP_CHESTPLATE_V1);
@@ -52,6 +53,8 @@ public class OpSheepsItemGroups {
 						entries.add(OpSetLoot.OP_PICKAXE_V2);
 						entries.add(OpSetLoot.OP_SHOVEL_V2);
 						entries.add(OpSetLoot.OP_HOE_V2);
+
+//						entries.add(Items.SHEEP_SPAWN_EGG);
 					})
 					.build()
 	);
