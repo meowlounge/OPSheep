@@ -2,8 +2,8 @@ package com.chilllounge.opsheeps;
 
 import com.chilllounge.opsheeps.datagen.EnchantmentGen;
 import com.chilllounge.opsheeps.datagen.ItemModelGen;
+import com.chilllounge.opsheeps.datagen.ModItemsTagGen;
 import com.chilllounge.opsheeps.datagen.RecipeGen;
-import com.chilllounge.opsheeps.datagen.ShearsTagGen;
 import com.chilllounge.opsheeps.datagen.lang.DeTranslationGen;
 import com.chilllounge.opsheeps.datagen.lang.EnTranslationGen;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -15,7 +15,7 @@ public class OpsheepsDataGenerator implements DataGeneratorEntrypoint {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
 		pack.addProvider(EnchantmentGen::new);
-		pack.addProvider(ShearsTagGen::new);
+		pack.addProvider(ModItemsTagGen::new);
 		pack.addProvider(ItemModelGen::new);
 		pack.addProvider(RecipeGen::new);
 		pack.addProvider(EnTranslationGen::new);
