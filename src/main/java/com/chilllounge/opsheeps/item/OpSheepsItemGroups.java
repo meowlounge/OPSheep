@@ -4,6 +4,7 @@ import com.chilllounge.opsheeps.Opsheeps;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -52,6 +53,8 @@ public class OpSheepsItemGroups {
 						entries.add(OpSetLoot.OP_PICKAXE_V2);
 						entries.add(OpSetLoot.OP_SHOVEL_V2);
 						entries.add(OpSetLoot.OP_HOE_V2);
+
+						entries.add(Items.SHEEP_SPAWN_EGG);
 					})
 					.build()
 	);
