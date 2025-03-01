@@ -1,32 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "opsheeps",
+  "id": "opsheep",
   "version": "${version}",
-  "name": "OP Sheeps",
+  "name": "OP Sheep",
   "description": "Dream about Sheep that doesnt drop wool...",
   "authors": [
     "prodbyeagle",
     "dwhincandi"
   ],
   "contact": {
-    "sources": "https://github.com/meowlounge/opsheeps"
+    "sources": "https://github.com/meowlounge/opsheep"
   },
   "license": "CC0-1.0",
-  "icon": "assets/opsheeps/icon.png",
+  "icon": "assets/opsheep/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.chilllounge.opsheeps.Opsheeps"
+      "com.chilllounge.opsheep.Opsheep"
     ],
     "fabric-datagen": [
-      "com.chilllounge.opsheeps.OpsheepsDataGenerator"
+      "com.chilllounge.opsheep.OpsheepDataGenerator"
     ],
     "clients": [
-      "com.chilllounge.opsheeps.OpsheepsClient"
+      "com.chilllounge.opsheep.OpsheepClient"
     ]
   },
   "mixins": [
-    "opsheeps.mixins.json"
+    "opsheep.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.16.10",

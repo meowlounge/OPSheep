@@ -1,0 +1,20 @@
+{
+  "anvil_cost": 16,
+  "description": {
+    "translate": "enchantment.opsheep.mineral_extractor"
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 18
+  },
+  "max_level": 6,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 12
+  },
+  "slots": [
+    "hand"
+  ],
+  "supported_items": "#minecraft:pickaxes",
+  "weight": 3
+}

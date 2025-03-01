@@ -1,11 +1,11 @@
 {
   "values": [
-    "opsheeps:super_shear_v1",
-    "opsheeps:super_shear_v2",
-    "opsheeps:super_shear_v3",
-    "opsheeps:super_shear_v4",
-    "opsheeps:super_shear_v5",
-    "opsheeps:op_pickaxe_v1",
-    "opsheeps:op_pickaxe_v2"
+    "opsheep:super_shear_v1",
+    "opsheep:super_shear_v2",
+    "opsheep:super_shear_v3",
+    "opsheep:super_shear_v4",
+    "opsheep:super_shear_v5",
+    "opsheep:op_pickaxe_v1",
+    "opsheep:op_pickaxe_v2"
   ]
 }

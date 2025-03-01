@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "opsheep:item/op_pickaxe_v2"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "opsheep:item/op_chestplate_v1",
+    "layer1": "minecraft:trims/items/chestplate_trim_resin"
+  }
+}
