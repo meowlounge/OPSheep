@@ -3,7 +3,7 @@
   "category": "equipment",
   "key": {
     "1": "minecraft:shears",
-    "D": "minecraft:diamond_block"
+    "D": "minecraft:diamond"
   },
   "pattern": [
     "111",

@@ -40,7 +40,7 @@ public class RecipeGen extends FabricRecipeProvider {
 						.pattern("1D1")
 						.pattern("111")
 						.input('1', Items.SHEARS)
-						.input('D', Items.DIAMOND_BLOCK)
+						.input('D', Items.DIAMOND)
 						.criterion(hasItem(Items.SHEARS), conditionsFromItem(Items.SHEARS))
 						.offerTo(exporter);
 
@@ -49,7 +49,7 @@ public class RecipeGen extends FabricRecipeProvider {
 						.pattern("1D1")
 						.pattern("111")
 						.input('1', OpSheepItems.SUPER_SHEAR_V1)
-						.input('D', Items.DIAMOND_BLOCK)
+						.input('D', Items.DIAMOND)
 						.criterion(hasItem(Items.SHEARS), conditionsFromItem(Items.SHEARS))
 						.offerTo(exporter);
 
@@ -58,7 +58,7 @@ public class RecipeGen extends FabricRecipeProvider {
 						.pattern("1D1")
 						.pattern("111")
 						.input('1', OpSheepItems.SUPER_SHEAR_V2)
-						.input('D', Items.DIAMOND_BLOCK)
+						.input('D', Items.DIAMOND)
 						.criterion(hasItem(Items.SHEARS), conditionsFromItem(Items.SHEARS))
 						.offerTo(exporter);
 
@@ -67,7 +67,7 @@ public class RecipeGen extends FabricRecipeProvider {
 						.pattern("1D1")
 						.pattern("111")
 						.input('1', OpSheepItems.SUPER_SHEAR_V3)
-						.input('D', Items.DIAMOND_BLOCK)
+						.input('D', Items.DIAMOND)
 						.criterion(hasItem(Items.SHEARS), conditionsFromItem(Items.SHEARS))
 						.offerTo(exporter);
 
@@ -76,7 +76,7 @@ public class RecipeGen extends FabricRecipeProvider {
 						.pattern("1D1")
 						.pattern("111")
 						.input('1', OpSheepItems.SUPER_SHEAR_V4)
-						.input('D', Items.DIAMOND_BLOCK)
+						.input('D', Items.DIAMOND)
 						.criterion(hasItem(Items.SHEARS), conditionsFromItem(Items.SHEARS))
 						.offerTo(exporter);
 			}
