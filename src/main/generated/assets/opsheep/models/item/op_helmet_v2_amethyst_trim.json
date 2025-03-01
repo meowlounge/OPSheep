@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "opsheep:item/op_helmet_v2",
+    "layer1": "minecraft:trims/items/helmet_trim_amethyst"
+  }
+}

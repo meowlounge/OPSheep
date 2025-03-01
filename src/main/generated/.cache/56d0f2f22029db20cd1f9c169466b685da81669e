@@ -1,0 +1,5 @@
+// 1.21.4	-999999999-01-01T00:00:00	OP Sheep/ModItemsTagGen
+1dbae4149119f8b1fa2e787bbdf4c5fd7f212210 data/minecraft/tags/item/enchantable/armor.json
+ec8eef767d2e94bc2c94cb1bd70b6b456ab3ec79 data/minecraft/tags/item/enchantable/mining.json
+c823468d2eaa6ebc2be11bd1d9e172769199a4f2 data/minecraft/tags/item/enchantable/mining_loot.json
+433cdde64c7a88e79fe7ca12b6d2fc830df7a711 data/minecraft/tags/item/enchantable/sharp_weapon.json

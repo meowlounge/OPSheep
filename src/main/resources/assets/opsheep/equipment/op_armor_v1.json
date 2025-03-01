@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "opsheep:op_v1_layer_1"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "opsheep:op_v1_layer_2"
+      }
+    ]
+  }
+}
